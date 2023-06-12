@@ -5,7 +5,7 @@ import { colors, fonts } from "../../utils/const"
 
 export const SContenedorNav = styled.div`
  /* Comentario en estilos */
-width: 50vw;    /* ancho de mi pagina    */ 
+width: 55vw;    /* ancho de mi pagina    */ 
 height: 100vh;    /* largo de mi pagina */
 background: ${colors.black};
 position: absolute;
