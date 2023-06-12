@@ -31,6 +31,7 @@ body {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 a {
   text-decoration: none;
