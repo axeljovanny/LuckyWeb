@@ -1,0 +1,35 @@
+.line {
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+}
+
+.line:nth-child(1) {
+  transform: translate(-35%, 160%) scale(-0.5);
+}
+.line:nth-child(2) {
+  transform: translate(5%, 80%) scale(-0.3);
+}
+.line:nth-child(3) {
+  transform: translate(46%, 440%) scale(-0.3);
+}
+.line:nth-child(4) {
+  transform: translate(44%, 460%) scale(-0.3);
+}
+.line:nth-child(5) {
+  transform: translate(46%, 480%) scale(-0.3);
+}
+
+.svgAbout{
+  width: 100%;
+  margin: 5px;
+}
+.svgAbout svg{
+  object-fit: contain;
+}
+
+@media (max-width: 1140px) {
+  .line {
+    display: none;
+  }
+}
