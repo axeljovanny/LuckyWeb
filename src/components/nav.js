@@ -2,11 +2,30 @@ import React from "react";
 
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
-import { SContenedorNav } from "../styles/js/nav";
+import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker, SRedesNav } from "../styles/js/nav";
 
 const Nav = ({ siteTitle }) => {
   return (
     <SContenedorNav>
+      <SContenedorPrincipalNav>
+
+        <SContenedorCloseYLogo>
+        </SContenedorCloseYLogo>
+
+        <SContenedorContenido>
+          <h1> HOME</h1>
+          <h1> PROYECTOS</h1>
+          <h1> NOSOTROS</h1>
+        </SContenedorContenido>
+
+        <SContenedorRedesYSticker>
+
+          <SRedesNav>
+          </SRedesNav>
+
+        </SContenedorRedesYSticker>
+
+      </SContenedorPrincipalNav>
     </SContenedorNav>
   )
 }
