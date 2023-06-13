@@ -63,20 +63,37 @@ export const SContenedorContenido = styled.div`
  /* Comentario en estilos */
 width: 100%;    /* ancho de mi pagina    */ 
 height: 50%;    /* largo de mi pagina */
-background:green;
+background:none;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+position: relative;
+
+h1{
+
+  font-family: ${fonts.reciaB};
+  font-size: 70px;
+  margin: 3px;
+  color: ${colors.white};
+
+}
 
 
 ${above.medium`
     
   `}
 ${above.large`
-    
+  
+  h1{
+
+font-size: 60px;
+
+
+}
   `}
 `
+
 
 
 export const SContenedorRedesYSticker = styled.div`

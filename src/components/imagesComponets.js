@@ -193,3 +193,19 @@ export function ImgFooter() {
 
 }
 
+
+export function INube() {
+    return <StaticImage
+    src="../images/rediseño/Stickers/Sticker_nube.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgNube"
+   
+
+    />
+
+}

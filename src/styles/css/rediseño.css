@@ -201,3 +201,18 @@
 
 
   }
+
+
+  /* imagenes del componente nav web*/
+  
+  .imgNube{
+    width: 50%;
+    position: absolute;
+    top:-40%;
+    left:0;
+  }
+  .imgNube img {
+    object-fit: cover;
+
+   
+  }
