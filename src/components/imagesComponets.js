@@ -178,3 +178,18 @@ export function IGrafiiti() {
 
 }
 
+/// FOOTER
+export function ImgFooter() {
+    return <StaticImage
+        src="../images/rediseño/Footer/footer.png"
+        alt="lucky ducky studio art"
+        loading="lazy"
+        placeholder="blurred"
+        layout="fullWidth"
+        quality='90'
+        formats={['auto', 'webp', 'avif']}
+        className="imgFooter"
+    />
+
+}
+
