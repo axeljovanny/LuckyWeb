@@ -94,6 +94,17 @@
 
   }
 
+
+
+  /* Estilos Footer */
+  .imgFooter {
+    width: 50%;
+    margin-top: 3em;
+  }
+  .imgFooter img {
+    object-fit: cover;
+  }
+
 /**xxxxxxxxxxxxxxx  estilos en web xxxxxxxxxxxxxxxxxxxx*/
 
   @media only screen and (min-width: 768px) {

@@ -5,7 +5,6 @@ import { colors, fonts, sizes } from "../../utils/const"
 export const StyledLine = styled.div`
 display:none;
 
-
   ${above.medium`
   `}
   ${above.large`

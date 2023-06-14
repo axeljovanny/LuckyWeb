@@ -1,6 +1,5 @@
 import React from "react";
 
-import { colors } from "../utils/const";
 import "../styles/css/svg.css";
 import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker, SRedesNav } from "../styles/js/nav";
 import { INube } from "./imagesComponets";
