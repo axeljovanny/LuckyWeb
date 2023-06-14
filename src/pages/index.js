@@ -1,13 +1,12 @@
 import * as React from "react"
-import { Footer, Header, Nav } from "../components"
+import { Header } from "../components"
+import Layout from "../components/layout"
 
 const IndexPage = () => {
   return (
-    <>
-      <Nav/>
+    <Layout>
       <Header id="header" siteTitle="Home" />
-      <Footer/>
-    </>
+    </Layout>
   )
 }
 
