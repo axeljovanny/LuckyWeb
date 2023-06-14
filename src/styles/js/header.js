@@ -154,25 +154,20 @@ ${above.large`
 export const SInicioYServicios = styled.div`
  /* Comentario en estilos */
 
- width: 100%;    // ancho de mi pagina  
-height: 80%;    // largo de mi pagina
-background: none;  /* color de fondo*/
-display: flex;  // utilizar las funciones de flex: ;
-flex-wrap: wrap;
-justify-content: center;
-align-items:center;
+  width: 100%;    // ancho de mi pagina  
+  height: 80%;    // largo de mi pagina
+  background: none;  /* color de fondo*/
+  display: flex;  // utilizar las funciones de flex: ;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
 ${above.large`
     width: 70%;    // ancho de mi pagina    
-    height: 100%;  
-    
+    height: 100%;   
   `}
 `
 
-
-
 export const STextoServiciosHome = styled.div`
- /* Comentario en estilos */
-
 width: 100%;    // ancho de mi pagina    
 height: 25%;    // largo de mi pagina
 background: none; //color de fondo
@@ -183,20 +178,14 @@ align-items: center;
 position: relative;
 
 p{
-
   font-family: ${fonts.montExtraBold};
-font-size: 10px;
-
-
+  font-size: 10px;
 }
 
 ${above.large`
   p{
-
-font-size: 13px;
-
-
-}
+  font-size: 13px;
+    }
    
   `}
 `
@@ -307,8 +296,67 @@ export const SAnimacionHomeDer = styled.div`
     
 `
 
+export const STextoInicio = styled.div`
+ /* Comentario en estilos */
+
+width: 100%;    // ancho de mi pagina    
+height: 75%;    // largo de mi pagina
+background: none; //color de fondo
+
+display: flex;  // utilizar las funciones de flex
+flex-direction:column;
+justify-content:center;
+align-items: center;
+text-align: center;
+
+position: relative;
+padding: 20%;
+color: ${colors.black};
+
+h1{
+  font-family: ${fonts.reciaB};
+    background:none;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+h1 > span {
+  font-size: 2em;
+  background: none;
+  margin: 0;
+
+}
+
+.Es{
+font-size: 1.5em;
+vertical-align: super;
+}
+
+.Un{
+font-size: 1em;
+vertical-align: baseline;
+}
 
 
+${above.large`
+background:none;
+padding: 0 25%;
+h1{
+  font-size: 3em;
+}
+
+.Un{
+font-size: 1em;
+vertical-align: super ;
+}
+
+.Es{
+font-size: 1em;
+vertical-align: baseline;
+}`}
+
+`
 
 
 /* -----------FIN SECCION HEADER ---------------- */
