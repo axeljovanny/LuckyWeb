@@ -4,7 +4,7 @@ import { Header, Nav } from "../components"
 const IndexPage = () => {
   return (
     <>
-      <Nav/>
+      <Nav />
       <Header id="header" siteTitle="Home" />
     </>
   )
