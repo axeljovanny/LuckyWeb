@@ -154,25 +154,20 @@ ${above.large`
 export const SInicioYServicios = styled.div`
  /* Comentario en estilos */
 
- width: 100%;    // ancho de mi pagina  
-height: 80%;    // largo de mi pagina
-background: none;  /* color de fondo*/
-display: flex;  // utilizar las funciones de flex: ;
-flex-wrap: wrap;
-justify-content: center;
-align-items:center;
+  width: 100%;    // ancho de mi pagina  
+  height: 80%;    // largo de mi pagina
+  background: none;  /* color de fondo*/
+  display: flex;  // utilizar las funciones de flex: ;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
 ${above.large`
     width: 70%;    // ancho de mi pagina    
-    height: 100%;  
-    
+    height: 100%;   
   `}
 `
 
-
-
 export const STextoServiciosHome = styled.div`
- /* Comentario en estilos */
-
 width: 100%;    // ancho de mi pagina    
 height: 25%;    // largo de mi pagina
 background: none; //color de fondo
@@ -183,21 +178,15 @@ align-items: center;
 position: relative;
 bottom:30%;
 p{
-
   font-family: ${fonts.montExtraBold};
-font-size: 10px;
-
-
+  font-size: 10px;
 }
 
 ${above.large`
 bottom:0;
   p{
-
-font-size: 13px;
-
-
-}
+  font-size: 13px;
+    }
    
   `}
 `
@@ -308,7 +297,12 @@ export const SAnimacionHomeDer = styled.div`
     
 `
 
+export const STextoInicio = styled.div`
+ /* Comentario en estilos */
 
+width: 100%;    // ancho de mi pagina    
+height: 75%;    // largo de mi pagina
+background: none; //color de fondo
 
 display: flex;  // utilizar las funciones de flex
 flex-direction:column;

@@ -3,15 +3,19 @@ import { above } from './index'
 import { colors, fonts } from "../../utils/const"
 import { motion } from "framer-motion"
 
+
+
 export const SContenedorNav = styled.div`
  /* Comentario en estilos */
-width: 55vw;    /* ancho de mi pagina    */ 
+width: 100%;    /* ancho de mi pagina    */ 
 height: 100vh;    /* largo de mi pagina */
 background: ${colors.black};
-position: absolute;
+display: flex;
+position: fixed;
 top: 0;
 left: 0;
 z-index: 1;
+
 
 ${above.medium`
     
@@ -33,29 +37,14 @@ background: none;
 ${above.medium`
     
   `}
-`;
+${above.large`
+    
+  `}
+`
 
-export const OverButton = styled(motion.button)`
-  position: fixed;
-  z-index: 13;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-`;
 
-export const Overlay = styled(motion.div)`
 
-  display: flex;
-  flex-direction: column;
-  height: 10%;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  z-index: 12;
-  background: ${colors.none};
 export const SContenedorCloseYLogo = styled.div`
  /* Comentario en estilos */
 width: 90%;    /* ancho de mi pagina    */ 
@@ -67,10 +56,14 @@ align-items: center;
 padding: 0 10% 0 0;
 
 
+${above.medium`
+    
+  `}
+${above.large`
+    
+  `}
+`
 
-  ${above.large` {
-    display: none;
-    }
 
 export const SContenedorContenido = styled.div`
  /* Comentario en estilos */
@@ -97,24 +90,18 @@ h1{
 ${above.medium`
     
   `}
-`;
 ${above.large`
 height: 45%;    
 justify-content: flex-end;
   
   h1{
 
-export const Over = styled(motion.div)`
-  flex-direction: column;
-  width: 100vw;
-  position: fixed;
-  top:0;
+font-size: 60px;
 
-  ${above.large` {
-    display: none;
-    }
+
+}
   `}
-`;
+`
 
 
 
@@ -160,3 +147,44 @@ ${above.large`
   
   `}
 `
+export const OverButton = styled(motion.button)`
+  position: fixed;
+  z-index: 13;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+`;
+
+export const Overlay = styled(motion.div)`
+
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 12;
+  background: ${colors.none};
+
+
+
+  ${above.large` {
+    display: none;
+    }
+  `}
+`;
+
+export const Over = styled(motion.div)`
+  flex-direction: column;
+  width: 100vw;
+  position: fixed;
+  top:0;
+
+  ${above.large` {
+    display: none;
+    }
+  `}
+`;

@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { SAnimacionCentral, SAnimacionHomeDer, SAnimacionHomeIzq, SAnimacionTextoInicio, SContenido, SHeader, SHeaderDerecha, SHeaderIzquierda, SIdioma, SInicioYServicios, SLogo, SNav, SNavButton, SRedes, STextoInicio, STextoServiciosHome } from "../styles/js/header";
 import { IFondoHeader, ILogoTrebol, IStickerBorrego, IStickerCorazon, IStickerLap, IconoMenu, IGrafiiti } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons";
-import { MenuToggle, Nav } from "./nav";
+import Nav, { MenuToggle } from "./nav";
 import { Overlay } from "../styles/js/nav";
 import { useCycle } from "framer-motion"
 import { colors } from "../utils/const";
@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => {
           </SHeaderIzquierda>
 
           <SInicioYServicios>
-            {/* <div>
+          <STextoInicio>
               <h1>
               <span class="Es">LA</span>  <span>CREATIVIDAD</span>  <span class="Es">ES</span>  <span class="Es">UN</span> <span>REFLEJO</span> <span class="Es">DE</span> <span>NUESTRA</span> <span>NUESTRA</span>{" "}  
               </h1>
@@ -49,9 +49,9 @@ const Header = ({ siteTitle }) => {
                 <IStickerLap />
               </div>
               <div>
-                <IGrafiiti />
+                {/* <IGrafiiti /> */}
               </div>
-            </div> */}
+              </STextoInicio>
             <STextoServiciosHome>
               <p>
                 BRANDING &nbsp; | &nbsp; PRODUCCION AUDIOVISUAL&nbsp; |&nbsp;
@@ -70,7 +70,7 @@ const Header = ({ siteTitle }) => {
   );
 };
 
-const IconNav = ({ siteTitle }) => {
+export const IconNav = ({ siteTitle }) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
 

@@ -3,36 +3,58 @@ import { motion } from "framer-motion";
 
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
-import { SContenedorNav, OverButton, Overlay, Over } from "../styles/js/nav";
-import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker, SRedesNav, } from "../styles/js/nav";
+import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker, SRedesNav, OverButton, Over } from "../styles/js/nav";
 import { IBala, ILogoTrebol, INube } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons";
-import { colors } from "../utils/const";
 
-const Nav = ({ open }) => {
+export const Nav = ({ open }) => {
   return (
     <Over 
       animate={open? "open" : "closed"}
       variants={sidebar}>
       <SContenedorNav variants={variants} >
-        {/* contenido del menu */}
-        <p>hola</p>
-      </SContenedorNav>
-    </Over>
-  )
-}
+      <SContenedorPrincipalNav>
 
         <SContenedorCloseYLogo>
 
           <ILogoTrebol/>
 
         </SContenedorCloseYLogo>
+
+        <SContenedorContenido>
+         <INube/>
+
+          <h1> HOME</h1>
+          <h1> PROYECTOS</h1>
+          <h1> NOSOTROS</h1>
+
+        </SContenedorContenido>
+
+        <SContenedorRedesYSticker>
+
+          <SRedesNav>
+            <BehanceIcon fill={colors.white} className={"svgAbout"} />
+            <FacebookIcon fill={colors.white} className={"svgAbout"} />
+              <InstagramIcon fill={colors.white} className={"svgAbout"} />
+          </SRedesNav>
+
+          <IBala/>
+        </SContenedorRedesYSticker>
+
+      </SContenedorPrincipalNav>
+      </SContenedorNav>
+    </Over>
+  )
+}
+
+export const MenuToggle = ({ toggle, siteTitle }) => {
     return (
     <OverButton onClick={toggle}>
     <svg width="23" height="23" viewBox="0 0 23 23">
     <Path
       variants={{
         closed: { d: "M 2 2.5 L 20 2.5", stroke: colors.black },
+        open: { d: "M 3 16.5 L 17 2.5", stroke: colors.white}
       }}
     />
     <Path
@@ -53,15 +75,7 @@ const Nav = ({ open }) => {
   </OverButton>)
    
 };
-export const MenuToggle = ({ toggle, siteTitle }) => {
-        open: { d: "M 3 16.5 L 17 2.5", stroke: colors.white}
 
-        <SContenedorContenido>
-         <INube/>
-
-          <h1> HOME</h1>
-          <h1> PROYECTOS</h1>
-          <h1> NOSOTROS</h1>
 const Path = props => (
   <motion.path
     fill="transparent"
@@ -100,19 +114,5 @@ const sidebar = {
   }
 };
 
-          <SRedesNav>
-            <BehanceIcon fill={colors.white} className={"svgAbout"} />
-            <FacebookIcon fill={colors.white} className={"svgAbout"} />
-              <InstagramIcon fill={colors.white} className={"svgAbout"} />
-          </SRedesNav>
-
-          <IBala/>
-        </SContenedorRedesYSticker>
-
-      </SContenedorPrincipalNav>
-    </SContenedorNav>
-  )
- 
-}
 
 export default Nav;
