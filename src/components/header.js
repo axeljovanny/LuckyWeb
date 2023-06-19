@@ -43,7 +43,7 @@ const Header = ({ siteTitle }) => {
           <SInicioYServicios>
             {/* <div>
               <h1>
-              LA <span>CREATIVIDAD</span>  <span class="Es">ES</span>  <span class="Un"> UN </span> <span>REFLEJO</span> DE <span>NUESTRA</span>{" "}  
+              <span class="Es">LA</span>  <span>CREATIVIDAD</span>  <span class="Es">ES</span>  <span class="Es">UN</span> <span>REFLEJO</span> <span class="Es">DE</span> <span>NUESTRA</span> <span>NUESTRA</span>{" "}  
               </h1>
               <div>
                 <IStickerLap />

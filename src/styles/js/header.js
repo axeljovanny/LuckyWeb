@@ -181,7 +181,7 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 position: relative;
-
+bottom:30%;
 p{
 
   font-family: ${fonts.montExtraBold};
@@ -191,6 +191,7 @@ font-size: 10px;
 }
 
 ${above.large`
+bottom:0;
   p{
 
 font-size: 13px;
@@ -309,6 +310,72 @@ export const SAnimacionHomeDer = styled.div`
 
 
 
+display: flex;  // utilizar las funciones de flex
+flex-direction:column;
+justify-content:center;
+align-items: center;
+text-align: center;
+line-height: 1px;
+
+position: relative;
+
+padding: 15%;
+color: ${colors.black};
+
+h1{
+  font-family: ${fonts.reciaB};
+    background:none;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+h1 > span {
+  
+  font-size: 2em;
+  background: none;
+  margin: 0;
+
+}
+
+.Es{
+
+font-size: 1.3em;
+vertical-align: super;
+
+}
+
+
+
+
+${above.large`
+
+
+
+width: 100%;      
+height: 60%;
+display: flex;
+position: none;
+background:none;
+padding: 0 17%  0 ;
+
+
+h1{
+  font-family: ${fonts.reciaB};
+    background:none;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+}
+
+.Es{
+font-size: 1.3em;
+vertical-align: center;
+}`}
+
+`
 
 
 /* -----------FIN SECCION HEADER ---------------- */

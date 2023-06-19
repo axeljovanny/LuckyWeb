@@ -51,13 +51,7 @@
 
 
   
-  .imgILogoTrebol{
-    width: 8% ;
-  }
-  .imgILogoTrebol img {
-    object-fit: cover;
-
-  }
+ 
 
 
   .imgFacebook{
@@ -92,6 +86,49 @@
       height: 80%;
      left: 20%;
 
+  }
+
+
+
+
+
+  /* imagenes del componente nav movil*/
+
+
+  .imgNube{
+    width: 70%;
+    background-color: none;
+    position: absolute;
+    bottom:50%;
+    left:0; 
+    transform:  rotateY(900deg) rotate(5deg)  translate(25%) translateY(-25%);
+
+  }
+  .imgNube img {
+    object-fit: cover;
+  
+  }
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+  /* Estilos Footer */
+  .imgFooter {
+    width: 50%;
+    margin-top: 3em;
+  }
+  .imgFooter img {
+    object-fit: cover;
   }
 
 /**xxxxxxxxxxxxxxx  estilos en web xxxxxxxxxxxxxxxxxxxx*/
@@ -155,6 +192,7 @@
     
     .imgILogoTrebol{
       width: 8% ;
+      
     }
     .imgILogoTrebol img {
       object-fit: cover;
@@ -200,4 +238,35 @@
   
 
 
+ /* imagenes del componente nav web*/
+  
+ .imgNube{
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top:-7%;
+  left:5; 
+  transform:  rotateY(900deg) rotate(10deg)  translate(25%) translateY(-5%);
+}
+.imgNube img {
+  object-fit: cover;
+}
+
+
+.imgBala{
+  width: 55%;
+  position: absolute;
+  bottom: -133%;
+  right: -10%;
+  transform: rotate(-45deg);
+}
+.imgBala img {
+  object-fit: cover;
+}
+
+
+
+
+
   }
+

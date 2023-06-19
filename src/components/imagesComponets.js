@@ -178,3 +178,60 @@ export function IGrafiiti() {
 
 }
 
+export function INube() {
+    return <StaticImage
+    src="../images/rediseño/Stickers/Sticker_nube.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgNube"
+   
+
+    />
+
+}
+
+
+export function IBala() {
+    return <StaticImage
+    src="../images/rediseño/Stickers/sticker_bala.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgBala"
+   
+
+    />
+
+}
+
+
+
+
+
+
+
+
+
+
+/// FOOTER
+export function ImgFooter() {
+    return <StaticImage
+        src="../images/rediseño/Footer/footer.png"
+        alt="lucky ducky studio art"
+        loading="lazy"
+        placeholder="blurred"
+        layout="fullWidth"
+        quality='90'
+        formats={['auto', 'webp', 'avif']}
+        className="imgFooter"
+    />
+
+}
+
