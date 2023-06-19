@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../styles/css/svg.css";
-import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker, SRedesNav, } from "../styles/js/nav";
+import { SContenedorCloseYLogo, SContenedorContenido, SContenedorIdioma, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker, SDerechosAutor, SRedesNav, } from "../styles/js/nav";
 import { IBala, ILogoTrebol, INube } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons";
 import { colors } from "../utils/const";
@@ -12,10 +12,12 @@ const Nav = ({ siteTitle }) => {
       <SContenedorPrincipalNav>
 
         <SContenedorCloseYLogo>
-
+        <SContenedorIdioma>
+         </SContenedorIdioma>
           <ILogoTrebol/>
 
         </SContenedorCloseYLogo>
+         
 
         <SContenedorContenido>
          <INube/>
@@ -34,7 +36,13 @@ const Nav = ({ siteTitle }) => {
               <InstagramIcon fill={colors.white} className={"svgAbout"} />
           </SRedesNav>
 
+        
           <IBala/>
+
+          <SDerechosAutor>
+          <p> © LUCKY DUCKY STUDIO 2023 </p>
+           </SDerechosAutor>
+           
         </SContenedorRedesYSticker>
 
       </SContenedorPrincipalNav>

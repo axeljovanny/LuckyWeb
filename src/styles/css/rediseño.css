@@ -110,14 +110,16 @@
   }
 
 
-
- 
-
-
-
-
-
-
+  .imgBala{
+    width: 90%;
+    position: absolute;
+    left:45%;
+    bottom:15%;
+    transform: rotate(-35deg) 
+  }
+  .imgBala img {
+    object-fit: cover;
+  }
 
 
 
@@ -255,10 +257,10 @@
 
 .imgBala{
   width: 55%;
-  position: absolute;
-  bottom: -133%;
-  right: -10%;
-  transform: rotate(-45deg);
+  position:absolute;
+  bottom: -90%;
+  right: -70%;
+  transform: rotate(-45deg) ;
 }
 .imgBala img {
   object-fit: cover;
