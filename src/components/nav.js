@@ -1,8 +1,10 @@
 import React from "react";
 
 import "../styles/css/svg.css";
-import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker, SRedesNav } from "../styles/js/nav";
-import { INube } from "./imagesComponets";
+import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker, SRedesNav, } from "../styles/js/nav";
+import { IBala, ILogoTrebol, INube } from "./imagesComponets";
+import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons";
+import { colors } from "../utils/const";
 
 const Nav = ({ siteTitle }) => {
   return (
@@ -10,10 +12,14 @@ const Nav = ({ siteTitle }) => {
       <SContenedorPrincipalNav>
 
         <SContenedorCloseYLogo>
+
+          <ILogoTrebol/>
+
         </SContenedorCloseYLogo>
 
         <SContenedorContenido>
          <INube/>
+
           <h1> HOME</h1>
           <h1> PROYECTOS</h1>
           <h1> NOSOTROS</h1>
@@ -23,13 +29,18 @@ const Nav = ({ siteTitle }) => {
         <SContenedorRedesYSticker>
 
           <SRedesNav>
+            <BehanceIcon fill={colors.white} className={"svgAbout"} />
+            <FacebookIcon fill={colors.white} className={"svgAbout"} />
+              <InstagramIcon fill={colors.white} className={"svgAbout"} />
           </SRedesNav>
 
+          <IBala/>
         </SContenedorRedesYSticker>
 
       </SContenedorPrincipalNav>
     </SContenedorNav>
   )
+ 
 }
 
 export default Nav;

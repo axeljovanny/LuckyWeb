@@ -176,13 +176,14 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 position: relative;
-
+bottom:30%;
 p{
   font-family: ${fonts.montExtraBold};
   font-size: 10px;
 }
 
 ${above.large`
+bottom:0;
   p{
   font-size: 13px;
     }
@@ -308,9 +309,11 @@ flex-direction:column;
 justify-content:center;
 align-items: center;
 text-align: center;
+line-height: 1px;
 
 position: relative;
-padding: 20%;
+
+padding: 15%;
 color: ${colors.black};
 
 h1{
@@ -319,9 +322,11 @@ h1{
     font-size: 2em;
     text-align: center;
     line-height: 1.5em;
+    letter-spacing: 1px;
 }
 
 h1 > span {
+  
   font-size: 2em;
   background: none;
   margin: 0;
@@ -329,31 +334,39 @@ h1 > span {
 }
 
 .Es{
-font-size: 1.5em;
+
+font-size: 1.3em;
 vertical-align: super;
+
 }
 
-.Un{
-font-size: 1em;
-vertical-align: baseline;
-}
+
 
 
 ${above.large`
-background:none;
-padding: 0 25%;
-h1{
-  font-size: 3em;
-}
 
-.Un{
-font-size: 1em;
-vertical-align: super ;
+
+
+width: 100%;      
+height: 60%;
+display: flex;
+position: none;
+background:none;
+padding: 0 17%  0 ;
+
+
+h1{
+  font-family: ${fonts.reciaB};
+    background:none;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.7em;
+    letter-spacing: 1px;
 }
 
 .Es{
-font-size: 1em;
-vertical-align: baseline;
+font-size: 1.3em;
+vertical-align: center;
 }`}
 
 `
