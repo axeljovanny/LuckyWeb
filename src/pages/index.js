@@ -1,12 +1,11 @@
 import * as React from "react"
 import { Header } from "../components"
-import Layout from "../components/layout"
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <>
       <Header id="header" siteTitle="Home" />
-    </Layout>
+    </>
   )
 }
 

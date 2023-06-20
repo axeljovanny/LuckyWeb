@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { above } from "./index";
 import { colors, fonts } from "../../utils/const";
+import { motion } from "framer-motion"
 
 export const SContenedorNav = styled.div`
   /* Comentario en estilos */
@@ -39,7 +40,7 @@ export const SContenedorPrincipalNav = styled.div`
 
 export const SContenedorCloseYLogo = styled.div`
   /* Comentario en estilos */
-  width: 100%; /* ancho de mi pagina    */
+  width: 90%; /* ancho de mi pagina    */
   height: 15%; /* largo de mi pagina */
   background: aqua;
   display: flex;
@@ -62,6 +63,19 @@ export const SContenedorIdioma = styled.div`
   width: 50%; /* ancho de mi pagina    */
   height: 100%; /* largo de mi pagina */
   background: red;
+  justify-content: flex-end;
+  align-items: center ;
+  
+ 
+ 
+  p{
+  color: white;
+  font-family: ${fonts.reciaB};
+  font-size: 25px;
+  padding: 0 2%;
+  letter-spacing: 1px;
+  transform: translateY(-10%);
+}
   
 
   ${above.medium`
@@ -72,6 +86,16 @@ export const SContenedorIdioma = styled.div`
   `}
 `;
 
+export const SContenedorContenido = styled.div`
+  /* Comentario en estilos */
+  width: 100%; /* ancho de mi pagina    */
+  height: 60%; /* largo de mi pagina */
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
 
 export const SContenedorContenido = styled.div`
@@ -199,4 +223,46 @@ export const SDerechosAutor = styled.div`
     
     
     `}
+`;
+
+export const OverButton = styled(motion.button)`
+  position: fixed;
+  z-index: 13;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+`;
+
+export const Overlay = styled(motion.div)`
+
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 12;
+  background: ${colors.none};
+
+
+
+  ${above.large` {
+    display: none;
+    }
+  `}
+`;
+
+export const Over = styled(motion.div)`
+  flex-direction: column;
+  width: 100vw;
+  position: fixed;
+  top:0;
+
+  ${above.large` {
+    display: none;
+    }
+  `}
 `;
