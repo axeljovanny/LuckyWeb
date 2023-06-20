@@ -77,38 +77,36 @@ width: 50%;    // ancho de mi pagina
 height: 100%;    // largo de mi pagina
 background: none;  /* color de fondo*/
 display: flex;  // utilizar las funciones de flex
-padding: 10%;
 justify-content:center;
 align-items:center ;
 flex-direction: row;
 position: relative;
+font-family: ${fonts.reciaB};
+font-size: 33px;
 
 a {
   background-color: none;
-  margin: 5%;
+  margin: 3%;
   font-family: ${fonts.reciaB};
-    font-size: 20px;
+  color: ${colors.black};
+  font-size: 25px;
 }
 
-p{
-  font-family: ${fonts.montExtraBold};
-  font-size: 20px;
-  transform: translateY(-10%);
-}
 
 ${above.large`
     width: 15%;    // ancho de mi pagina  
     padding: 0;
     justify-content: flex-start;
+    transform: translateY(-3%);
+    font-size: 30px;
    
   a{
-  margin: 3%;
-  font-size: 20px;
-  }
+    margin: 3%;
+    font-size: 25px;
+    color: ${colors.black};
 
-  p{
-  transform: translateY(-10%);
-}
+  }
+  
   `}
 
 `
@@ -153,7 +151,6 @@ ${above.large`
 `
 export const SInicioYServicios = styled.div`
  /* Comentario en estilos */
-
   width: 100%;    // ancho de mi pagina  
   height: 80%;    // largo de mi pagina
   background: none;  /* color de fondo*/
@@ -176,7 +173,7 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 position: relative;
-bottom:30%;
+bottom:25%;
 p{
   font-family: ${fonts.montExtraBold};
   font-size: 10px;
@@ -244,18 +241,19 @@ export const SRedes = styled.div`
 display: none;  // se oculta
 
 ${above.large`
-    width: 15%;    // ancho de mi pagina    
-    height: 25%;    // largo de mi pagina
+    width: 22%;    // ancho de mi pagina    
+    height: 30%;    // largo de mi pagina
     background: none; //color de fondo
     display: flex;  // utilizar las funciones de flex
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    transform: translateY(-15%);
-
-    div{
-    margin: 2px 0px;
+    a {
+      height: width;  
+      margin:0;
+      padding:10%;
     }
+    
   `}
 
 
