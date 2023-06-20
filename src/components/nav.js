@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
-import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker, SRedesNav, OverButton, Over, SDerechosAutor } from "../styles/js/nav";
+import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor } from "../styles/js/nav";
 import { IBala, ILogoTrebol, INube } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons";
 
@@ -16,7 +16,11 @@ export const Nav = ({ open }) => {
       <SContenedorPrincipalNav>
 
         <SContenedorCloseYLogo>
-
+        <SContenedorIdioma>
+             <p> ESP </p>
+            <p> | </p>
+            <p> ENG</p>
+         </SContenedorIdioma>
           <ILogoTrebol/>
 
         </SContenedorCloseYLogo>

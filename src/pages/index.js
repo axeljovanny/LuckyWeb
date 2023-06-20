@@ -1,10 +1,9 @@
 import * as React from "react"
-import { Header, Nav } from "../components"
+import { Header } from "../components"
 
 const IndexPage = () => {
   return (
     <>
-      <Nav />
       <Header id="header" siteTitle="Home" />
     </>
   )

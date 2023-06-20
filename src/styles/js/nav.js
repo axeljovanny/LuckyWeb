@@ -34,7 +34,7 @@ export const SContenedorPrincipalNav = styled.div`
     
   `}
   ${above.large`
-    
+      width: 90%;
   `}
 `;
 
@@ -55,6 +55,38 @@ export const SContenedorCloseYLogo = styled.div`
     
   `}
 `;
+
+
+export const SContenedorIdioma = styled.div`
+  /* Comentario en estilos */
+  display: flex;
+  width: 50%; /* ancho de mi pagina    */
+  height: 100%; /* largo de mi pagina */
+  background: red;
+  justify-content: flex-end;
+  align-items: center ;
+  
+ 
+ 
+  p{
+  color: white;
+  font-family: ${fonts.reciaB};
+  font-size: 25px;
+  padding: 0 2%;
+  letter-spacing: 1px;
+  transform: translateY(-10%);
+}
+  
+
+  ${above.medium`
+    
+  `}
+  ${above.large`
+    display: none;
+  `}
+`;
+
+
 
 export const SContenedorContenido = styled.div`
   /* Comentario en estilos */
