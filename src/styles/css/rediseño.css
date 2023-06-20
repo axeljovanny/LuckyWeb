@@ -6,31 +6,21 @@
     width: 100%;
     left: 10px;
     transform: rotate(-15deg) scale(1.5) translateX(-3%);
-
-    
-
   }
   .imgBorrego img {
     object-fit: cover;
-   
   }
 
-
-
-
   .imgLap {
-    width: 100% ;
+    position: absolute;
+      top: 22%;
+      right: -10%;
+      width: 40% ;
     transform: rotateY(200deg) rotate(-20deg) scale(1.5) translate(5%);
-   
-
   }
   .imgLap img {
     object-fit: cover;
   }
-  
- 
-
-  
 
   .imgCorazon  {
     width: 90% ;
@@ -39,8 +29,6 @@
   .imgCorazon img {
     object-fit: cover;
   }
-   
-
   
   .imgMenu  {
     width: 20% ;
@@ -49,18 +37,12 @@
     object-fit: cover;
   }
 
-
-  
- 
-
-
   .imgFacebook{
     width: 50%;
   }
   .imgFacebook img {
     object-fit: cover;
   }
-
 
   .imgInstagram{
     width: 50%;
@@ -69,7 +51,6 @@
     object-fit: cover;
   }
 
-  
   .imgWhatsApp{
     width: 50%;
   }
@@ -78,30 +59,27 @@
   }
 
   .imgGrafiiti{
+      width: 70%;
+      height: 10%;
+      position: absolute;
+      bottom: 25%;
     
   }
   .imgGrafiiti img {
     object-fit: cover;
-     width: 60%;
-      height: 80%;
-     left: 20%;
 
   }
-
-
-
-
 
   /* imagenes del componente nav movil*/
 
 
   .imgNube{
-    width: 70%;
+    width: 60%;
     background-color: none;
     position: absolute;
-    bottom:50%;
-    left:0; 
-    transform:  rotateY(900deg) rotate(5deg)  translate(25%) translateY(-25%);
+    top:-10%;
+    left:-20%; 
+    transform:  rotateY(900deg) rotate(5deg);
 
   }
   .imgNube img {
@@ -111,10 +89,10 @@
 
 
   .imgBala{
-    width: 90%;
+    width: 80%;
     position: absolute;
-    left:45%;
-    bottom:15%;
+    right: -30%;
+    bottom: 20%;
     transform: rotate(-35deg) 
   }
   .imgBala img {
@@ -140,13 +118,11 @@
     
     .imgBorrego {
       width: 100%;
-      transform: rotate(20deg);
+      transform: rotate(25deg);
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      
+      position: absolute;
+      left: -25%;
+      top: -10%;
       
     }
     .imgBorrego img {
@@ -155,14 +131,12 @@
       
     }
   
-   
-  
-  
-  
     .imgLap {
-      width: 100% ;
-      transform: rotateY(200deg) rotate(-15deg)
-  
+      position: absolute;
+      top: 5%;
+      right: 8%;
+      width: 23% ;
+      transform: rotateY(200deg) rotate(-25deg)
     }
     .imgLap img {
       object-fit: cover;
@@ -173,8 +147,10 @@
     
   
     .imgCorazon  {
+      position: absolute;
+      right: -10%;
       width: 100% ;
-      transform: rotate(-20deg)
+      transform: rotate(-40deg)
     }
     .imgCorazon img {
       object-fit: cover;
@@ -226,16 +202,16 @@
   
   
     .imgGrafiiti{
+      width: 40%;
+      height: 25%;
+      position: absolute;
+      bottom: 15%;
+      right: 12%;
    
     
     }
     .imgGrafiiti img{
       object-fit: cover;
-      position: 'absolute';
-      top: 20px;
-      left: 0;
-      width: 80%;
-      height: 60%;
     }
   
 
@@ -246,9 +222,9 @@
   width: 40%;
   height: 100%;
   position: absolute;
-  top:-7%;
-  left:5; 
-  transform:  rotateY(900deg) rotate(10deg)  translate(25%) translateY(-5%);
+  top:-10%;
+  left:-7%; 
+  transform:  rotateY(900deg) rotate(10deg);
 }
 .imgNube img {
   object-fit: cover;
@@ -259,7 +235,7 @@
   width: 55%;
   position:absolute;
   bottom: -90%;
-  right: -70%;
+  right: -15%;
   transform: rotate(-45deg) ;
 }
 .imgBala img {

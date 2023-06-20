@@ -21,9 +21,7 @@ const Header = ({ siteTitle }) => {
           </SLogo>
 
           <SIdioma>
-            <p> ESP </p>
-            <p> | </p>
-            <p> ENG</p>
+            <a> ESP </a>|<a> ENG</a>
           </SIdioma>
         </SNav>
 
@@ -33,24 +31,20 @@ const Header = ({ siteTitle }) => {
               <IStickerBorrego />
             </SAnimacionHomeIzq>
             <SRedes>
-              <BehanceIcon fill={colors.black} className={"svgAbout"} />
-              <FacebookIcon fill={colors.black} className={"svgAbout"} />
-              <InstagramIcon fill={colors.black} className={"svgAbout"} />
+            <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.black} className={"svgHeader"} /></a>
+            <a href="https://www.facebook.com/luckyducky.studio" rel="noreferrer" target="_blank"><FacebookIcon fill={colors.black} className={"svgHeader"} /></a>
+            <a href="https://www.instagram.com/lduckystudio/" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.black} className={"svgHeader"} /></a>
             </SRedes>
           </SHeaderIzquierda>
 
           <SInicioYServicios>
-          <STextoInicio>
+            <IStickerLap />
+            <STextoInicio>
               <h1>
-              <span class="Es">LA</span>  <span>CREATIVIDAD</span>  <span class="Es">ES</span>  <span class="Es">UN</span> <span>REFLEJO</span> <span class="Es">DE</span> <span>NUESTRA</span> <span>NUESTRA</span>{" "}  
+                <span class="Es">LA</span>  <span>CREATIVIDAD</span>  <span class="Es">ES</span>  <span class="Es">UN</span> <span>REFLEJO</span> <span class="Es">DE</span> <span>NUESTRA</span> <span>NUESTRA</span>{" "}
               </h1>
-              <div>
-                <IStickerLap />
-              </div>
-              <div>
-                {/* <IGrafiiti /> */}
-              </div>
-              </STextoInicio>
+              <IGrafiiti/>
+            </STextoInicio>
             <STextoServiciosHome>
               <p>
                 BRANDING &nbsp; | &nbsp; PRODUCCION AUDIOVISUAL&nbsp; |&nbsp;
@@ -65,6 +59,7 @@ const Header = ({ siteTitle }) => {
           </SHeaderDerecha>
         </SContenido>
       </SHeader>
+
     </>
   );
 };
@@ -74,13 +69,13 @@ export const IconNav = ({ siteTitle }) => {
   const containerRef = useRef(null);
 
   return (
-      <Overlay
-          initial={false}
-          animate={isOpen ? "open" : "closed"}
-          ref={containerRef}>
-          <MenuToggle toggle={() => toggleOpen()} siteTitle={siteTitle} />
-          <Nav open={isOpen} />
-      </Overlay>
+    <Overlay
+      initial={false}
+      animate={isOpen ? "open" : "closed"}
+      ref={containerRef}>
+      <MenuToggle toggle={() => toggleOpen()} siteTitle={siteTitle} />
+      <Nav open={isOpen} />
+    </Overlay>
   );
 };
 
