@@ -15,7 +15,6 @@ const Header = ({ siteTitle }) => {
         <IFondoHeader />
         <SNav>
           <SNavButton>
-            <IconoMenu />
           </SNavButton>
           <SLogo>
             <ILogoTrebol />

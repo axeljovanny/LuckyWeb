@@ -60,7 +60,7 @@ export const Nav = ({ open }) => {
 export const MenuToggle = ({ toggle, siteTitle }) => {
     return (
     <OverButton onClick={toggle}>
-    <svg width="23" height="23" viewBox="0 0 23 23">
+    <svg width="40" height="40" viewBox="0 0 23 23">
     <Path
       variants={{
         closed: { d: "M 2 2.5 L 20 2.5", stroke: colors.black },

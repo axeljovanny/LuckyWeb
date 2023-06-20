@@ -219,11 +219,18 @@ export const SDerechosAutor = styled.div`
 export const OverButton = styled(motion.button)`
   position: fixed;
   z-index: 13;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 70px;
+  left: 40px ;
+
+  ${above.large`
+    top: 55px;
+    left: 80px ;
+
+  `}
 
 `;
 
@@ -240,9 +247,8 @@ export const Overlay = styled(motion.div)`
 
 
 
-  ${above.large` {
-    display: none;
-    }
+  ${above.large` 
+    
   `}
 `;
 
@@ -252,8 +258,7 @@ export const Over = styled(motion.div)`
   position: fixed;
   top:0;
 
-  ${above.large` {
-    display: none;
-    }
+  ${above.large`
+
   `}
 `;
