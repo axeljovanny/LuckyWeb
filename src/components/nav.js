@@ -13,6 +13,9 @@ const Nav = ({ siteTitle }) => {
 
         <SContenedorCloseYLogo>
         <SContenedorIdioma>
+             <p> ESP </p>
+            <p> | </p>
+            <p> ENG</p>
          </SContenedorIdioma>
           <ILogoTrebol/>
 
