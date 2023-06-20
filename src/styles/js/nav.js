@@ -86,16 +86,7 @@ export const SContenedorIdioma = styled.div`
   `}
 `;
 
-export const SContenedorContenido = styled.div`
-  /* Comentario en estilos */
-  width: 100%; /* ancho de mi pagina    */
-  height: 60%; /* largo de mi pagina */
-  background: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+
 
 
 export const SContenedorContenido = styled.div`
