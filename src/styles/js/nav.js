@@ -39,7 +39,7 @@ export const SContenedorPrincipalNav = styled.div`
 
 export const SContenedorCloseYLogo = styled.div`
   /* Comentario en estilos */
-  width: 90%; /* ancho de mi pagina    */
+  width: 100%; /* ancho de mi pagina    */
   height: 15%; /* largo de mi pagina */
   background: aqua;
   display: flex;
@@ -62,19 +62,6 @@ export const SContenedorIdioma = styled.div`
   width: 50%; /* ancho de mi pagina    */
   height: 100%; /* largo de mi pagina */
   background: red;
-  justify-content: flex-end;
-  align-items: center ;
-  
- 
- 
-  p{
-  color: white;
-  font-family: ${fonts.reciaB};
-  font-size: 25px;
-  padding: 0 2%;
-  letter-spacing: 1px;
-  transform: translateY(-10%);
-}
   
 
   ${above.medium`
