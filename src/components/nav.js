@@ -3,18 +3,17 @@ import { motion } from "framer-motion";
 
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
-import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor } from "../styles/js/nav";
+import { SBlur, SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor } from "../styles/js/nav";
 import { IBala, ILogoTrebol, INube } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons";
 
-export const Nav = ({ open }) => {
+export const Nav = ({ open, toggle }) => {
   return (
     <Over 
       animate={open? "open" : "closed"}
       variants={sidebar}>
-      <SContenedorNav variants={variants} >
+      <SContenedorNav variants={variants}>
       <SContenedorPrincipalNav>
-
         <SContenedorCloseYLogo>
         <SContenedorIdioma>
              <p> ESP </p>
@@ -52,6 +51,7 @@ export const Nav = ({ open }) => {
         </SContenedorRedesYSticker>
 
       </SContenedorPrincipalNav>
+      <SBlur onClick={toggle}/>
       </SContenedorNav>
     </Over>
   )
@@ -106,20 +106,22 @@ const variants = {
 
 //propiedades al mostrar menu
 const sidebar = {
-  open:{
-      backgroundColor: colors.green,
-      display: "flex",
-      height: "100%",
-      transition: {
-      duration: .3
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 4 + 200}px at 0px 0px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2,
+      duration: .8
     }
-  },
+  }),
   closed: {
-      backgroundColor: colors.none,
-      display: "none",
-      height: 0,
-      transition: {
-      duration: .3
+    clipPath: "circle(0px at 0px 0px)",
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+      duration: .8
     }
   }
 };

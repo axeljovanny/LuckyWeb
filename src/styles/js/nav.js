@@ -3,11 +3,33 @@ import { above } from "./index";
 import { colors, fonts } from "../../utils/const";
 import { motion } from "framer-motion"
 
+//TODO BLUREAR
+export const SBlur = styled.div`
+  /* Comentario en estilos */  
+  height: 100%; /* largo de mi pagina */
+  background: rgba(0, 0, 0, 0.65);
+  //-webkit-backdrop-filter: blur(5px);   
+  //backdrop-filter: blur(5px);
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10% 0 0;
+
+  ${above.medium`
+    width: 20%;
+    display: flex;
+  `}
+  ${above.large`
+    width: 40%;
+    display: flex;
+  `}
+`;
+//
 export const SContenedorNav = styled.div`
   /* Comentario en estilos */
   width: 100%; /* ancho de mi pagina    */
   height: 100vh; /* largo de mi pagina */
-  background: ${colors.black};
+  //background: ${colors.blur};
   display: flex;
   position: fixed;
   top: 0;
@@ -18,7 +40,7 @@ export const SContenedorNav = styled.div`
     
   `}
   ${above.large`
-    width: 60%;
+    width: 100%;
   `}
 `;
 
@@ -26,15 +48,15 @@ export const SContenedorNav = styled.div`
 
 export const SContenedorPrincipalNav = styled.div`
   /* Comentario en estilos */
-  width: 100%; /* ancho de mi pagina    */
+  //width: 100%; /* ancho de mi pagina    */
   height: 100%; /* largo de mi pagina */
-  background: none;
+  background: black;
 
   ${above.medium`
-    
+      width: 80%;
   `}
   ${above.large`
-      width: 90%;
+      width: 60%;
   `}
 `;
 

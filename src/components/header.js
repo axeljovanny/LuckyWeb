@@ -74,7 +74,7 @@ export const IconNav = ({ siteTitle }) => {
       animate={isOpen ? "open" : "closed"}
       ref={containerRef}>
       <MenuToggle toggle={() => toggleOpen()} siteTitle={siteTitle} />
-      <Nav open={isOpen} />
+      <Nav open={isOpen} toggle={() => toggleOpen()} />
     </Overlay>
   );
 };
