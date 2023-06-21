@@ -175,6 +175,14 @@
     .imgILogoTrebol img {
       object-fit: cover;
     }
+
+    .imgILogoTrebolNav{
+      width: 10.7% ;
+      
+    }
+    .imgILogoTrebolNav img {
+      object-fit: cover;
+    }
   
   
     .imgFacebook{

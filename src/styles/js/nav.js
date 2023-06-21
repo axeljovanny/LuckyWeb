@@ -35,6 +35,7 @@ export const SContenedorNav = styled.div`
   top: 0;
   left: 0;
   z-index: 1;
+  overflow: hidden;
 
   ${above.medium`
     
@@ -62,19 +63,21 @@ export const SContenedorPrincipalNav = styled.div`
 
 export const SContenedorCloseYLogo = styled.div`
   /* Comentario en estilos */
-  width: 90%; /* ancho de mi pagina    */
+  width: 96%; /* ancho de mi pagina    */
   height: 15%; /* largo de mi pagina */
   background: none;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   padding: 0 10% 0 0;
+  svg { display:none }
 
   ${above.medium`
-    
+  svg { display:flex }
+
   `}
   ${above.large`
-    
+    padding: 0 4% 0 0;
   `}
 `;
 
@@ -84,21 +87,19 @@ export const SContenedorIdioma = styled.div`
   display: flex;
   width: 50%; /* ancho de mi pagina    */
   height: 100%; /* largo de mi pagina */
-  background: red;
+  background: none;
+  margin-right: 5%;
   justify-content: flex-end;
-  align-items: center ;
+  align-items: flex-end ;
   
- 
- 
   p{
-  color: white;
+  color: ${colors.white};
   font-family: ${fonts.reciaB};
   font-size: 25px;
   padding: 0 2%;
   letter-spacing: 1px;
   transform: translateY(-10%);
 }
-  
 
   ${above.medium`
     
@@ -190,12 +191,12 @@ export const SRedesNav = styled.div`
   `}
   ${above.large`
     
-    width: 25%;   
-    height: 95% ;
+    width: 30%;   
+    height: 70% ;
     position: absolute;
-    left:-0;
-     bottom:-20%;
-     justify-content: center;
+    left:-1.5%;
+    top:40%;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 
@@ -211,7 +212,7 @@ export const SDerechosAutor = styled.div`
   bottom: 0;
 
   p {
-    color: white;
+    color: ${colors.white};
     font-family: ${fonts.montExtraBold};
     font-size: 1em;
     display: flex;
@@ -224,9 +225,7 @@ export const SDerechosAutor = styled.div`
     `}
   ${above.large`
   p{
-
-  color: white;
-  font-size: 20px;
+  font-size: 13px;
   transform: translateY(-10%);
 }
       
