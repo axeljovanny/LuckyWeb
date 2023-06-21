@@ -242,9 +242,58 @@
   object-fit: cover;
 }
 
+ /* imagenes del componente footer web*/
+
+.imglogo{
+  width: 70%;
+  position: absolute;
+
+}
+.imglogo img {
+  object-fit: cover;
+}
+
+.imgfoco{
+  width: 15%;
+  position: absolute;
+  top:63%;
+  right: -7%;
+transform: rotate(12deg);
+
+}
+.imgfoco img {
+  object-fit: cover;
+}
+
+
+.imgMesa{
+  width: 17%;
+  position: absolute;
+  right: 2%;
+  transform: scale(1em) ;
+
+ 
+
+}
+.imgMesa img {
+  object-fit: cover;
+}
 
 
 
+.imgtrebol2{
+  width: 15%;
+  position: absolute;
+  right: -4%;
+  bottom: 5.5%;
+  transform: rotate(20deg);
+ 
 
+ 
+
+}
+.imgtrebol2 img {
+  object-fit: cover;
+}
   }
 

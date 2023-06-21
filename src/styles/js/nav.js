@@ -42,7 +42,7 @@ export const SContenedorCloseYLogo = styled.div`
   /* Comentario en estilos */
   width: 90%; /* ancho de mi pagina    */
   height: 15%; /* largo de mi pagina */
-  background: aqua;
+  background: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;

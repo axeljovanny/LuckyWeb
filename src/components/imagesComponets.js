@@ -213,17 +213,71 @@ export function IBala() {
 
 
 /// FOOTER
-export function ImgFooter() {
+
+
+
+export function IStickerlogo () {
     return <StaticImage
-        src="../images/rediseño/Footer/footer.png"
-        alt="lucky ducky studio art"
-        loading="lazy"
-        placeholder="blurred"
-        layout="fullWidth"
-        quality='90'
-        formats={['auto', 'webp', 'avif']}
-        className="imgFooter"
+    src="../images/rediseño/Stickers/logoSticker2.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='80'
+    formats={['auto', 'webp', 'avif']}
+    className="imglogo"
+    imgClassName=""
+
     />
 
 }
 
+
+export function IStickerFoco () {
+    return <StaticImage
+    src="../images/rediseño/Stickers/Foco.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='80'
+    formats={['auto', 'webp', 'avif']}
+    className="imgfoco"
+    imgClassName=""
+
+    />
+
+}
+
+export function IStickerMesa() {
+    return <StaticImage
+    src="../images/rediseño/Stickers/Mesa de trabajo 2.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='80'
+    formats={['auto', 'webp', 'avif']}
+    className="imgMesa"
+    imgClassName=""
+
+    />
+
+}
+
+
+export function IStickerTrebol2() {
+    return <StaticImage
+    src="../images/rediseño/Stickers/trevol2.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='80'
+    formats={['auto', 'webp', 'avif']}
+    className="imgtrebol2"
+    imgClassName=""
+
+    />
+
+}
