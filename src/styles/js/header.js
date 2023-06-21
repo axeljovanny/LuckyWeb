@@ -40,6 +40,8 @@ export const SHeader = styled.div`
   justify-content: center; // centrar contenido
   align-items: center; // alinear el contenido
   flex-flow: row wrap; // utilizar filas y columnas y saltar de linea si no cabe 
+  overflow: hidden;
+
 `
 
 

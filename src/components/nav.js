@@ -20,11 +20,8 @@ export const Nav = ({ open, toggle }) => {
             <p> | </p>
             <p> ENG</p>
          </SContenedorIdioma>
-          <ILogoTrebol/>
-
+          <Trebol fill={colors.white} className={"svgLogoNav"}/>
         </SContenedorCloseYLogo>
-         
-
         <SContenedorContenido>
          <INube/>
 
@@ -35,17 +32,14 @@ export const Nav = ({ open, toggle }) => {
         </SContenedorContenido>
 
         <SContenedorRedesYSticker>
-
           <SRedesNav>
             <BehanceIcon fill={colors.white} className={"svgAbout"} />
             <FacebookIcon fill={colors.white} className={"svgAbout"} />
               <InstagramIcon fill={colors.white} className={"svgAbout"} />
           </SRedesNav>
-
-        
           <IBala/>
           <SDerechosAutor>
-          <p> © LUCKY DUCKY STUDIO 2023 </p>
+          <p> © LUCKY DUCKY STUDIO {new Date().getFullYear()} </p>
            </SDerechosAutor>
 
         </SContenedorRedesYSticker>
