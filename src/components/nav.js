@@ -5,8 +5,7 @@ import { colors } from "../utils/const";
 import "../styles/css/svg.css";
 import { IBala, ILogoTrebolNav, INube } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon, Trebol } from "../images/icons/icons";
-import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor } from "../styles/js/nav";
-import { SBlur, SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor } from "../styles/js/nav";
+import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor, SBlur } from "../styles/js/nav";
 
 export const Nav = ({ open, toggle }) => {
   return (
