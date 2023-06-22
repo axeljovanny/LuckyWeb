@@ -50,7 +50,7 @@ export const SContenedorPrincipalNav = styled.div`
   /* Comentario en estilos */
   //width: 100%; /* ancho de mi pagina    */
   height: 100%; /* largo de mi pagina */
-  background: black;
+  background: ${colors.black};
 
   ${above.medium`
       width: 80%;

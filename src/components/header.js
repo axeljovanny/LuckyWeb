@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => {
           </SLogo>
 
           <SIdioma>
-            <a> ESP </a>|<a> ENG</a>
+            {/* <a> ESP </a>|<a> ENG</a> */}
           </SIdioma>
         </SNav>
 

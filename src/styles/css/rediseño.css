@@ -103,11 +103,12 @@
 
 
   /* Estilos Footer */
-  .imgFooter {
-    width: 50%;
-    margin-top: 3em;
+  .imglogo{
+    width: 100%;
+   
+  
   }
-  .imgFooter img {
+  .imglogo img {
     object-fit: cover;
   }
 
@@ -246,7 +247,7 @@
 
 .imglogo{
   width: 70%;
-  position: absolute;
+ 
 
 }
 .imglogo img {
