@@ -121,15 +121,15 @@ ${above.large`
 `
 
 export const SContenedorCentral = styled.div`
- /* Comentario en estilos */
- width:100%;
-background-color:none; 
-grid-area: 1 / 2 / 2 / 3;
-display: flex;
-justify-content:center;
-align-items: center;
-flex-flow: column;
-position: relative;
+  /* Comentario en estilos */
+  width:100%;
+  background-color:none; 
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  //justify-content:center;
+  //align-items: center;
+  flex-flow: column;
+  position: relative;
 
 ${above.medium`
     
@@ -141,47 +141,91 @@ ${above.large`
 
 export const STextoFrase = styled.div`
  /* Comentario en estilos */
-width: 75%;    /* ancho de mi pagina    */ 
-height: 30%; 
-background-color:none;   /* largo de mi pagina */
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 4%;
-position: absolute;
-left: 7%;
-top: 10%;
+  width: 75%;    /* ancho de mi pagina    */ 
+  //height: 30%; 
+  background-color: none;   /* largo de mi pagina */
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //padding: 0 4%;
+  position: relative;
+  //left: 7%;
+  //top: 10%;
 
-p{
+
   font-family: ${fonts.reciaB};
-  font-size: 2em;
   color: ${colors.white};
-}
+
+${above.medium`
+    font-size: 2em;
+  `}
+${above.large`
+    font-size: 3em;
+  `}
+`
+
+export const STextoDH = styled.div`
+ /* Comentario en estilos */
+ width: 75%;    /* ancho de mi pagina    */ 
+//height: 30%; 
+background-color: none;   /* largo de mi pagina */
+display: flex;
+/*
+justify-content: center;
+align-items: center;*/
+//padding: 0 4%;
+position: relative;
 
 
+font-family: ${fonts.handOfSean};
+color: ${colors.white};
 
 
 ${above.medium`
-    
+    font-size: 1.5em;
   `}
 ${above.large`
-    
+    font-size: 2em;
   `}
 `
 export const STextoUbicacion = styled.div`
  /* Comentario en estilos */
-width: 60%;    /* ancho de mi pagina    */ 
-height: 60%; 
-background-color:yellow;   /* largo de mi pagina */
+ width: 75%;    /* ancho de mi pagina    */ 
+//height: 30%; 
+background-color: none;   /* largo de mi pagina */
 display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 10%;
-position: absolute;
-bottom: 0%;
-left: 7%;
+//justify-content: center;
+//align-items: center;
+//padding: 0 4%;
+position: relative;
 
+font-family: ${fonts.montExtraLight};
+color: ${colors.white};
 
+${above.medium`
+    font-size: .6em;
+  `}
+${above.large`
+    font-size: 1em;
+  `}
+`
+
+export const STextoContacto = styled.div`
+ /* Comentario en estilos */
+  width: 75%;    /* ancho de mi pagina    */ 
+  //height: 30%; 
+  background-color: none;   /* largo de mi pagina */
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+  //padding: 0 4%;
+  position: relative;
+
+p{
+  font-family: ${fonts.montExtraLight};
+  font-size: 1em;
+  color: ${colors.white};
+}
 
 ${above.medium`
     
@@ -190,10 +234,11 @@ ${above.large`
     
   `}
 `
+
 export const STextoCopy = styled.div`
 width: 100%;
-background-color:green; 
-border-top-color:white ;
+background-color: black; 
+border-top: solid 0.1em white;
 grid-area: 2 / 1 / 3 / 4;
 display: flex;
 justify-content:flex-end;
@@ -210,7 +255,7 @@ export const STextoDerechosAutor = styled.div`
  /* Comentario en estilos */
 width: 30%;    /* ancho de mi pagina    */ 
 height: 80%; 
-background-color:red;   /* largo de mi pagina */
+background-color: black;   /* largo de mi pagina */
 display: flex;
 justify-content: center;
 align-items: center;

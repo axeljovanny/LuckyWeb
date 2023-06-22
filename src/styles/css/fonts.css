@@ -46,3 +46,9 @@
     url(../fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
   font-display: swap;
 }
+@font-face {
+  font-family: "Hand_Of_Sean_Demo";
+  src: local("Hand_Of_Sean_Demo"),
+    url(../fonts/Hand\ of\ Sean/Hand_Of_Sean_Demo.ttf) format("truetype");
+  font-display: swap;
+}

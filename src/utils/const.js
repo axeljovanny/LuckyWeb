@@ -22,4 +22,5 @@ export const fonts = {
     montLight: "MontserratLight",
     monttMedium: "MontserratMedium",
     reciaB:"ReciaBold",
+    handOfSean: "Hand_Of_Sean_Demo"
 }
