@@ -77,23 +77,6 @@ export function IStickerCorazon() {
 
 
 
-export function IconoMenu() {
-    return <StaticImage
-    src="../images/rediseño/iconos/Menu.png"
-    alt="Fondo de nuestro header"
-    loading="eager"
-    placeholder="blurred"
-    layout="fullWidth"
-    quality='90'
-    formats={['auto', 'webp', 'avif']}
-    className="imgMenu"
-
-    />
-
-}
-
-
-
 export function ILogoTrebol() {
     return <StaticImage
     src="../images/rediseño/logos/Isotipo_Black.png"
@@ -118,52 +101,6 @@ export function ILogoTrebolNav() {
     formats={['auto', 'webp', 'avif']}
     className="imgILogoTrebolNav"
     />
-}
-
-
-export function IFacebook() {
-    return <StaticImage
-    src="../images/rediseño/iconos/Facebook.png"
-    alt="Fondo de nuestro header"
-    loading="eager"
-    placeholder="blurred"
-    layout="fullWidth"
-    quality='90'
-    formats={['auto', 'webp', 'avif']}
-    className="imgFacebook"
-
-    />
-
-}
-
-export function Instagram() {
-    return <StaticImage
-    src="../images/rediseño/iconos/Instagram.png"
-    alt="Fondo de nuestro header"
-    loading="eager"
-    placeholder="blurred"
-    layout="fullWidth"
-    quality='90'
-    formats={['auto', 'webp', 'avif']}
-    className="imgInstagram"
-
-    />
-
-}
-
-export function IWhatsApp() {
-    return <StaticImage
-    src="../images/rediseño/iconos/WhatsApp.png"
-    alt="Fondo de nuestro header"
-    loading="eager"
-    placeholder="blurred"
-    layout="fullWidth"
-    quality='90'
-    formats={['auto', 'webp', 'avif']}
-    className="imgWhatsApp"
-
-    />
-
 }
 
 

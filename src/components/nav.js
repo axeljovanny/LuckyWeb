@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
-import { IBala, ILogoTrebolNav, INube } from "./imagesComponets";
+import { IBala, INube } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon, Trebol } from "../images/icons/icons";
 import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor, SBlur } from "../styles/js/nav";
 
