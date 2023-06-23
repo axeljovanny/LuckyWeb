@@ -7,7 +7,7 @@ import "../styles/css/rediseño.css"
 
 export function IFondoHeader() {
     return <StaticImage
-    src="../images/rediseño/Fondos/Fondo Claro.jpg"
+    src="../images/Fondos/Fondo Claro.jpg"
     alt="Fondo de nuestro header"
     layout="fullWidth"
     loading="eager"
@@ -28,7 +28,7 @@ export function IFondoHeader() {
 
 export function IStickerBorrego() {
     return <StaticImage
-    src="../images/rediseño/Stickers/sticker_borrego.png"
+    src="../images/Stickers/sticker_borrego.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -45,7 +45,7 @@ export function IStickerBorrego() {
 
 export function IStickerLap() {
     return <StaticImage
-    src="../images/rediseño/Stickers/sticker_lap.png"
+    src="../images/Stickers/sticker_lap.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -62,7 +62,7 @@ export function IStickerLap() {
 
 export function IStickerCorazon() {
     return <StaticImage
-    src="../images/rediseño/Stickers/sticker_corazon.png"
+    src="../images/Stickers/sticker_corazon.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -79,7 +79,7 @@ export function IStickerCorazon() {
 
 export function ILogoTrebol() {
     return <StaticImage
-    src="../images/rediseño/logos/Isotipo_Black.png"
+    src="../images/Logos/Isotipo_Black.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -92,7 +92,7 @@ export function ILogoTrebol() {
 
 export function ILogoTrebolNav() {
     return <StaticImage
-    src="../images/rediseño/logos/Isotipo_Black.png"
+    src="../images/Logos/Isotipo_Black.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -106,7 +106,7 @@ export function ILogoTrebolNav() {
 
 export function IGrafiiti() {
     return <StaticImage
-    src="../images/rediseño/Stickers/Grafiiti 1.png"
+    src="../images/Stickers/Grafiiti 1.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -120,7 +120,7 @@ export function IGrafiiti() {
 
 export function INube() {
     return <StaticImage
-    src="../images/rediseño/Stickers/Sticker_nube.png"
+    src="../images/Stickers/Sticker_nube.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -137,7 +137,7 @@ export function INube() {
 
 export function IBala() {
     return <StaticImage
-    src="../images/rediseño/Stickers/sticker_bala.png"
+    src="../images/Stickers/sticker_bala.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -166,7 +166,7 @@ export function IBala() {
 
 export function IStickerlogo () {
     return <StaticImage
-    src="../images/rediseño/Stickers/logoSticker2.png"
+    src="../images/Stickers/logoSticker2.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -183,7 +183,7 @@ export function IStickerlogo () {
 
 export function IStickerFoco () {
     return <StaticImage
-    src="../images/rediseño/Stickers/Foco.png"
+    src="../images/Stickers/Foco.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -199,7 +199,7 @@ export function IStickerFoco () {
 
 export function IStickerMesa() {
     return <StaticImage
-    src="../images/rediseño/Stickers/Mesa de trabajo 2.png"
+    src="../images/Stickers/Mesa de trabajo 2.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -216,7 +216,7 @@ export function IStickerMesa() {
 
 export function IStickerTrebol2() {
     return <StaticImage
-    src="../images/rediseño/Stickers/trevol2.png"
+    src="../images/Stickers/trevol2.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
