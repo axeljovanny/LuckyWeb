@@ -59,11 +59,11 @@
   }
 
   .imgGrafiiti{
-      width: 70%;
-      height: 10%;
-      position: absolute;
-      bottom: 25%;
-    
+    width: 110%;
+    height: auto;
+    position: absolute;
+    top:0%;
+    right: 0%;
   }
   .imgGrafiiti img {
     object-fit: cover;
@@ -169,7 +169,7 @@
   
     
     .imgILogoTrebol{
-      width: 8% ;
+      width: 6% ;
       
     }
     .imgILogoTrebol img {
@@ -207,22 +207,7 @@
     .imgWhatsApp img {
       object-fit: cover;
     }
-  
-  
-    .imgGrafiiti{
-      width: 40%;
-      height: 25%;
-      position: absolute;
-      bottom: 15%;
-      right: 12%;
-   
     
-    }
-    .imgGrafiiti img{
-      object-fit: cover;
-    }
-  
-
 
  /* imagenes del componente nav web*/
   
@@ -306,11 +291,8 @@ transform: rotate(12deg);
   }
 
   @media only screen and (min-width: 1400px) {
-    .imgGrafiiti{
-      width: 25%;
-      height: auto;
-      position: absolute;
-      bottom: 25%;
-      right: 25%;
-  }
+    .imgILogoTrebol{
+      width: 4% ;
+      
+    }
   }

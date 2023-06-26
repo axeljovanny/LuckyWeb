@@ -41,9 +41,8 @@ const Header = ({ siteTitle }) => {
             <IStickerLap />
             <STextoInicio>
               <h1>
-                <span class="Es">LA</span>  <span>CREATIVIDAD</span>  <span class="Es">ES</span>  <span class="Es">UN</span> <span>REFLEJO</span> <span class="Es">DE</span> <span>NUESTRA</span> <span>NUESTRA</span>{" "}
+                <span class="Es">LA</span>  <span>CREATIVIDAD</span>  <span class="Es">ES</span>  <span class="Es">UN</span> <span>REFLEJO</span> <span class="Es">DE</span> <span>NUESTRA</span> <span style={{position:"relative"}}><IGrafiiti/>NUESTRA</span>{" "}
               </h1>
-              <IGrafiiti/>
             </STextoInicio>
             <STextoServiciosHome>
               <p>
