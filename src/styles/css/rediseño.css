@@ -134,9 +134,9 @@
   
     .imgLap {
       position: absolute;
-      top: 5%;
+      top: -10%;
       right: 8%;
-      width: 23% ;
+      width: 40% ;
       transform: rotateY(200deg) rotate(-25deg)
     }
     .imgLap img {

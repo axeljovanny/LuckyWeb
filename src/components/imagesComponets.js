@@ -36,8 +36,9 @@ export function IStickerBorrego() {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imgBorrego"
-    imgClassName=""
-
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
@@ -53,7 +54,9 @@ export function IStickerLap() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgLap"
-    style={{position:"absolute"}}
+    style={{
+        position:"absolute"
+    }}
 
     />
 
@@ -71,7 +74,9 @@ export function IStickerCorazon() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgCorazon"
-
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
@@ -88,6 +93,9 @@ export function ILogoTrebol() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgILogoTrebol"
+    style={{
+        position:"absolute"
+    }}
     />
 }
 
@@ -101,6 +109,9 @@ export function ILogoTrebolNav() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgILogoTrebolNav"
+    style={{
+        position:"absolute"
+    }}
     />
 }
 
@@ -115,6 +126,9 @@ export function IGrafiiti() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgGrafiiti"
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
@@ -129,6 +143,9 @@ export function INube() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgNube"
+    style={{
+        position:"absolute"
+    }}
    
 
     />
@@ -146,6 +163,9 @@ export function IBala() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgBala"
+    style={{
+        position:"absolute"
+    }}
    
 
     />
@@ -175,7 +195,6 @@ export function IStickerlogo () {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imglogo"
-    imgClassName=""
 
     />
 
@@ -192,8 +211,9 @@ export function IStickerFoco () {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imgfoco"
-    imgClassName=""
-
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
@@ -208,8 +228,9 @@ export function IStickerMesa() {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imgMesa"
-    imgClassName=""
-
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
@@ -225,8 +246,9 @@ export function IStickerTrebol2() {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imgtrebol2"
-    imgClassName=""
-
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
