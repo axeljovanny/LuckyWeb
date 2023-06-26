@@ -1,5 +1,6 @@
 import * as React from "react"
-import { Call, Header, Portafolio } from "../components"
+import { Header } from "../components"
+import {graphql} from 'gatsby';
 
 const IndexPage = () => {
   return (
@@ -15,3 +16,16 @@ export default IndexPage
 
 export const Head = () => <title>Home Page</title>
 
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
