@@ -345,17 +345,11 @@ vertical-align: super;
 
 
 ${above.large`
-
-
-
 width: 100%;      
 height: 60%;
 display: flex;
-position: none;
-background:none;
+background:red;
 padding: 0 17%  0 ;
-
-
 h1{
   font-family: ${fonts.reciaB};
     background:none;
@@ -364,11 +358,15 @@ h1{
     line-height: 1.7em;
     letter-spacing: 1px;
 }
-
 .Es{
 font-size: 1.3em;
 vertical-align: center;
 }`}
+
+${above.xlarge`
+padding: 0 28%  0 ;
+
+`}
 
 `
 

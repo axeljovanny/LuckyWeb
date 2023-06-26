@@ -131,12 +131,11 @@
       
       
     }
-  
     .imgLap {
       position: absolute;
-      top: -10%;
-      right: 8%;
-      width: 40% ;
+      top: -15%;
+      right: -5%;
+      width: 25% ;
       transform: rotateY(200deg) rotate(-25deg)
     }
     .imgLap img {
@@ -306,3 +305,12 @@ transform: rotate(12deg);
 }
   }
 
+  @media only screen and (min-width: 1400px) {
+    .imgGrafiiti{
+      width: 25%;
+      height: auto;
+      position: absolute;
+      bottom: 25%;
+      right: 25%;
+  }
+  }
