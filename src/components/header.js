@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { SAnimacionCentral, SAnimacionHomeDer, SAnimacionHomeIzq, SAnimacionTextoInicio, SContenido, SHeader, SHeaderDerecha, SHeaderIzquierda, SIdioma, SInicioYServicios, SLogo, SNav, SNavButton, SRedes, STextoInicio, STextoServiciosHome } from "../styles/js/header";
+import { Item, SAnimacionCentral, SAnimacionHomeDer, SAnimacionHomeIzq, SAnimacionTextoInicio, SContenido, SHeader, SHeaderDerecha, SHeaderIzquierda, SIdioma, SInicioYServicios, SLogo, SNav, SNavButton, SRedes, STextoInicio, STextoServiciosHome } from "../styles/js/header";
 import { IFondoHeader, ILogoTrebol, IStickerBorrego, IStickerCorazon, IStickerLap, IconoMenu, IGrafiiti } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons";
 import Nav, { MenuToggle } from "./nav";
@@ -7,8 +7,14 @@ import { Overlay } from "../styles/js/nav";
 import { useCycle } from "framer-motion"
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
+import {Link, useI18next, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {graphql} from 'gatsby';
 
 const Header = ({ siteTitle }) => {
+  const {t} = useTranslation();
+  const { languages, originalPath } = useI18next();
+  //const { languages, originalPath } = useI18next();
+
   return (
     <>
       <SHeader>
@@ -21,7 +27,27 @@ const Header = ({ siteTitle }) => {
           </SLogo>
 
           <SIdioma>
-            <a> ESP </a>|<a> ENG</a>
+            {/* <a> ESP </a>|<a> ENG</a> */}
+            <h1 style={{margin: 0}}>
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`
+            }}>
+            {siteTitle}
+          </Link>
+        </h1>
+        <ul className="languages">
+          {languages.map((lng) => (
+            <li key={lng}>
+              <Link to={originalPath} language={lng}>
+                {lng}
+              </Link>
+            </li>
+          ))}
+        </ul>
+             
           </SIdioma>
         </SNav>
 
@@ -41,7 +67,7 @@ const Header = ({ siteTitle }) => {
             <IStickerLap />
             <STextoInicio>
               <h1>
-                <span class="Es">LA</span>  <span>CREATIVIDAD</span>  <span class="Es">ES</span>  <span class="Es">UN</span> <span>REFLEJO</span> <span class="Es">DE</span> <span>NUESTRA</span> <span>NUESTRA</span>{" "}
+                <span class="Es"><Trans>LA</Trans></span>  <span><Trans>CREATIVIDAD</Trans></span>  <span class="Es"><Trans>ES</Trans></span>  <span class="Es"><Trans>UN</Trans></span> <span><Trans>REFLEJO</Trans></span> <span class="Es"><Trans>DE</Trans></span> <span><Trans>NUESTRA</Trans></span> <span>NUESTRA</span>{" "}
               </h1>
               <IGrafiiti/>
             </STextoInicio>
