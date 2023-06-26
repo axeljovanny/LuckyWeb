@@ -162,7 +162,8 @@ export const SInicioYServicios = styled.div`
   align-items:center;
 ${above.large`
     width: 70%;    // ancho de mi pagina    
-    height: 100%;   
+    height: 100%;  
+    position: relative; 
   `}
 `
 

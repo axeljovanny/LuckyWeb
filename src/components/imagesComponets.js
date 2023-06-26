@@ -53,6 +53,7 @@ export function IStickerLap() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgLap"
+    style={{position:"absolute"}}
 
     />
 
