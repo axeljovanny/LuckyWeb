@@ -10,7 +10,6 @@ import { colors } from "../utils/const";
 
 const Footer = ({ siteTitle }) => {
     return (
-        <>
         <SFooter>
             <SIzqFooter>
                 <SAnimacionLDS>
@@ -51,7 +50,6 @@ const Footer = ({ siteTitle }) => {
                 </STextoDerechosAutor>
             </STextoCopy>
         </SFooter>
-        </>
     )
 }
 

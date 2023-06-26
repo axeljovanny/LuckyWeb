@@ -84,7 +84,7 @@ export const SContenedorIdioma = styled.div`
   display: flex;
   width: 50%; /* ancho de mi pagina    */
   height: 100%; /* largo de mi pagina */
-  background: red;
+  background:none;
   justify-content: flex-end;
   align-items: center ;
   
