@@ -175,6 +175,7 @@ align-items: center;
 position: relative;
 bottom:25%;
 p{
+  color: ${colors.black};
   font-family: ${fonts.montExtraBold};
   font-size: 10px;
 }
