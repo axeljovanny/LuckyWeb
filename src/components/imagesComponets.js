@@ -256,7 +256,7 @@ export function IStickerTrebol2() {
 
 export function IPortafolio() {
     return <StaticImage
-    src="../images/Fondos/Fondo Color.png"
+    src="../images/Fondos/Portafolio.jpg"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -264,6 +264,21 @@ export function IPortafolio() {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="portafolio"
+   
+    />
+
+}
+
+export function IPortafolioMovil() {
+    return <StaticImage
+    src="../images/Fondos/PortafolioMovil.jpg"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='80'
+    formats={['auto', 'webp', 'avif']}
+    className="portafoliomovil"
    
     />
 

@@ -106,18 +106,27 @@
 
  /* imagenes componente portafolio movil */
 
-  .fondorojo{
-    width: 100%;
+  .portafolio{
+
+    display: none;
   
   
    
   
   }
-  .fondorrojo img {
-    object-fit: cover;
-  }
-
+ 
   
+.portafoliomovil{
+  display: flex;
+  width: 100%;
+ height: 100%;
+
+}
+
+.portafoliomovil img {
+  object-fit: none;
+}
+
 
 
   /* Estilos Footer */
@@ -143,6 +152,29 @@
 /**xxxxxxxxxxxxxxx  estilos en web xxxxxxxxxxxxxxxxxxxx*/
 
   @media only screen and (min-width: 768px) {
+    
+ /* imagenes del componente portafolio web*/
+
+.portafolio{
+  width: 100%;
+ height: 100%;
+ display: flex;
+ 
+
+}
+.portafolio img {
+  object-fit: cover;
+}
+
+
+
+.portafoliomovil{
+
+ display: none;
+ 
+
+}
+
     
     
     .imgBorrego {
@@ -316,18 +348,6 @@ transform: rotate(12deg);
 }
   }
 
-
- /* imagenes del componente portafolio web*/
-
-.portafolio{
-  width: 100%;
- height: 100%;
- 
-
-}
-.portafolio img {
-  object-fit: cover;
-}
 
 
 
