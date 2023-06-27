@@ -135,7 +135,7 @@ export function IGrafiiti() {
 
 export function INube() {
     return <StaticImage
-    src="../images/Stickers/Sticker_nube.png"
+    src="../images/Stickers/sticker_nube.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"

@@ -52,6 +52,7 @@ export const SContenedorPrincipalNav = styled.div`
   //width: 100%; /* ancho de mi pagina    */
   height: 100%; /* largo de mi pagina */
   background: ${colors.black};
+  overflow: hidden;
 
   ${above.medium`
       width: 80%;
