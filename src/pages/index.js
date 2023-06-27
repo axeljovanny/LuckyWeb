@@ -1,10 +1,11 @@
 import * as React from "react"
-import { Call, Header } from "../components"
+import { Call, Header, Portafolio } from "../components"
 
 const IndexPage = () => {
   return (
     <>
       <Header id="header" siteTitle="Home" />
+      <Portafolio id="portafolio" siteTitle="Home" />
       <Call id="call" siteTitle="Home" />
     </>
   )

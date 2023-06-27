@@ -102,6 +102,24 @@
 
 
 
+
+
+ /* imagenes componente portafolio movil */
+
+  .fondorojo{
+    width: 100%;
+  
+  
+   
+  
+  }
+  .fondorrojo img {
+    object-fit: cover;
+  }
+
+  
+
+
   /* Estilos Footer */
   .imglogo{
     width: 100%;
@@ -111,6 +129,16 @@
   .imglogo img {
     object-fit: cover;
   }
+
+
+
+
+
+
+
+
+
+
 
 /**xxxxxxxxxxxxxxx  estilos en web xxxxxxxxxxxxxxxxxxxx*/
 
@@ -248,8 +276,7 @@
 
 .imgfoco{
   width: 15%;
-  position: absolute;
-  top:73%;
+  bottom:10%;
   right: -7%;
 transform: rotate(12deg);
 
@@ -261,7 +288,6 @@ transform: rotate(12deg);
 
 .imgMesa{
   width: 17%;
-  position: absolute;
   right: 2%;
   transform: scale(1em) ;
 
@@ -278,7 +304,7 @@ transform: rotate(12deg);
   width: 15%;
   position: absolute;
   right: -4%;
-  bottom: 5.5%;
+  bottom: 2%;
   transform: rotate(20deg);
  
 
@@ -290,9 +316,26 @@ transform: rotate(12deg);
 }
   }
 
+
+ /* imagenes del componente portafolio web*/
+
+.fondorojo{
+  width: 100%;
+ height: 100%;
+ 
+
+}
+.fondorrojo img {
+  object-fit: cover;
+}
+
+
+
+
   @media only screen and (min-width: 1400px) {
     .imgILogoTrebol{
       width: 4% ;
       
     }
   }
+

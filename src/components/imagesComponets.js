@@ -252,3 +252,19 @@ export function IStickerTrebol2() {
     />
 
 }
+
+
+export function IFondoRojo() {
+    return <StaticImage
+    src="../images/Fondos/Fondo Color.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='80'
+    formats={['auto', 'webp', 'avif']}
+    className="fondorojo"
+   
+    />
+
+}
