@@ -254,7 +254,7 @@ export function IStickerTrebol2() {
 }
 
 
-export function IFondoRojo() {
+export function IPortafolio() {
     return <StaticImage
     src="../images/Fondos/Fondo Color.png"
     alt="Fondo de nuestro header"
@@ -263,7 +263,7 @@ export function IFondoRojo() {
     layout="fullWidth"
     quality='80'
     formats={['auto', 'webp', 'avif']}
-    className="fondorojo"
+    className="portafolio"
    
     />
 

@@ -4,7 +4,7 @@ import { colors, fonts, sizes } from "../../utils/const"
 
 export const SCall = styled.div`
 width: 100%;
-height: 100vh; 
+height: 80vh; 
 background-color:${colors.white};  
 display: flex;
 justify-content: center;
@@ -39,7 +39,6 @@ h1{
     font-size: 4em;
     text-align: center;
     letter-spacing: 1px;
-    padding: 0  22% ;
     margin: 0 0 2%;
 
 }
@@ -57,10 +56,20 @@ ${above.medium`
   `}
 ${above.large`
 
+ h1{
+    
+    font-size: 4em;
+    
+    letter-spacing: 1px;
+    padding: 0  10% ;
+    margin: 0 0 2%;
+
+}
+
   `}
 `
 export const SCallButtom = styled.div`
-width: 20%;
+width: 60%;
 height: 8%; 
 background-color:none;  
 display: flex;
@@ -81,6 +90,7 @@ ${above.medium`
     
   `}
 ${above.large`
-
+width: 20%;
+height: 8%; 
   `}
 `

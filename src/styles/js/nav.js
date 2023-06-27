@@ -49,7 +49,7 @@ export const SContenedorNav = styled.div`
 
 export const SContenedorPrincipalNav = styled.div`
   /* Comentario en estilos */
-  //width: 100%; /* ancho de mi pagina    */
+  width: 100%; 
   height: 100%; /* largo de mi pagina */
   background: ${colors.black};
   overflow: hidden;
