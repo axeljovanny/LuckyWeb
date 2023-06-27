@@ -59,11 +59,11 @@
   }
 
   .imgGrafiiti{
-      width: 70%;
-      height: 10%;
-      position: absolute;
-      bottom: 25%;
-    
+    width: 110%;
+    height: auto;
+    position: absolute;
+    top:0%;
+    right: 0%;
   }
   .imgGrafiiti img {
     object-fit: cover;
@@ -131,12 +131,11 @@
       
       
     }
-  
     .imgLap {
       position: absolute;
-      top: 5%;
-      right: 8%;
-      width: 23% ;
+      top: -15%;
+      right: -5%;
+      width: 25% ;
       transform: rotateY(200deg) rotate(-25deg)
     }
     .imgLap img {
@@ -170,10 +169,18 @@
   
     
     .imgILogoTrebol{
-      width: 8% ;
+      width: 6% ;
       
     }
     .imgILogoTrebol img {
+      object-fit: cover;
+    }
+
+    .imgILogoTrebolNav{
+      width: 10.7% ;
+      
+    }
+    .imgILogoTrebolNav img {
       object-fit: cover;
     }
   
@@ -200,22 +207,7 @@
     .imgWhatsApp img {
       object-fit: cover;
     }
-  
-  
-    .imgGrafiiti{
-      width: 40%;
-      height: 25%;
-      position: absolute;
-      bottom: 15%;
-      right: 12%;
-   
     
-    }
-    .imgGrafiiti img{
-      object-fit: cover;
-    }
-  
-
 
  /* imagenes del componente nav web*/
   
@@ -298,3 +290,9 @@ transform: rotate(12deg);
 }
   }
 
+  @media only screen and (min-width: 1400px) {
+    .imgILogoTrebol{
+      width: 4% ;
+      
+    }
+  }

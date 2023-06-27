@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
-import { SBlur, SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor } from "../styles/js/nav";
-import { IBala, ILogoTrebol, INube } from "./imagesComponets";
-import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons";
+import { IBala, INube } from "./imagesComponets";
+import { BehanceIcon, FacebookIcon, InstagramIcon, Trebol } from "../images/icons/icons";
+import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor, SBlur } from "../styles/js/nav";
 
 export const Nav = ({ open, toggle }) => {
   return (
@@ -20,11 +20,8 @@ export const Nav = ({ open, toggle }) => {
             <p> | </p>
             <p> ENG</p>
          </SContenedorIdioma>
-          <ILogoTrebol/>
-
+          <Trebol fill={colors.white} className={"svgLogoNav"}/>
         </SContenedorCloseYLogo>
-         
-
         <SContenedorContenido>
          <INube/>
 
@@ -35,17 +32,14 @@ export const Nav = ({ open, toggle }) => {
         </SContenedorContenido>
 
         <SContenedorRedesYSticker>
-
           <SRedesNav>
             <BehanceIcon fill={colors.white} className={"svgAbout"} />
             <FacebookIcon fill={colors.white} className={"svgAbout"} />
               <InstagramIcon fill={colors.white} className={"svgAbout"} />
           </SRedesNav>
-
-        
           <IBala/>
           <SDerechosAutor>
-          <p> © LUCKY DUCKY STUDIO 2023 </p>
+          <p> © LUCKY DUCKY STUDIO {new Date().getFullYear()} </p>
            </SDerechosAutor>
 
         </SContenedorRedesYSticker>

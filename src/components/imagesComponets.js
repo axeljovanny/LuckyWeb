@@ -7,7 +7,7 @@ import "../styles/css/rediseño.css"
 
 export function IFondoHeader() {
     return <StaticImage
-    src="../images/rediseño/Fondos/Fondo Claro.jpg"
+    src="../images/Fondos/Fondo Claro.jpg"
     alt="Fondo de nuestro header"
     layout="fullWidth"
     loading="eager"
@@ -28,7 +28,7 @@ export function IFondoHeader() {
 
 export function IStickerBorrego() {
     return <StaticImage
-    src="../images/rediseño/Stickers/sticker_borrego.png"
+    src="../images/Stickers/sticker_borrego.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -36,8 +36,9 @@ export function IStickerBorrego() {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imgBorrego"
-    imgClassName=""
-
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
@@ -45,7 +46,7 @@ export function IStickerBorrego() {
 
 export function IStickerLap() {
     return <StaticImage
-    src="../images/rediseño/Stickers/sticker_lap.png"
+    src="../images/Stickers/sticker_lap.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -53,6 +54,9 @@ export function IStickerLap() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgLap"
+    style={{
+        position:"absolute"
+    }}
 
     />
 
@@ -62,7 +66,7 @@ export function IStickerLap() {
 
 export function IStickerCorazon() {
     return <StaticImage
-    src="../images/rediseño/Stickers/sticker_corazon.png"
+    src="../images/Stickers/sticker_corazon.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -70,24 +74,9 @@ export function IStickerCorazon() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgCorazon"
-
-    />
-
-}
-
-
-
-export function IconoMenu() {
-    return <StaticImage
-    src="../images/rediseño/iconos/Menu.png"
-    alt="Fondo de nuestro header"
-    loading="eager"
-    placeholder="blurred"
-    layout="fullWidth"
-    quality='90'
-    formats={['auto', 'webp', 'avif']}
-    className="imgMenu"
-
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
@@ -96,7 +85,7 @@ export function IconoMenu() {
 
 export function ILogoTrebol() {
     return <StaticImage
-    src="../images/rediseño/logos/Isotipo_Black.png"
+    src="../images/Logos/Isotipo_Black.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -104,61 +93,32 @@ export function ILogoTrebol() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgILogoTrebol"
-
+    style={{
+        position:"absolute"
+    }}
     />
-
 }
 
-
-export function IFacebook() {
+export function ILogoTrebolNav() {
     return <StaticImage
-    src="../images/rediseño/iconos/Facebook.png"
+    src="../images/Logos/Isotipo_Black.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
     layout="fullWidth"
     quality='90'
     formats={['auto', 'webp', 'avif']}
-    className="imgFacebook"
-
+    className="imgILogoTrebolNav"
+    style={{
+        position:"absolute"
+    }}
     />
-
-}
-
-export function Instagram() {
-    return <StaticImage
-    src="../images/rediseño/iconos/Instagram.png"
-    alt="Fondo de nuestro header"
-    loading="eager"
-    placeholder="blurred"
-    layout="fullWidth"
-    quality='90'
-    formats={['auto', 'webp', 'avif']}
-    className="imgInstagram"
-
-    />
-
-}
-
-export function IWhatsApp() {
-    return <StaticImage
-    src="../images/rediseño/iconos/WhatsApp.png"
-    alt="Fondo de nuestro header"
-    loading="eager"
-    placeholder="blurred"
-    layout="fullWidth"
-    quality='90'
-    formats={['auto', 'webp', 'avif']}
-    className="imgWhatsApp"
-
-    />
-
 }
 
 
 export function IGrafiiti() {
     return <StaticImage
-    src="../images/rediseño/Stickers/Grafiiti 1.png"
+    src="../images/Stickers/Grafiiti 1.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -166,13 +126,16 @@ export function IGrafiiti() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgGrafiiti"
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
 
 export function INube() {
     return <StaticImage
-    src="../images/rediseño/Stickers/Sticker_nube.png"
+    src="../images/Stickers/sticker_nube.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -180,6 +143,9 @@ export function INube() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgNube"
+    style={{
+        position:"absolute"
+    }}
    
 
     />
@@ -189,7 +155,7 @@ export function INube() {
 
 export function IBala() {
     return <StaticImage
-    src="../images/rediseño/Stickers/sticker_bala.png"
+    src="../images/Stickers/sticker_bala.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -197,6 +163,9 @@ export function IBala() {
     quality='90'
     formats={['auto', 'webp', 'avif']}
     className="imgBala"
+    style={{
+        position:"absolute"
+    }}
    
 
     />
@@ -218,7 +187,7 @@ export function IBala() {
 
 export function IStickerlogo () {
     return <StaticImage
-    src="../images/rediseño/Stickers/logoSticker2.png"
+    src="../images/Stickers/logoSticker2.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -226,7 +195,6 @@ export function IStickerlogo () {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imglogo"
-    imgClassName=""
 
     />
 
@@ -235,7 +203,7 @@ export function IStickerlogo () {
 
 export function IStickerFoco () {
     return <StaticImage
-    src="../images/rediseño/Stickers/Foco.png"
+    src="../images/Stickers/Foco.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -243,15 +211,16 @@ export function IStickerFoco () {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imgfoco"
-    imgClassName=""
-
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
 
 export function IStickerMesa() {
     return <StaticImage
-    src="../images/rediseño/Stickers/Mesa de trabajo 2.png"
+    src="../images/Stickers/Mesa de trabajo 2.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -259,8 +228,9 @@ export function IStickerMesa() {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imgMesa"
-    imgClassName=""
-
+    style={{
+        position:"absolute"
+    }}
     />
 
 }
@@ -268,7 +238,7 @@ export function IStickerMesa() {
 
 export function IStickerTrebol2() {
     return <StaticImage
-    src="../images/rediseño/Stickers/trevol2.png"
+    src="../images/Stickers/trevol2.png"
     alt="Fondo de nuestro header"
     loading="eager"
     placeholder="blurred"
@@ -276,8 +246,9 @@ export function IStickerTrebol2() {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imgtrebol2"
-    imgClassName=""
-
+    style={{
+        position:"absolute"
+    }}
     />
 
 }

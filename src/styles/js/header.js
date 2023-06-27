@@ -40,6 +40,8 @@ export const SHeader = styled.div`
   justify-content: center; // centrar contenido
   align-items: center; // alinear el contenido
   flex-flow: row wrap; // utilizar filas y columnas y saltar de linea si no cabe 
+  overflow: hidden;
+
 `
 
 
@@ -160,7 +162,8 @@ export const SInicioYServicios = styled.div`
   align-items:center;
 ${above.large`
     width: 70%;    // ancho de mi pagina    
-    height: 100%;   
+    height: 100%;  
+    position: relative; 
   `}
 `
 
@@ -343,17 +346,11 @@ vertical-align: super;
 
 
 ${above.large`
-
-
-
 width: 100%;      
 height: 60%;
 display: flex;
-position: none;
 background:none;
 padding: 0 17%  0 ;
-
-
 h1{
   font-family: ${fonts.reciaB};
     background:none;
@@ -362,11 +359,15 @@ h1{
     line-height: 1.7em;
     letter-spacing: 1px;
 }
-
 .Es{
 font-size: 1.3em;
 vertical-align: center;
 }`}
+
+${above.xlarge`
+padding: 0 28%  0 ;
+
+`}
 
 `
 

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { above } from './index'
-import { colors, fonts, sizes } from "../../utils/const"
+import { colors, fonts } from "../../utils/const"
 
 export const SFooter = styled.div`
  /* Comentario en estilos */
