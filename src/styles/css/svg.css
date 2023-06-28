@@ -55,6 +55,16 @@
   object-fit: contain;
 }
 
+.svgPlus{
+
+  width: 25%;
+  height: auto;
+}
+.svgPlus svg{
+  object-fit: contain;
+}
+
+
 
 
 @media (max-width: 1140px) {
