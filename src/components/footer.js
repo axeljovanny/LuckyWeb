@@ -24,7 +24,7 @@ const Footer = ({ siteTitle }) => {
             </SIzqFooter>
             <SContenedorCentral>
                 <STextoFrase>
-                    <p> NO ES DE DONDE TOMAMOS LAS COSAS, SI NO A DONDE LAS VAMOS A LLEVAR.</p>
+                    <p> "No se trata solo de dónde nace una idea, sino de hasta dónde podemos llevarla" </p>
                 </STextoFrase>
                 <STextoDH>
                     <p>Ducky House</p>
