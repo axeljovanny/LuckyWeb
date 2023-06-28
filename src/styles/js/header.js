@@ -112,6 +112,13 @@ ${above.large`
   `}
 
 `
+export const Item = styled.li`
+  font-family: Montserrat;
+  font-size: .7em;
+  :hover {
+    text-decoration: underline;
+  }
+`;
 
 export const SNavButton = styled.div`
 width: 50%;    // ancho de mi pagina  
