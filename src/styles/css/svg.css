@@ -36,6 +36,16 @@
   object-fit: contain;
 }
 
+.svgNav{
+  width: 100%;
+  background-color:none;
+  height: auto;
+}
+.svgNav svg{
+  object-fit: contain;
+}
+
+
 .svgLogoNav{
   width: 10.6%;
   transform: translateY(1.8vh);
@@ -67,8 +77,16 @@
 
 
 
-@media (max-width: 1140px) {
+@media only screen and (min-width: 768px) {
   .line {
     display: none;
   }
+  .svgNav{
+    width: 30%;
+    height: auto;
+  }
+  .svgNav svg{
+    object-fit: contain;
+  }
+   
 }
