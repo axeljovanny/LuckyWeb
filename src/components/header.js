@@ -7,14 +7,12 @@ import { Overlay } from "../styles/js/nav";
 import { useCycle } from "framer-motion"
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
-import {Link, useI18next, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
-import {graphql} from 'gatsby';
+import {Link, useI18next, Trans} from 'gatsby-plugin-react-i18next';
 
 const Header = ({ siteTitle }) => {
-  const {t} = useTranslation();
-  const { languages, originalPath } = useI18next();
-  //const { languages, originalPath } = useI18next();
+  const { languages, originalPath, i18n } = useI18next();
 
+  //console.log(languages);
   return (
     <>
       <SHeader>
@@ -25,32 +23,14 @@ const Header = ({ siteTitle }) => {
           <SLogo>
             <ILogoTrebol />
           </SLogo>
-
           <SIdioma>
-            {/* <a> ESP </a>|<a> ENG</a> */}
-            <h1 style={{margin: 0}}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`
-            }}>
-            {siteTitle}
-          </Link>
-        </h1>
-        <ul className="languages">
-          {languages.map((lng) => (
-            <li key={lng}>
-              <Link to={originalPath} language={lng}>
-                {lng}
-              </Link>
-            </li>
-          ))}
-        </ul>
-             
+             {/* {languages.map((lng) => (  
+                <Link key={lng} to={originalPath} language={lng} style={{ textDecoration: i18n.resolvedLanguage === lng ? 'underline' : 'none' }}>
+                  {lng}
+                </Link>
+            ))}  */}
           </SIdioma>
         </SNav>
-
         <SContenido>
           <SHeaderIzquierda>
             <SAnimacionHomeIzq>
@@ -67,13 +47,22 @@ const Header = ({ siteTitle }) => {
             <IStickerLap />
             <STextoInicio>
               <h1>
-                <span class="Es"><Trans>LA</Trans></span><span><Trans>CREATIVIDAD</Trans></span>  <span class="Es"><Trans>ES</Trans></span>  <span class="Es"><Trans>UN</Trans></span> <span><Trans>REFLEJO</Trans></span> <span class="Es"><Trans>DE</Trans></span> <span><Trans>NUESTRA</Trans></span> <span><Trans>EXPERIENCIA</Trans></span>{" "}
+                <span class="Es"><Trans>LA</Trans></span>&nbsp;
+                <span><Trans>CREATIVIDAD</Trans></span>&nbsp;
+                <span class="Es"><Trans>ES</Trans></span>&nbsp;
+                <span class="Es"><Trans>UN</Trans></span>&nbsp;
+                <span><Trans>REFLEJO</Trans></span>&nbsp;
+                <span class="Es"><Trans>DE</Trans></span>&nbsp;
+                <span><Trans>NUESTRA</Trans></span>&nbsp;
+                <span style={{position:"relative"}}><IGrafiiti/><Trans i18nKey="exp">EXPERIENCIA</Trans></span>{" "}
               </h1>
             </STextoInicio>
             <STextoServiciosHome>
               <p>
-                BRANDING &nbsp; | &nbsp; PRODUCCION AUDIOVISUAL&nbsp; |&nbsp;
+                <Trans i18nKey="services">
+                BRANDING &nbsp; | &nbsp; PRODUCCION AUDIOVISUAL&nbsp; | &nbsp;
                 DESARROLLO WEB
+                </Trans>
               </p>
             </STextoServiciosHome>
           </SInicioYServicios>

@@ -6,6 +6,8 @@ import "../styles/css/svg.css";
 import { IBala, INube } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon, Trebol } from "../images/icons/icons";
 import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor, SBlur } from "../styles/js/nav";
+import { Trans } from 'gatsby-plugin-react-i18next';
+import { Link } from "gatsby";
 
 export const Nav = ({ open, toggle }) => {
   return (
@@ -16,21 +18,22 @@ export const Nav = ({ open, toggle }) => {
       <SContenedorPrincipalNav>
         <SContenedorCloseYLogo>
         <SContenedorIdioma>
-             <p> ESP </p>
-            <p> | </p>
-            <p> ENG</p>
-         </SContenedorIdioma>
-          <Trebol fill={colors.white} className={"svgLogoNav"}/>
+          <p> ESP </p>
+          <p> | </p>
+          <p> ENG</p>
+        </SContenedorIdioma>
+        <Trebol fill={colors.white} className={"svgLogoNav"}/>
         </SContenedorCloseYLogo>
         <SContenedorContenido>
          <INube/>
-
-          <h1> HOME</h1>
-          <h1> PROYECTOS</h1>
-          <h1> NOSOTROS</h1>
-
+          <Link to="/"  onClick={toggle}>
+            <h1><Trans i18nKey="home">HOME</Trans></h1>
+          </Link>
+          <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank">
+            <h1><Trans i18nKey="proyectos">PROYECTOS</Trans></h1>
+          </a>
+          <h1 class="menuDisabled"><Trans i18nKey="nosotros">NOSOTROS</Trans></h1>
         </SContenedorContenido>
-
         <SContenedorRedesYSticker>
           <SRedesNav>
             <BehanceIcon fill={colors.white} className={"svgAbout"} />
@@ -104,7 +107,7 @@ const sidebar = {
     clipPath: `circle(${height * 4 + 200}px at 0px 0px)`,
     transition: {
       type: "spring",
-      stiffness: 20,
+      stiffness: 100,
       restDelta: 2,
       duration: .8
     }
@@ -119,6 +122,5 @@ const sidebar = {
     }
   }
 };
-
 
 export default Nav;

@@ -4,9 +4,8 @@ import { IStickerFoco, IStickerMesa, IStickerTrebol2, IStickerlogo } from "./ima
 import "../styles/css/svg.css";
 import { BehanceIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "../images/icons/icons";
 import { colors } from "../utils/const";
-
-
-
+import { Trans } from 'gatsby-plugin-react-i18next';
+import { graphql } from 'gatsby';
 
 const Footer = ({ siteTitle }) => {
     return (
@@ -16,15 +15,15 @@ const Footer = ({ siteTitle }) => {
                     <IStickerlogo/>
                 </SAnimacionLDS>
                 <SRedesFooter>
-                <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.white} className={"svgFooter"} /> </a>
-            <a href="https://www.facebook.com/luckyducky.studio" rel="noreferrer" target="_blank"><FacebookIcon fill={colors.white} className={"svgFooter"} /> </a>
-            <a href="https://www.instagram.com/lduckystudio/" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.white} className={"svgFooter"} /> </a>
-            <a href="https://www.linkedin.com/company/lduckystudio/" rel="noreferrer" target="_blank"> <LinkedinIcon fill={colors.white} className={"svgFooter"} /> </a>
+                    <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.white} className={"svgFooter"} /> </a>
+                    <a href="https://www.facebook.com/luckyducky.studio" rel="noreferrer" target="_blank"><FacebookIcon fill={colors.white} className={"svgFooter"} /> </a>
+                    <a href="https://www.instagram.com/lduckystudio/" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.white} className={"svgFooter"} /> </a>
+                    <a href="https://www.linkedin.com/company/lduckystudio/" rel="noreferrer" target="_blank"> <LinkedinIcon fill={colors.white} className={"svgFooter"} /> </a>
                 </SRedesFooter>
             </SIzqFooter>
             <SContenedorCentral>
                 <STextoFrase>
-                    <p> "No se trata solo de dónde nace una idea, sino de hasta dónde podemos llevarla" </p>
+                    <p>"<Trans i18nKey="footerText">No se trata solo de dónde nace una idea, sino de hasta dónde podemos llevarla</Trans>"</p>
                 </STextoFrase>
                 <STextoDH>
                     <p>Ducky House</p>
@@ -54,3 +53,17 @@ const Footer = ({ siteTitle }) => {
 }
 
 export default Footer
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
