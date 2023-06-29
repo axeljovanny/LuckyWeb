@@ -115,7 +115,7 @@ export const SContenedorIdioma = styled.div`
 export const SContenedorContenido = styled.div`
   /* Comentario en estilos */
   width: 100%; /* ancho de mi pagina    */
-  height: 60%; /* largo de mi pagina */
+  height: 55%; /* largo de mi pagina */
   background: none;
   display: flex;
   flex-direction: column;
@@ -161,14 +161,14 @@ export const SContenedorRedesYSticker = styled.div`
     
   `}
   ${above.large`
-height:25%;
+
 width: 100%;    /* ancho de mi pagina    */ 
 height: 25%;    /* largo de mi pagina */
 background: none;
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 align-items: flex-end;
-position: relative;
+
 
   `}
 `;
@@ -176,12 +176,11 @@ position: relative;
 export const SRedesNav = styled.div`
   /* Comentario en estilos */
   width: 50%; /* ancho de mi pagina    */
-  height: 30%;
+  height: auto;
   background: none;
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 30%;
+
   align-items: center;
   flex-direction: row;
   
@@ -193,11 +192,9 @@ export const SRedesNav = styled.div`
     
     width: 30%;   
     height: 70% ;
-    position: absolute;
-    left:-1.5%;
-    top:40%;
+  
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
 
   
@@ -205,11 +202,13 @@ export const SRedesNav = styled.div`
 `;
 export const SDerechosAutor = styled.div`
   /* Comentario en estilos */
-  width: 90%; /* ancho de mi pagina    */
-  height: 35%; /* largo de mi pagina */
+     width: 100%;   
+      height: auto;
   background: none;
-  position: absolute;
-  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
   p {
     color: ${colors.white};
@@ -226,12 +225,12 @@ export const SDerechosAutor = styled.div`
   ${above.large`
   p{
   font-size: 13px;
-  transform: translateY(-10%);
+  
 }
       
-      width: 50%;   
-      height: 45%;
-      top: 110%;
+      width: 100%;   
+      height: auto;
+      
     
     
     `}

@@ -39,6 +39,7 @@
 
   .imgFacebook{
     width: 50%;
+    
   }
   .imgFacebook img {
     object-fit: cover;
@@ -247,6 +248,7 @@
   
     .imgFacebook{
       width: 50%;
+ 
     }
     .imgFacebook img{
       object-fit: cover;

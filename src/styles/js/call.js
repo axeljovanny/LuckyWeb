@@ -4,7 +4,7 @@ import { colors, fonts, sizes } from "../../utils/const"
 
 export const SCall = styled.div`
 width: 100%;
-height: 80vh; 
+height: 50vh; 
 background-color:${colors.white};  
 display: flex;
 justify-content: center;
@@ -16,7 +16,7 @@ ${above.medium`
     
   `}
 ${above.large`
-
+height: 80vh; 
   `}
 `
 
@@ -44,10 +44,13 @@ h1{
 }
 
 
-h3 > span {
+h3 {
   color: ${colors.black};
   font-family: ${fonts.reciaB};
   font-size: 1.5em;
+  
+  
+ 
   
 }
 
@@ -66,10 +69,12 @@ ${above.large`
 
 }
 
+
+
   `}
 `
 export const SCallButtom = styled.div`
-width: 60%;
+width: 90%;
 height: 8%; 
 background-color:none;  
 display: flex;
@@ -90,7 +95,7 @@ ${above.medium`
     
   `}
 ${above.large`
-width: 20%;
+width: 30%;
 height: 8%; 
   `}
 `

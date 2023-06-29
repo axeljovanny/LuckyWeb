@@ -83,6 +83,7 @@ background-color:none;   /* largo de mi pagina */
 display: flex;
 justify-content: center;
 align-items: center;
+margin: 10% 0 0 0;
 
 
 ${above.medium`

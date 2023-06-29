@@ -33,17 +33,21 @@ export const Nav = ({ open, toggle }) => {
 
         <SContenedorRedesYSticker>
           <SRedesNav>
-            <BehanceIcon fill={colors.white} className={"svgAbout"} />
-            <FacebookIcon fill={colors.white} className={"svgAbout"} />
-              <InstagramIcon fill={colors.white} className={"svgAbout"} />
+          <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.white} className={"svgNav"} /> </a>
+            <a href="https://www.facebook.com/luckyducky.studio" rel="noreferrer" target="_blank"><FacebookIcon fill={colors.white} className={"svgNav"} /> </a>
+            <a href="https://www.instagram.com/lduckystudio/" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.white} className={"svgNav"} /> </a>
+
+
+              
           </SRedesNav>
           <IBala/>
-          <SDerechosAutor>
-          <p> © LUCKY DUCKY STUDIO {new Date().getFullYear()} </p>
-           </SDerechosAutor>
+       
 
         </SContenedorRedesYSticker>
-
+        <SDerechosAutor>
+          <p> © LUCKY DUCKY STUDIO {new Date().getFullYear()} </p>
+           </SDerechosAutor>
+           
       </SContenedorPrincipalNav>
       <SBlur onClick={toggle}/>
       </SContenedorNav>
