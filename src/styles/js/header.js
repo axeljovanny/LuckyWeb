@@ -188,6 +188,7 @@ p{
   color: ${colors.black};
   font-family: ${fonts.montExtraBold};
   font-size: 10px;
+  word-spacing: 5px;
 }
 
 ${above.large`

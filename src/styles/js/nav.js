@@ -122,6 +122,11 @@ export const SContenedorContenido = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  
+  .menuDisabled{
+    color: #525151;
+    text-decoration: line-through;
+  }
 
   h1 {
     font-family: ${fonts.reciaB};
