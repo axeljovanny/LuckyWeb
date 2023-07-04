@@ -10,6 +10,7 @@ export const colors = {
 export const sizes = {
     tittle: "calc(22px + 0.2vw)",
     text: "calc(16px + 0.1vw)",
+    textoTitulo: "3em",
 
 }
 
@@ -22,5 +23,5 @@ export const fonts = {
     montLight: "MontserratLight",
     monttMedium: "MontserratMedium",
     reciaB:"ReciaBold",
-    handOfSean: "Hand_Of_Sean_Demo"
+    handOfSean: "Hand_Of_Sean_Demo",
 }

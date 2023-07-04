@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { above } from './index'
-import { colors, fonts } from "../../utils/const"
+import { colors, fonts, sizes } from "../../utils/const"
+
 
 /*
 Nomenclatura de Estilos:
@@ -175,7 +176,7 @@ ${above.large`
 `
 
 export const STextoServiciosHome = styled.div`
-width: 100%;    // ancho de mi pagina    
+width: 100%;    // an:cho de mi pagina    
 height: 25%;    // largo de mi pagina
 background: none; //color de fondo
 display: flex;  // utilizar las funciones de flex
@@ -311,33 +312,33 @@ export const STextoInicio = styled.div`
 
 width: 100%;    // ancho de mi pagina    
 height: 75%;    // largo de mi pagina
-background: none; //color de fondo
-
-display: flex;  // utilizar las funciones de flex
+background-color:none;
+display:${props => props.movil ? "none" : "flex"};
 flex-direction:column;
 justify-content:center;
 align-items: center;
 text-align: center;
-line-height: 1px;
-
 position: relative;
-
-padding: 15%;
+padding:15% 10% ;
 color: ${colors.black};
+
 
 h1{
   font-family: ${fonts.reciaB};
     background:none;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.6em;
     letter-spacing: 1px;
+    padding: 0 10%;
+    
+    
 }
 
 h1 > span {
   
   font-size: 2em;
-  background: none;
+  background:none;
   margin: 0;
 
 }
@@ -348,6 +349,8 @@ font-size: 1.3em;
 vertical-align: super;
 
 }
+.web{display:none;}
+.movil{display:static;}
 
 
 
@@ -355,24 +358,35 @@ vertical-align: super;
 ${above.large`
 width: 100%;      
 height: 60%;
-display: flex;
 background:none;
-padding: 0 17%  0 ;
+padding: 0 18%  0 ;
 h1{
   font-family: ${fonts.reciaB};
     background:none;
-    font-size: 3em;
+    font-size: ${sizes.textoTitulo};
     text-align: center;
     line-height: 1.7em;
     letter-spacing: 1px;
+    padding: 0;
 }
 .Es{
 font-size: 1.3em;
 vertical-align: center;
-}`}
+}
+.movil{display:static;}
+`}
 
 ${above.xlarge`
-padding: 0 28%  0 ;
+height: 80%;
+background-color:none;
+padding: 0 20%  0 ;
+
+h1{
+    letter-spacing: 5px;
+    font-size: 4em;
+    padding:0;
+   
+}
 
 `}
 

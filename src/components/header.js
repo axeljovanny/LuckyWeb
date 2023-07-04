@@ -5,7 +5,7 @@ import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons"
 import Nav, { MenuToggle } from "./nav";
 import { Overlay } from "../styles/js/nav";
 import { useCycle } from "framer-motion"
-import { colors } from "../utils/const";
+import { colors, sizes  } from "../utils/const";
 import "../styles/css/svg.css";
 import {Link, useI18next, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import {graphql} from 'gatsby';
@@ -67,7 +67,9 @@ const Header = ({ siteTitle }) => {
             <IStickerLap />
             <STextoInicio>
               <h1>
-                <span class="Es"><Trans>LA</Trans></span><span><Trans>CREATIVIDAD</Trans></span>  <span class="Es"><Trans>ES</Trans></span>  <span class="Es"><Trans>UN</Trans></span> <span><Trans>REFLEJO</Trans></span> <span class="Es"><Trans>DE</Trans></span> <span><Trans>NUESTRA</Trans></span> <span><Trans>EXPERIENCIA</Trans></span>{" "}
+                <span class="Es web"> <Trans>LA</Trans><br/> </span> 
+                <span class="Es movil"> <Trans>LA</Trans> </span>
+                <span> <Trans>CREATIVIDAD</Trans> </span>  <span class="Es"><Trans>ES</Trans></span>  <span class="Es"><Trans>UN</Trans></span> <span><Trans>REFLEJO</Trans></span> <span class="Es"><Trans>DE</Trans></span> <span><Trans>NUESTRA</Trans></span> <span><Trans>EXPERIENCIA</Trans></span>{" "}
               </h1>
             </STextoInicio>
             <STextoServiciosHome>
