@@ -5,11 +5,11 @@ import { colors, fonts } from "../../utils/const"
 export const SFooter = styled.div`
  /* Comentario en estilos */
 width: 100%;    /* ancho de mi pagina    */ 
-height: 80vh; 
+height: 90vh; 
 background-color:${colors.black};   /* largo de mi pagina */
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows:60% 20% 20%;
+grid-template-rows:70% 20% 10%;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 
@@ -280,7 +280,7 @@ position: relative;
 export const STextoContacto = styled.div`
  /* Comentario en estilos */
   width: 100%;    /* ancho de mi pagina    */ 
-
+  
   background-color: none;   /* largo de mi pagina */
   display: flex;
   flex-direction: column;
@@ -309,9 +309,9 @@ ${above.large`
 
 export const STextoCopy = styled.div`
 width: 100%;
-height: 80%;
+height: 100%;
 grid-area: 3 / 1 / 4 / 2;
-background-color: none; 
+background-color:none; 
 border-top: solid 0.1em white;
 display: flex;
 justify-content:center;
@@ -329,13 +329,10 @@ align-items: center;
 `
 export const STextoDerechosAutor = styled.div`
  /* Comentario en estilos */
-width: 60%;     
-height: 80%; 
+
 
 background-color: none;   /* largo de mi pagina */
-display: flex;
-justify-content: center;
-align-items: center;
+
 
 
 p{
@@ -351,6 +348,6 @@ ${above.medium`
     
   `}
 ${above.large`
-    width: 30%; 
+   
   `}
 `

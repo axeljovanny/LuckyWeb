@@ -192,7 +192,12 @@ p{
 }
 
 ${above.large`
+width: 100%;   
+height: 10%; 
+background:none;
+
 bottom:0;
+
   p{
   font-size: 13px;
     }
@@ -357,17 +362,18 @@ vertical-align: super;
 
 ${above.large`
 width: 100%;      
-height: 60%;
+height: 80%;
 background:none;
 padding: 0 18%  0 ;
+text-align:center;
+
+
 h1{
   font-family: ${fonts.reciaB};
     background:none;
     font-size: ${sizes.textoTitulo};
     text-align: center;
-    line-height: 1.7em;
-    letter-spacing: 1px;
-    padding: 0;
+    padding: 1%;
 }
 .Es{
 font-size: 1.3em;

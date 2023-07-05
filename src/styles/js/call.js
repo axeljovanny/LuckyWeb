@@ -24,7 +24,7 @@ height: 80vh;
 
 export const SCallFrase= styled.div`
 width: 80%;
-height: 60%; 
+height: 80%; 
 background-color:none;  
 display: flex;
 justify-content: center;
@@ -36,7 +36,7 @@ flex-direction: column;
 h1{
     font-family: ${fonts.reciaB};
     color: ${colors.black};
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     letter-spacing: 1px;
     margin: 0 0 2%;
@@ -75,7 +75,7 @@ ${above.large`
 `
 export const SCallButtom = styled.div`
 width: 90%;
-height: 8%; 
+height: 10%; 
 background-color:none;  
 display: flex;
 justify-content: center;
