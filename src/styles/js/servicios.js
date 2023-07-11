@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { above } from './index'
-import { colors, fonts, sizes } from "../../utils/const"
-import { color } from "framer-motion"
+import { colors, fonts } from "../../utils/const"
 
 
 export const SContenedorInicial = styled.div`

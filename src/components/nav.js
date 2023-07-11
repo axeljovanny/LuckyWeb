@@ -13,7 +13,7 @@ import { useCycle } from "framer-motion"
 import {useI18next, Trans, Link} from 'gatsby-plugin-react-i18next';
 
 const Nav = ({ open, toggle }) => {
-  const { languages, originalPath, t, i18n } = useI18next();
+  const { languages, originalPath, i18n } = useI18next();
 
   return (
     <Over 
@@ -34,12 +34,12 @@ const Nav = ({ open, toggle }) => {
         <SContenedorContenido>
          <INube/>
           <Link to="/"  onClick={toggle}>
-            <h1><Trans>HOME</Trans></h1>
+            <h1><Trans>NAV_HOME</Trans></h1>
           </Link>
           <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank">
-            <h1><Trans>PROYECTOS</Trans></h1>
+            <h1><Trans>NAV_PROYECTOS</Trans></h1>
           </a>
-          <h1 class="menuDisabled"><Trans>NOSOTROS</Trans></h1>
+          <h1 class="menuDisabled"><Trans>NAV_NOSOTROS</Trans></h1>
         </SContenedorContenido>
         <SContenedorRedesYSticker>
           <SRedesNav>

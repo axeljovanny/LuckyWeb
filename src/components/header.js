@@ -1,13 +1,12 @@
-import React, { useState, useRef } from "react";
-import { Item, SAnimacionCentral, SAnimacionHomeDer, SAnimacionHomeIzq, SAnimacionTextoInicio, SContenido, SHeader, SHeaderDerecha, SHeaderIzquierda, SIdioma, SInicioYServicios, SLogo, SNav, SNavButton, SRedes, STextoInicio, STextoServiciosHome } from "../styles/js/header";
+import React from "react";
+import { SAnimacionHomeDer, SAnimacionHomeIzq, SContenido, SHeader, SHeaderDerecha, SHeaderIzquierda, SIdioma, SInicioYServicios, SLogo, SNav, SNavButton, SRedes, STextoInicio, STextoServiciosHome } from "../styles/js/header";
 import { IFondoHeader, ILogoTrebol, IStickerBorrego, IStickerCorazon, IStickerLap, IGrafiiti } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons";
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
-import { useI18next, Trans, Link } from 'gatsby-plugin-react-i18next';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 const Header = ({ siteTitle }) => {
-  const {languages, originalPath, t, i18n } = useI18next();
 
   return (
     <>
@@ -19,13 +18,7 @@ const Header = ({ siteTitle }) => {
           <SLogo>
             <ILogoTrebol />
           </SLogo>
-          <SIdioma>
-             {/* {languages.map((lng) => (  
-                <Link key={lng} to={originalPath} language={lng} style={{ textDecoration: i18n.resolvedLanguage === lng ? 'underline' : 'none' }}>
-                  {lng}
-                </Link>
-            ))}  */}
-          </SIdioma>
+          <SIdioma/>
         </SNav>
         <SContenido>
           <SHeaderIzquierda>
@@ -33,9 +26,9 @@ const Header = ({ siteTitle }) => {
               <IStickerBorrego />
             </SAnimacionHomeIzq>
             <SRedes>
-            <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.black} className={"svgHeader"} /> </a>
-            <a href="https://www.facebook.com/luckyducky.studio" rel="noreferrer" target="_blank"><FacebookIcon fill={colors.black} className={"svgHeader"} /> </a>
-            <a href="https://www.instagram.com/lduckystudio/" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.black} className={"svgHeader"} /> </a>
+              <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.black} className={"svgHeader"} /> </a>
+              <a href="https://www.facebook.com/luckyducky.studio" rel="noreferrer" target="_blank"><FacebookIcon fill={colors.black} className={"svgHeader"} /> </a>
+              <a href="https://www.instagram.com/lduckystudio/" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.black} className={"svgHeader"} /> </a>
             </SRedes>
           </SHeaderIzquierda>
 
@@ -43,17 +36,14 @@ const Header = ({ siteTitle }) => {
             <IStickerLap />
             <STextoInicio>
               <h1>
-                <span class="Es web"> <Trans>LA</Trans><br/> </span> 
-                <span class="Es movil"> <Trans>LA</Trans> </span>
-                <span> <Trans>CREATIVIDAD</Trans> </span>  <span class="Es"><Trans>ES</Trans></span>  <span class="Es"><Trans>UN</Trans></span> <span><Trans>REFLEJO</Trans></span> <span class="Es"><Trans>DE</Trans></span> <span><Trans>NUESTRA</Trans></span> <span><Trans>EXPERIENCIA</Trans></span>{" "}
+                <span class="Es web"> <Trans>HEADER_LA</Trans><br/> </span> 
+                <span class="Es movil"> <Trans>HEADER_LA</Trans> </span>
+                <span> <Trans>HEADER_CREATIVIDAD</Trans> </span>  <span class="Es"><Trans>HEADER_ES</Trans></span>  <span class="Es"><Trans>HEADER_UN</Trans></span> <span><Trans>HEADER_REFLEJO</Trans></span> <span class="Es"><Trans>HEADER_DE</Trans></span> <span><Trans>HEADER_NUESTRA</Trans></span> <span><Trans>HEADER_EXPERIENCIA</Trans></span>{" "}
               </h1>
             </STextoInicio>
             <STextoServiciosHome>
               <p>
-                <Trans i18nKey="services">
-                BRANDING &nbsp; | &nbsp; PRODUCCION AUDIOVISUAL&nbsp; | &nbsp;
-                DESARROLLO WEB
-                </Trans>
+                <Trans i18nKey="SERVICES"/>
               </p>
             </STextoServiciosHome>
           </SInicioYServicios>

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { above } from './index'
-import { colors, fonts, sizes } from "../../utils/const"
+import { colors } from "../../utils/const"
 
 
 export const SPortafolio = styled.div`

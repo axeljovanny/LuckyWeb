@@ -4,11 +4,10 @@ import { IStickerFoco, IStickerMesa, IStickerTrebol2, IStickerlogo } from "./ima
 import "../styles/css/svg.css";
 import { BehanceIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "../images/icons/icons";
 import { colors } from "../utils/const";
-import {useI18next, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import { Trans} from 'gatsby-plugin-react-i18next';
 
 
 const Footer = ({ siteTitle}) => {
-    const { t } = useTranslation();
     
     return (
         <SFooter>
@@ -25,7 +24,7 @@ const Footer = ({ siteTitle}) => {
             </SIzqFooter>
             <SContenedorCentral>
                 <STextoFrase>
-                    <p>"<Trans>No se trata solo de dónde nace una idea, sino de hasta dónde podemos llevarla</Trans>"</p>
+                    <p>"<Trans>FOOTER_FRASE</Trans>"</p>
                 </STextoFrase>
                 <STextoDH>
                     <p>Ducky House</p>

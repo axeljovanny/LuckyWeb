@@ -1,6 +1,4 @@
 import * as React from "react"
-//import { Call, Header, Portafolio, Servicios } from "../components"
-import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../components/layout";
 import Header from "../components/header"
 import Portafolio from "../components/portafolio"
@@ -12,7 +10,6 @@ import { IconNav } from "../components/nav";
 import { Idiomas } from "../components/idioma";
 
 const IndexPage = () => {
-  const {t} = useTranslation();
   
   return (
     <>
@@ -26,12 +23,6 @@ const IndexPage = () => {
         <Footer/>
       </Layout>   
     </>
-    // <Layout>
-    //   {/* <Seo title={t('seo')} /> */}
-    //   <h1>
-    //     <Trans i18nKey="title">Hi people</Trans>
-    //   </h1>
-    // </Layout>
   )
 }
 
