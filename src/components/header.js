@@ -1,18 +1,14 @@
 import React, { useState, useRef } from "react";
 import { Item, SAnimacionCentral, SAnimacionHomeDer, SAnimacionHomeIzq, SAnimacionTextoInicio, SContenido, SHeader, SHeaderDerecha, SHeaderIzquierda, SIdioma, SInicioYServicios, SLogo, SNav, SNavButton, SRedes, STextoInicio, STextoServiciosHome } from "../styles/js/header";
-import { IFondoHeader, ILogoTrebol, IStickerBorrego, IStickerCorazon, IStickerLap, IconoMenu, IGrafiiti } from "./imagesComponets";
+import { IFondoHeader, ILogoTrebol, IStickerBorrego, IStickerCorazon, IStickerLap, IGrafiiti } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons";
-import Nav, { MenuToggle } from "./nav";
-import { Overlay } from "../styles/js/nav";
-import { useCycle } from "framer-motion"
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
-import {Link, useI18next, Trans} from 'gatsby-plugin-react-i18next';
+import { useI18next, Trans, Link } from 'gatsby-plugin-react-i18next';
 
 const Header = ({ siteTitle }) => {
-  const { languages, originalPath, i18n } = useI18next();
+  const {languages, originalPath, t, i18n } = useI18next();
 
-  //console.log(languages);
   return (
     <>
       <SHeader>
@@ -75,21 +71,6 @@ const Header = ({ siteTitle }) => {
       </SHeader>
 
     </>
-  );
-};
-
-export const IconNav = ({ siteTitle }) => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
-  const containerRef = useRef(null);
-
-  return (
-    <Overlay
-      initial={false}
-      animate={isOpen ? "open" : "closed"}
-      ref={containerRef}>
-      <MenuToggle toggle={() => toggleOpen()} siteTitle={siteTitle} />
-      <Nav open={isOpen} toggle={() => toggleOpen()} />
-    </Overlay>
   );
 };
 

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 
 import { colors } from "../utils/const";
@@ -6,10 +6,15 @@ import "../styles/css/svg.css";
 import { IBala, INube } from "./imagesComponets";
 import { BehanceIcon, FacebookIcon, InstagramIcon, Trebol } from "../images/icons/icons";
 import { SContenedorCloseYLogo, SContenedorContenido, SContenedorNav,SContenedorPrincipalNav, SContenedorRedesYSticker,SContenedorIdioma , SRedesNav, OverButton, Over, SDerechosAutor, SBlur } from "../styles/js/nav";
-import { Trans } from 'gatsby-plugin-react-i18next';
-import { Link } from "gatsby";
 
-export const Nav = ({ open, toggle }) => {
+import { Overlay } from "../styles/js/nav";
+import { useCycle } from "framer-motion"
+
+import {useI18next, Trans, Link} from 'gatsby-plugin-react-i18next';
+
+const Nav = ({ open, toggle }) => {
+  const { languages, originalPath, t, i18n } = useI18next();
+
   return (
     <Over 
       animate={open? "open" : "closed"}
@@ -18,34 +23,31 @@ export const Nav = ({ open, toggle }) => {
       <SContenedorPrincipalNav>
         <SContenedorCloseYLogo>
         <SContenedorIdioma>
-          <p> ESP </p>
-          <p> | </p>
-          <p> ENG</p>
+          {languages.map((lng) => (  
+                <Link key={lng} to={originalPath} language={lng} style={{ textDecoration: i18n.resolvedLanguage === lng ? 'underline' : 'none' }}>
+                  {lng}
+                </Link>
+            ))} 
         </SContenedorIdioma>
         <Trebol fill={colors.white} className={"svgLogoNav"}/>
         </SContenedorCloseYLogo>
         <SContenedorContenido>
          <INube/>
           <Link to="/"  onClick={toggle}>
-            <h1><Trans i18nKey="home">HOME</Trans></h1>
+            <h1><Trans>HOME</Trans></h1>
           </Link>
           <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank">
-            <h1><Trans i18nKey="proyectos">PROYECTOS</Trans></h1>
+            <h1><Trans>PROYECTOS</Trans></h1>
           </a>
-          <h1 class="menuDisabled"><Trans i18nKey="nosotros">NOSOTROS</Trans></h1>
+          <h1 class="menuDisabled"><Trans>NOSOTROS</Trans></h1>
         </SContenedorContenido>
         <SContenedorRedesYSticker>
           <SRedesNav>
-          <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.white} className={"svgNav"} /> </a>
+            <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.white} className={"svgNav"} /> </a>
             <a href="https://www.facebook.com/luckyducky.studio" rel="noreferrer" target="_blank"><FacebookIcon fill={colors.white} className={"svgNav"} /> </a>
             <a href="https://www.instagram.com/lduckystudio/" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.white} className={"svgNav"} /> </a>
-
-
-              
           </SRedesNav>
           <IBala/>
-       
-
         </SContenedorRedesYSticker>
         <SDerechosAutor>
           <p> © LUCKY DUCKY STUDIO {new Date().getFullYear()} </p>
@@ -127,4 +129,17 @@ const sidebar = {
   }
 };
 
-export default Nav;
+export const IconNav = ({ siteTitle }) => {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
+
+  return (
+    <Overlay
+      initial={false}
+      animate={isOpen ? "open" : "closed"}
+      ref={containerRef}>
+      <MenuToggle toggle={() => toggleOpen()} siteTitle={siteTitle} />
+      <Nav open={isOpen} toggle={() => toggleOpen()} />
+    </Overlay>
+  );
+};

@@ -17,17 +17,20 @@ import {} from "./imagesComponets";
 import { Plus } from "../images/icons/icons";
 import "../styles/css/svg.css";
 import { colors } from "../utils/const";
+import {useI18next, Trans} from 'gatsby-plugin-react-i18next';
 
 const Call = ({ siteTit }) => {
+  const {languages, originalPath, t} = useI18next();
+
   return (
     <SContenedorInicial>
       <SContenedorTitulo>
-        <h1> SERVICIOS </h1>
+        <h1><Trans>SERVICIOS</Trans></h1>
       </SContenedorTitulo>
       <SContenedorGrid>
         <SBranding>
           {" "}
-          <h2> BRANDING</h2>
+          <h2><Trans>BRANDING</Trans></h2>
         </SBranding>
         <SBrandingTexto>
           <h3>
@@ -41,7 +44,7 @@ const Call = ({ siteTit }) => {
         </SBrandingMas>
         <SDesarrolloWeb>
           {" "}
-          <h2> DESARROLLO WEB</h2>
+          <h2><Trans>DESARROLLO WEB</Trans></h2>
         </SDesarrolloWeb>
         <SDesarrolloTexto>
           {" "}
@@ -56,7 +59,7 @@ const Call = ({ siteTit }) => {
         </SDesarrolloMas>
 
         <SCreacionContenido>
-          <h2> CREACION DE CONTENIDO</h2>
+          <h2><Trans>CREACIÓN DE CONTENIDO</Trans></h2>
         </SCreacionContenido>
         <SCreaciontexto>
           <h3>

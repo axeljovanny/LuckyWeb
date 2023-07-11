@@ -10,9 +10,13 @@
     "callFirstRow": "TURN YOUR VISION INTO REALITY",
     "callSecRow": "TELL US MORE ABOUT YOUR PROJECT...",
     "contact": "¡CONTACT US NOW!",
-    "footerText": "It's not just about where an idea is born, but how far we can take it.",
-    "home": "Home",
-    "proyectos": "Projects",
-    "nosotros": "About us",
-    "exp":"EXPERIENCE"
+    "No se trata solo de dónde nace una idea, sino de hasta dónde podemos llevarla": "It's not just about where an idea is born, but how far we can take it",
+    "HOME": "HOME",
+    "PROYECTOS": "PROJECTS",
+    "NOSOTROS": "ABOUT US",
+    "exp":"EXPERIENCE",
+    "SERVICIOS": "SERVICES",
+    "BRANDING": "BRANDING",
+    "DESARROLLO WEB": "WEB DEVELOPMENT",
+    "CREACIÓN DE CONTENIDO": "CONTENT CREATION"
 }
