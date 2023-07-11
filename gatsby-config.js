@@ -37,10 +37,10 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`,
-        languages: [`en`, `es`],
+        languages: [`es`, `en`, `fr`, `ar`],
         defaultLanguage: `en`,
         siteUrl: `http://localhost:8000/`,
-        trailingSlash: 'always',
+        //trailingSlash: 'always',
         i18nextOptions: {
           interpolation: {
             escapeValue: false

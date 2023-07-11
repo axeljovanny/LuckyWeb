@@ -7,14 +7,12 @@ import { Overlay } from "../styles/js/nav";
 import { useCycle } from "framer-motion"
 import { colors, sizes  } from "../utils/const";
 import "../styles/css/svg.css";
-import {Link, useI18next, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
-import {graphql} from 'gatsby';
+import {Link, useI18next, Trans} from 'gatsby-plugin-react-i18next';
 
 const Header = ({ siteTitle }) => {
-  const {t} = useTranslation();
-  const { languages, originalPath } = useI18next();
-  //const { languages, originalPath } = useI18next();
+  const { languages, originalPath, i18n } = useI18next();
 
+  //console.log(languages);
   return (
     <>
       <SHeader>
@@ -25,32 +23,14 @@ const Header = ({ siteTitle }) => {
           <SLogo>
             <ILogoTrebol />
           </SLogo>
-
           <SIdioma>
-            {/* <a> ESP </a>|<a> ENG</a> */}
-            <h1 style={{margin: 0}}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`
-            }}>
-            {siteTitle}
-          </Link>
-        </h1>
-        <ul className="languages">
-          {languages.map((lng) => (
-            <li key={lng}>
-              <Link to={originalPath} language={lng}>
-                {lng}
-              </Link>
-            </li>
-          ))}
-        </ul>
-             
+             {/* {languages.map((lng) => (  
+                <Link key={lng} to={originalPath} language={lng} style={{ textDecoration: i18n.resolvedLanguage === lng ? 'underline' : 'none' }}>
+                  {lng}
+                </Link>
+            ))}  */}
           </SIdioma>
         </SNav>
-
         <SContenido>
           <SHeaderIzquierda>
             <SAnimacionHomeIzq>
@@ -74,8 +54,10 @@ const Header = ({ siteTitle }) => {
             </STextoInicio>
             <STextoServiciosHome>
               <p>
-                BRANDING &nbsp; | &nbsp; PRODUCCION AUDIOVISUAL&nbsp; |&nbsp;
+                <Trans i18nKey="services">
+                BRANDING &nbsp; | &nbsp; PRODUCCION AUDIOVISUAL&nbsp; | &nbsp;
                 DESARROLLO WEB
+                </Trans>
               </p>
             </STextoServiciosHome>
           </SInicioYServicios>
