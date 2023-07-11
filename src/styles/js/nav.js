@@ -92,20 +92,19 @@ export const SContenedorIdioma = styled.div`
   justify-content: flex-end;
   align-items: flex-end ;
   
-  p{
-  color: ${colors.white};
-  font-family: ${fonts.reciaB};
-  font-size: 25px;
-  padding: 0 2%;
-  letter-spacing: 1px;
-  transform: translateY(-10%);
-}
+  a, p {
+    margin: 1%;
+    font-family: ${fonts.reciaB};
+    color: ${colors.white};
+    font-size: 25px;
+    transform: translateY(-10%);
+  }
 
   ${above.medium`
     
   `}
   ${above.large`
-    display: none;
+
   `}
 `;
 

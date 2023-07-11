@@ -3,7 +3,7 @@ import { above } from './index'
 import { colors, fonts } from "../../utils/const"
 import { motion } from "framer-motion"
 
-export const SOverlay = styled(motion.div)`
+export const SContenedorIdioma = styled(motion.div)`
 
   display: flex;
   flex-direction: row;
@@ -13,8 +13,8 @@ export const SOverlay = styled(motion.div)`
   z-index: 11;
   background: ${colors.none};
   justify-content: right;
-  top: -55px;
-  right: -80px;
+  top: -100px;
+  right: -5px;
   
   ${above.large` 
     

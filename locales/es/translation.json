@@ -10,9 +10,13 @@
     "callFirstRow": "TRANSFORMA TU VISIÓN EN REALIDAD",
     "callSecRow": "CUENTANOS MAS SOBRE TU PROYECTO...",
     "contact": "¡CONTÁCTANOS AHORA!",
-    "footerText": "No se trata solo de dónde nace una idea, sino de hasta dónde podemos llevarla",
-    "home": "Inicio",
-    "proyectos": "Proyectos",
-    "nosotros": "Nosotros",
-    "exp":"EXPERIENCIA"
+    "No se trata solo de dónde nace una idea, sino de hasta dónde podemos llevarla": "No se trata solo de dónde nace una idea, sino de hasta dónde podemos llevarla",
+    "HOME": "INICIO",
+    "PROYECTOS": "PROYECTOS",
+    "NOSOTROS": "NOSOTROS",
+    "exp":"EXPERIENCIA",
+    "SERVICIOS": "SERVICIOS",
+    "BRANDING": "ENTIDAD DE MARCA",
+    "DESARROLLO WEB": "DESARROLLO WEB",
+    "CREACIÓN DE CONTENIDO": "CREACIÓN DE CONTENIDO"
 }

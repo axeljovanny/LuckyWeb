@@ -1,6 +1,7 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
 module.exports = {
   siteMetadata: {
     title: `Lucky Ducky Studio`,
@@ -37,10 +38,9 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`,
-        languages: [`es`, `en`, `fr`, `ar`],
+        languages: [`en`, `es`],
         defaultLanguage: `en`,
-        siteUrl: `http://localhost:8000/`,
-        //trailingSlash: 'always',
+        siteUrl: `https://luckyducky.studio`,
         i18nextOptions: {
           interpolation: {
             escapeValue: false

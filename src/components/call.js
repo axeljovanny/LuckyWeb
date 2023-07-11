@@ -1,9 +1,11 @@
 
 import React from "react"
 import { SCall, SCallButtom, SCallFrase } from "../styles/js/call";
-import { Trans} from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 
 const Call = ({ siteTit }) => {
+    const { t } = useTranslation();
+    
     return (
         <SCall>
             <SCallFrase>
