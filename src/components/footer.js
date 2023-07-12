@@ -8,7 +8,7 @@ import { Trans} from 'gatsby-plugin-react-i18next';
 
 
 const Footer = ({ siteTitle}) => {
-    
+    const currentYear = new Date().getFullYear();
     return (
         <SFooter>
             <SIzqFooter>
@@ -27,14 +27,14 @@ const Footer = ({ siteTitle}) => {
                     <p>"<Trans>FOOTER_FRASE</Trans>"</p>
                 </STextoFrase>
                 <STextoDH>
-                    <p>Ducky House</p>
+                    <p><Trans>FOOTER_HOUSE</Trans></p>
                 </STextoDH>
                 <STextoUbicacion>
-                    <p>M. Ávila Camacho 17, Mariano Balleza, 37800 Dolores Hidalgo C.I.N. Guanajuato, México.</p>
+                    <p><Trans>FOOTER_DIRECCION</Trans></p>
                 </STextoUbicacion>
                 <STextoContacto>
-                    <p>(+52) 418 111 9941</p>
-                    <p>hello@luckyducky.studio</p>
+                    <p><Trans>FOOTER_TEL</Trans></p>
+                    <p><Trans>FOOTER_MAIL</Trans></p>
                 </STextoContacto>
             </SContenedorCentral>
             <SDerFooter>
@@ -46,7 +46,7 @@ const Footer = ({ siteTitle}) => {
             </SDerFooter>
             <STextoCopy>
                 <STextoDerechosAutor>
-                <p>  Lucky Ducky Studio© 2023</p>
+                <p><Trans>FOOTER_C</Trans>&copy; {currentYear}</p>
                 </STextoDerechosAutor>
             </STextoCopy>
         </SFooter>

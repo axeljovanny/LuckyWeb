@@ -7,19 +7,52 @@
     "HEADER_DE": "OF",
     "HEADER_NUESTRA": "OUR",
     "HEADER_EXPERIENCIA":"EXPERIENCE",
+    
     "SERVICES": "BRANDING | AUDIOVISUAL PRODUCTION | WEB DEVELOPMENT",
+   
     "CALL_SUB_CTA": "TURN YOUR VISION INTO REALITY",
     "CALL_CTA": "TELL US MORE ABOUT YOUR PROJECT...",
     "CALL_CONTACT": "¡CONTACT US NOW!",
-    "FOOTER_FRASE": "It's not just a question of where an idea is born, but how far we can take it.",
+    
     "NAV_HOME": "HOME",
     "NAV_PROYECTOS": "PROJECTS",
     "NAV_NOSOTROS": "ABOUT US",
+    
     "SERVICIOS_TITTLE": "SERVICES",
     "SERVICIOS_BRANDING": "BRANDING",
     "SERVICIOS_WEB": "DESARROLLO WEB",
     "SERVICIOS_CONTENIDO": "CREACIÓN DE CONTENIDO",
     "SERVICIOS_BRANDING_DESC":"With your ideas we will help you to highlight your brand with a unique, professional identity that reflects the values and personality of your business.",
     "SERVICIOS_WEB_DESC":"We offer you creative and effective solutions to enhance your brand's presence in networks with written, visual and audiovisual content to bring the right message to your audience.",
-    "SERVICIOS_CONTENIDO_DESC":"We generate customized and professional solutions to take your online presence to the next level. We will take care of creating an effective and attractive online presence."
+    "SERVICIOS_CONTENIDO_DESC":"We generate customized and professional solutions to take your online presence to the next level. We will take care of creating an effective and attractive online presence.",
+    
+    "SERVICIOS_CONTENIDO_1":"- Content strategy",
+    "SERVICIOS_CONTENIDO_2":"- Audiovisual production",
+    "SERVICIOS_CONTENIDO_3":"- Video editing",
+    "SERVICIOS_CONTENIDO_4":"- Editing of clips for networks",
+    "SERVICIOS_CONTENIDO_5":"- Network management",
+    "SERVICIOS_CONTENIDO_6":"- SEO optimization in networks",
+    "SERVICIOS_CONTENIDO_7":"- Content production",
+
+
+    "SERVICIOS_WEB_1":"- Responsive website design",
+    "SERVICIOS_WEB_2":"- Website development",
+    "SERVICIOS_WEB_3":"- Online Shops",
+    "SERVICIOS_WEB_4":"- Consulting and advice",
+    "SERVICIOS_WEB_5":"- Maintenance and updates", 
+
+    "SERVICIOS_BRANDING_1":"- Logo creation",
+    "SERVICIOS_BRANDING_2":"- Branding strategy", 
+    "SERVICIOS_BRANDING_3":"- Branding strategy",
+    "SERVICIOS_BRANDING_4":"- Design of post for networks",
+    "SERVICIOS_BRANDING_5":"- Stationery and business card design",
+    "SERVICIOS_BRANDING_6":"- Brand style guide",
+    "SERVICIOS_BRANDING_7":"- Design of visual elements",
+
+    "FOOTER_FRASE": "It's not just a question of where an idea is born, but how far we can take it.",
+    "FOOTER_HOUSE":"Ducky House",
+    "FOOTER_DIRECCION":"Guanajuato, México.",
+    "FOOTER_TEL":"(+52) 418 111 9941",
+    "FOOTER_MAIL":"hello@luckyducky.studio",
+    "FOOTER_C":"Lucky Ducky Studio"
 }

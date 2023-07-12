@@ -12,7 +12,7 @@ import { useCycle } from "framer-motion"
 
 import {useI18next, Trans, Link} from 'gatsby-plugin-react-i18next';
 
-const Nav = ({ open, toggle }) => {
+const Nav = ({ open="closed", toggle }) => {
   const { languages, originalPath, i18n } = useI18next();
 
   return (

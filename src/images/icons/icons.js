@@ -121,6 +121,24 @@ const Plus = ({ stroke, className }) => (
     />
   </svg>
 );
+const Minus = ({ stroke, className }) => (
+  <svg 
+   className={className}
+    width="36"
+    height="36"
+    viewBox="0 0 36 36"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M3.01379 18.0015H33.0108"
+      stroke={ stroke }
+      stroke-width="5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
 
 export {
   FacebookIcon,
@@ -130,4 +148,5 @@ export {
   MessengerIcon,
   Trebol,
   Plus,
+  Minus,
 };

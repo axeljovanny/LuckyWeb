@@ -5,7 +5,7 @@ import { colors, fonts } from "../../utils/const"
 
 export const SContenedorInicial = styled.div`
 width: 100vw;
-height: 80vh; 
+height: auto; 
 background-color:${colors.white};    
 display: flex;
 justify-content:space-around;
@@ -69,7 +69,7 @@ ${above.medium`
   `}
 ${above.large`
 grid-template-columns: 30% 60% 10%;
-grid-template-rows: repeat(3, 1fr);
+grid-template-rows: repeat(3, auto);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 padding: 3% 0 0;
@@ -126,14 +126,22 @@ grid-area: 2 / 1 / 3 / 3;
 
 display: flex;
 justify-content:flex-start;
-align-items: center;
+align-items: flex-start;
 padding: 0 0 0 10%;
+flex-direction: column;
+
 
 h3{
   font-family: ${fonts.monttMedium};
   font-size: 1.1em;
   color: ${colors.black};
 
+}
+p{
+  font-family: ${fonts.monttMedium};
+  font-size: 1em;
+  color: ${colors.black};
+  margin: 5px;
 }
 
 ${above.medium`
@@ -145,8 +153,7 @@ grid-area: 1 / 2 / 2 / 3;
 border-top: solid 0.1em ${colors.black};
 display: flex;
 justify-content:flex-start;
-align-items: center;
-padding: 0 0 0 10%;
+padding: 5% 0 5% 10%;
 
 h3{
   font-family: ${fonts.monttMedium};
@@ -218,8 +225,10 @@ grid-area: 4 / 1 / 5 / 3;
 border-top: solid 0.1em ${colors.black};
 display: flex;
 justify-content:flex-start;
-align-items: center;
+align-items: flex-start;
 padding: 0 0 0 10%;
+flex-direction: column;
+
 
 h3{
   font-family: ${fonts.monttMedium};
@@ -227,7 +236,12 @@ h3{
   color: ${colors.black};
 
 }
-
+p{
+  font-family: ${fonts.monttMedium};
+  font-size: 1em;
+  color: ${colors.black};
+  margin: 5px;
+}
 
 
 ${above.medium`
@@ -235,6 +249,8 @@ ${above.medium`
   `}
 ${above.large`
 grid-area: 2 / 2 / 3 / 3;
+padding: 5% 0 5% 10%;
+
   `}
 `
 
@@ -282,6 +298,7 @@ ${above.medium`
   `}
 ${above.large`
 grid-area: 3 / 1 / 4 / 2;
+
   `}
 `
 
@@ -291,14 +308,21 @@ background-color:${colors.white};
 grid-area: 6 / 1 / 7 / 3;
 display: flex;
 justify-content:flex-start;
-align-items: center;
+align-items: flex-start;
 padding: 0 0 0 10%;
+flex-direction: column;
 
 h3{
   font-family: ${fonts.monttMedium};
   font-size: 1.1em;
   color: ${colors.black};
+}
 
+p{
+  font-family: ${fonts.monttMedium};
+  font-size: 1em;
+  color: ${colors.black};
+  margin: 5px;
 }
 
 
@@ -310,6 +334,8 @@ ${above.large`
 border-top: solid 0.1em ${colors.black};
 border-bottom: solid 0.1em ${colors.black};
 grid-area: 3 / 2 / 4 / 3;
+padding: 5% 0 5% 10%;
+
   `}
 `
 
@@ -334,4 +360,17 @@ ${above.large`
 grid-area: 3 / 3 / 4 / 4;
 
   `}
+`
+
+export const ShowBranding= styled.div`
+    display: ${props => (props.open ? "flex" : "none")};
+    flex-direction: column;
+`
+export const ShowContent= styled.div`
+    display: ${props => (props.open ? "flex" : "none")};
+    flex-direction: column;
+`
+export const ShowWeb= styled.div`
+    display: ${props => (props.open ? "flex" : "none")};
+    flex-direction: column;
 `
