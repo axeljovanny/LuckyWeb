@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { above } from './index'
+import { motion } from "framer-motion"
 import { colors, fonts, sizes } from "../../utils/const"
 
 
@@ -159,7 +160,7 @@ ${above.large`
   `}
 
 `
-export const SInicioYServicios = styled.div`
+export const SInicioYServicios = styled (motion.div)`
  /* Comentario en estilos */
   width: 100%;    // ancho de mi pagina  
   height: 80%;    // largo de mi pagina
@@ -231,7 +232,7 @@ ${above.large`
 `
 
 
-export const SAnimacionHomeIzq = styled.div`
+export const SAnimacionHomeIzq = styled(motion.div)`
  /* Comentario en estilos */
 
 width: 40%;    // ancho de mi pagina    
@@ -297,7 +298,7 @@ ${above.large`
   `}
 
 `
-export const SAnimacionHomeDer = styled.div`
+export const SAnimacionHomeDer = styled (motion.div)`
     width: 90%;    // ancho de mi pagina    
     height: 30%;    // largo de mi pagina
     background: none ; //color de fondo

@@ -17,6 +17,7 @@ import {
   ShowWeb,
 } from "../styles/js/servicios";
 import { } from "./imagesComponets";
+import { motion } from "framer-motion"
 import { Minus, Plus } from "../images/icons/icons";
 import "../styles/css/svg.css";
 import { colors } from "../utils/const";
@@ -30,57 +31,57 @@ const Call = ({ siteTit }) => {
   return (
     <SContenedorInicial>
       <SContenedorTitulo>
-        <h1><Trans>SERVICIOS_TITTLE</Trans></h1>
+        <motion.h1 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.8 }} viewport={{ once: true }}><Trans>SERVICIOS_TITTLE</Trans></motion.h1>
       </SContenedorTitulo>
       <SContenedorGrid>
         <SBranding>
-          <h2><Trans>SERVICIOS_BRANDING</Trans></h2>
+          <motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.8 }} viewport={{ once: true }}><Trans>SERVICIOS_BRANDING</Trans></motion.h2>
         </SBranding>
         <SBrandingTexto>
-          <h3>
+          <motion.h3 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.8 }} viewport={{ once: true }}>
             <Trans>SERVICIOS_BRANDING_DESC</Trans>
-          </h3>
+          </motion.h3>
           <ShowBranding open={brand}>
-            <p><Trans>SERVICIOS_BRANDING_1</Trans></p>
-            <p><Trans>SERVICIOS_BRANDING_2</Trans></p>
-            <p><Trans>SERVICIOS_BRANDING_3</Trans></p>
-            <p><Trans>SERVICIOS_BRANDING_4</Trans></p>
-            <p><Trans>SERVICIOS_BRANDING_5</Trans></p>
-            <p><Trans>SERVICIOS_BRANDING_6</Trans></p>
+            <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_BRANDING_1</Trans></motion.p>
+            <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_BRANDING_2</Trans></motion.p>
+            <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_BRANDING_3</Trans></motion.p>
+            <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_BRANDING_4</Trans></motion.p>
+            <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_BRANDING_5</Trans></motion.p>
+            <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_BRANDING_6</Trans></motion.p>
           </ShowBranding>
         </SBrandingTexto>
         <SBrandingMas onClick={() => toggleBrand(!brand)}>
           {brand ? (<Minus stroke={colors.black} className={"svgPlus"}/>) : (<Plus stroke={colors.black} className={"svgPlus"}/>)}
         </SBrandingMas>
         <SDesarrolloWeb>
-          <h2><Trans>SERVICIOS_WEB</Trans></h2>
+          <motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 2 }} viewport={{ once: true }}><Trans>SERVICIOS_WEB</Trans></motion.h2>
         </SDesarrolloWeb>
         <SDesarrolloTexto>
-          <h3><Trans>SERVICIOS_WEB_DESC</Trans></h3>
+          <motion.h3 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 2 }} viewport={{ once: true }}><Trans>SERVICIOS_WEB_DESC</Trans></motion.h3>
           <ShowWeb open={web}>
-          <p><Trans>SERVICIOS_WEB_1</Trans></p>
-          <p><Trans>SERVICIOS_WEB_2</Trans></p>
-          <p><Trans>SERVICIOS_WEB_3</Trans></p>
-          <p><Trans>SERVICIOS_WEB_4</Trans></p>
-          <p><Trans>SERVICIOS_WEB_5</Trans></p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_WEB_1</Trans></motion.p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_WEB_2</Trans></motion.p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_WEB_3</Trans></motion.p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_WEB_4</Trans></motion.p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_WEB_5</Trans></motion.p>
           </ShowWeb>
         </SDesarrolloTexto>
         <SDesarrolloMas onClick={() => toggleWeb(!web)}>
         {web ? (<Minus stroke={colors.black} className={"svgPlus"}/>) : (<Plus stroke={colors.black} className={"svgPlus"}/>)}
         </SDesarrolloMas>
         <SCreacionContenido>
-          <h2><Trans>SERVICIOS_CONTENIDO</Trans></h2>
+          <motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 2.5 }} viewport={{ once: true }}><Trans>SERVICIOS_CONTENIDO</Trans></motion.h2>
         </SCreacionContenido>
         <SCreaciontexto>
-          <h3><Trans>SERVICIOS_CONTENIDO_DESC</Trans></h3>
+          <motion.h3 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 2.5 }} viewport={{ once: true }}><Trans>SERVICIOS_CONTENIDO_DESC</Trans></motion.h3>
           <ShowContent open={content}>
-          <p><Trans>SERVICIOS_CONTENIDO_1</Trans></p>
-          <p><Trans>SERVICIOS_CONTENIDO_2</Trans></p>
-          <p><Trans>SERVICIOS_CONTENIDO_3</Trans></p>
-          <p><Trans>SERVICIOS_CONTENIDO_4</Trans></p>
-          <p><Trans>SERVICIOS_CONTENIDO_5</Trans></p>
-          <p><Trans>SERVICIOS_CONTENIDO_6</Trans></p>
-          <p><Trans>SERVICIOS_CONTENIDO_7</Trans></p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_CONTENIDO_1</Trans></motion.p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_CONTENIDO_2</Trans></motion.p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_CONTENIDO_3</Trans></motion.p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_CONTENIDO_4</Trans></motion.p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_CONTENIDO_5</Trans></motion.p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_CONTENIDO_6</Trans></motion.p>
+          <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}><Trans>SERVICIOS_CONTENIDO_7</Trans></motion.p>
           </ShowContent>
         </SCreaciontexto>
         <SCreacionMas onClick={() => toggleContent(!content)}>  
