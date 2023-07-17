@@ -73,7 +73,7 @@ ${above.large`
 
   `}
 `
-export const SCallButtom = styled.div`
+export const SCallButtom = styled.a`
 width: 90%;
 height: 10%; 
 background-color:none;  
@@ -83,13 +83,9 @@ align-items: center;
 border-radius: 10px;
 border: 1px solid ${colors.black};
 
-a {
-  color: ${colors.black};
-  font-family: ${fonts.montBlack};
-  font-size: 1em;
-  
-}
-
+color: ${colors.black};
+font-family: ${fonts.montBlack};
+font-size: 1em;
 
 ${above.medium`
     
