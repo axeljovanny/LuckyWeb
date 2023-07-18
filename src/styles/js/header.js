@@ -256,7 +256,7 @@ ${above.large`
   `}
 `
 
-export const SRedes = styled.div`
+export const SRedes = styled (motion.div)`
 display: none;  // se oculta
 
 ${above.large`

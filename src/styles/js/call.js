@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { above } from './index'
 import { colors, fonts } from "../../utils/const"
+import { motion } from "framer-motion";
 
 export const SCall = styled.div`
 width: 100%;
@@ -73,7 +74,7 @@ ${above.large`
 
   `}
 `
-export const SCallButtom = styled.div`
+export const SCallButtom = styled (motion.div)`
 width: 90%;
 height: 10%; 
 background-color:none;  

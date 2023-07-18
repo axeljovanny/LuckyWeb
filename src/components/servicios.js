@@ -17,7 +17,7 @@ import {
   ShowWeb,
 } from "../styles/js/servicios";
 import { } from "./imagesComponets";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { Minus, Plus } from "../images/icons/icons";
 import "../styles/css/svg.css";
 import { colors } from "../utils/const";
