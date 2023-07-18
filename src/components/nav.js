@@ -60,10 +60,11 @@ const Nav = ({ open="closed", toggle }) => {
   )
 }
 
-export const MenuToggle = ({ toggle, siteTitle }) => {
+export const MenuToggle = ({ toggle, siteTitle, isOpen }) => {
+  console.log("valor de open:", isOpen);
     return (
-    <OverButton onClick={toggle}>
-    <svg width="40" height="40" viewBox="0 0 23 23">
+    <OverButton isOpen={isOpen} onClick={toggle}>
+    <svg width="40" height="40" viewBox="0 0 21 22">
     <Path
       variants={{
         closed: { d: "M 2 2.5 L 20 2.5", stroke: colors.black },
@@ -138,7 +139,7 @@ export const IconNav = ({ siteTitle }) => {
       initial={false}
       animate={isOpen ? "open" : "closed"}
       ref={containerRef}>
-      <MenuToggle toggle={() => toggleOpen()} siteTitle={siteTitle} />
+      <MenuToggle toggle={() => toggleOpen()} siteTitle={siteTitle} isOpen={isOpen} />
       <Nav open={isOpen} toggle={() => toggleOpen()} />
     </Overlay>
   );

@@ -4,54 +4,47 @@ import { colors, fonts } from "../../utils/const"
 import { motion } from "framer-motion"
 
 export const SContenedorIdioma = styled(motion.div)`
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    position: absolute;
+    z-index: 11;
+    background: ${colors.none};
+    justify-content: right;
+    top: 60px;
+    right: 50px;
 
-  display: flex;
-  flex-direction: row;
-  height: 10%;
-  width: 100vw;
-  position: absolute;
-  z-index: 11;
-  background: ${colors.none};
-  justify-content: right;
-  top: -100px;
-  right: -5px;
-  
-  ${above.large` 
-    
-  `}
+    ${above.medium`
+        top: 60px;
+        right: 80px;
+    `}
+    ${above.large`
+        top: 60px;
+        right: 90px;
+    `}
 `;
 
 export const SIdioma = styled.div`
-    width: 50%;    
-    height: 100%;    
-    background: none;  
-    display: flex;  
-    justify-content:center;
-    align-items:center ;
-    flex-direction: row;
-    position: relative;
     font-family: ${fonts.reciaB};
-    font-size: 33px;
+    font-size: 23px;
 
     a {
-        background-color: none;
-        margin: 3%;
-        font-family: ${fonts.reciaB};
-        color: ${colors.black};
-        font-size: 25px;
+        color: ${colors.black};        
+        padding-left: 20%;
     }
 
-    ${above.large`
-        width: 15%;     
-        padding: 0;
-        justify-content: flex-start;
-        transform: translateY(-3%);
+    ${above.medium`
         font-size: 30px;
-    
+
         a{
-        margin: 3%;
-        font-size: 25px;
-        color: ${colors.black};
+            padding-left: 30%;
+        }
+    `}
+    ${above.large`
+        font-size: 30px;
+
+        a{
+            padding-left: 30%;
         }
     `}
 `;
