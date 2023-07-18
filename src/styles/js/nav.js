@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { above } from "./index";
 import { colors, fonts } from "../../utils/const";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 //TODO BLUREAR
 export const SBlur = styled.div`
-  /* Comentario en estilos */  
+  /* Comentario en estilos */
   height: 100%; /* largo de mi pagina */
   background: rgba(0, 0, 0, 0.65);
-  //-webkit-backdrop-filter: blur(5px);   
+  //-webkit-backdrop-filter: blur(5px);
   //backdrop-filter: blur(5px);
   display: none;
   justify-content: flex-end;
@@ -49,7 +49,7 @@ export const SContenedorNav = styled.div`
 
 export const SContenedorPrincipalNav = styled.div`
   /* Comentario en estilos */
-  width: 100%; 
+  width: 100%;
   height: 100%; /* largo de mi pagina */
   background: ${colors.black};
   overflow: hidden;
@@ -71,7 +71,9 @@ export const SContenedorCloseYLogo = styled.div`
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0 10% 0 0;
-  svg { display:none }
+  svg {
+    display: none;
+  }
 
   ${above.medium`
   svg { display:flex }
@@ -82,17 +84,17 @@ export const SContenedorCloseYLogo = styled.div`
   `}
 `;
 
-
 export const SContenedorIdioma = styled.div`
   /* Comentario en estilos */
   display: flex;
   width: 50%; /* ancho de mi pagina    */
   height: 100%; /* largo de mi pagina */
-  background:none;
+  background: none;
   justify-content: flex-end;
-  align-items: flex-end ;
-  
-  a, p {
+  align-items: flex-end;
+
+  a,
+  p {
     margin: 1%;
     font-family: ${fonts.reciaB};
     color: ${colors.white};
@@ -108,9 +110,6 @@ export const SContenedorIdioma = styled.div`
   `}
 `;
 
-
-
-
 export const SContenedorContenido = styled.div`
   /* Comentario en estilos */
   width: 100%; /* ancho de mi pagina    */
@@ -121,8 +120,8 @@ export const SContenedorContenido = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  
-  .menuDisabled{
+
+  .menuDisabled {
     color: #525151;
     text-decoration: line-through;
   }
@@ -187,7 +186,6 @@ export const SRedesNav = styled.div`
 
   align-items: center;
   flex-direction: row;
-  
 
   ${above.medium`
     
@@ -206,13 +204,12 @@ export const SRedesNav = styled.div`
 `;
 export const SDerechosAutor = styled.div`
   /* Comentario en estilos */
-     width: 100%;   
-      height: auto;
+  width: 100%;
+  height: auto;
   background: none;
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   p {
     color: ${colors.white};
@@ -243,23 +240,23 @@ export const SDerechosAutor = styled.div`
 export const OverButton = styled(motion.button)`
   position: fixed;
   z-index: 13;
-  background: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 70px;
-  left: 40px ;
+  top: 50px;
+  left: 30px;
+  background: ${(props) => (props.isOpen ? "#706d68a3" : "#bbb3a685")};
+  padding: 10px;
+  border-radius: 50%;
 
   ${above.large`
     top: 55px;
     left: 80px ;
 
   `}
-
 `;
 
 export const Overlay = styled(motion.div)`
-
   display: flex;
   flex-direction: column;
   height: 10%;
@@ -268,8 +265,6 @@ export const Overlay = styled(motion.div)`
   top: 0;
   z-index: 12;
   background: ${colors.none};
-
-
 
   ${above.large` 
     
@@ -280,7 +275,7 @@ export const Over = styled(motion.div)`
   flex-direction: column;
   width: 100vw;
   position: fixed;
-  top:0;
+  top: 0;
 
   ${above.large`
 
