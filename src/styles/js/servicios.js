@@ -58,7 +58,7 @@ height: 80%;
 background-color: none;
 display: grid;
 grid-template-columns:70% 20%;
-grid-template-rows: repeat(6, 15%);
+grid-template-rows: repeat(6, auto);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 

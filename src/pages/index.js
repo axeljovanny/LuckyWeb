@@ -10,23 +10,23 @@ import { IconNav } from "../components/nav";
 import { Idiomas } from "../components/idioma";
 
 const IndexPage = () => {
-  
+
   return (
     <>
       <Layout>
-        <IconNav/>
-        <Idiomas/>
         <Header id="header" siteTitle="Home" />
         <Portafolio id="portafolio" siteTitle="Home" />
         <Servicios id="servicios" siteTitle="Home" />
-        <Call id="call" siteTitle="Home" />   
+        <Call id="call" siteTitle="Home" />
         <Footer/>
+        <Idiomas/>
+        <IconNav/>
       </Layout>   
     </>
   )
 }
 
-export default IndexPage
+export default IndexPage;
 
 export const Head = () => <title>Home Page</title>
 

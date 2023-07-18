@@ -1,7 +1,8 @@
+import { useMediaQuery } from 'react-responsive';
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import "../styles/css/rediseño.css"
-
+import { useStaticQuery, graphql } from "gatsby";
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 
 //TODO: Poner bien las descripciones de los ALT en cada imagen
 
@@ -62,26 +63,27 @@ export function IStickerLap() {
 
 }
 
-
-
-export function IStickerCorazon() {
-    return <StaticImage
-        src="../images/Stickers/sticker_corazon.png"
-        alt="Fondo de nuestro header"
-        loading="eager"
-        placeholder="blurred"
-        layout="fullWidth"
-        quality='90'
-        formats={['auto', 'webp', 'avif']}
-        className="imgCorazon"
-        style={{
-            position: "absolute"
-        }}
-    />
+export function IStickerCorazon(isMobile) {
+    if (isMobile) {
+        return (
+            <StaticImage
+                src="../images/Stickers/sticker_corazon.png"
+                alt="Fondo de nuestro header"
+                loading="eager"
+                placeholder="blurred"
+                layout='constrained'
+                quality='70'
+                formats={['auto', 'webp', 'avif']}
+                className="imgCorazon"
+                style={{
+                    position: "absolute"
+                }}
+            />
+        );
+    }
+    return null;
 
 }
-
-
 
 export function ILogoTrebol() {
     return <StaticImage
@@ -116,23 +118,25 @@ export function ILogoTrebolNav() {
 }
 
 
-export function IGrafiiti() {
-    return <StaticImage
-        src="../images/Stickers/Grafiiti 1.png"
-        alt="Fondo de nuestro header"
-        loading="eager"
-        placeholder="blurred"
-        layout="fullWidth"
-        quality='90'
-        formats={['auto', 'webp', 'avif']}
-        style={{
-            position: "absolute",
-            top: "-20%",
-            left: "5%",
-            width: "90%",
-            height: "110%"
-        }}
-    />
+export function IGrafiiti(isMobile) {
+
+    return (
+        <StaticImage
+            src="../images/Stickers/Grafiiti 1.png"
+            alt="Fondo de nuestro header"
+            loading="eager"
+            placeholder="blurred"
+            quality={70}
+            formats={['auto', 'webp', 'avif']}
+            width={isMobile ? 220 : 500}
+            height={isMobile ? 60 : 60}
+            style={{
+                position: "absolute",
+                bottom: "-20%"
+            }}
+            objectFit="contain"
+        />
+    );
 
 }
 

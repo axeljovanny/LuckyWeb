@@ -6,8 +6,10 @@ import { motion } from "framer-motion"
 import { colors } from "../utils/const";
 import "../styles/css/svg.css";
 import { Trans } from 'gatsby-plugin-react-i18next';
+import { useMediaQuery } from "react-responsive";
 
 const Header = ({ siteTitle }) => {
+  const isMobile = useMediaQuery ({ maxWidth: 767 }); 
 
   return (
     <>
@@ -39,10 +41,10 @@ const Header = ({ siteTitle }) => {
             </motion.div>
             <STextoInicio>
               <motion.h1 initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.9, ease: "easeInOut", type: "spring", delay: .3 }}>
-                <span class="Es web"> <Trans>HEADER_LA</Trans><br /> </span>
-                <span class="Es movil"> <Trans>HEADER_LA</Trans> </span>
-                <span> <Trans>HEADER_CREATIVIDAD</Trans> </span>  <span class="Es"><Trans>HEADER_ES</Trans></span>  <span class="Es"><Trans>HEADER_UN</Trans></span> <span><Trans>HEADER_REFLEJO</Trans></span> <span class="Es"><Trans>HEADER_DE</Trans></span> <span><Trans>HEADER_NUESTRA</Trans></span><span style={{ position: "relative", display: "inline-block" }}>
-                  <IGrafiiti />
+                <span className="Es web"> <Trans>HEADER_LA</Trans><br /> </span>
+                <span className="Es movil"> <Trans>HEADER_LA</Trans> </span>
+                <span> <Trans>HEADER_CREATIVIDAD</Trans> </span>  <span className="Es"><Trans>HEADER_ES</Trans></span>  <span className="Es"><Trans>HEADER_UN</Trans></span> <span><Trans>HEADER_REFLEJO</Trans></span> <span className="Es"><Trans>HEADER_DE</Trans></span> <span><Trans>HEADER_NUESTRA</Trans></span><span style={{ position: "relative", display: "inline-block" }}>
+                  <IGrafiiti isMobile={isMobile} />
                   <Trans>HEADER_EXPERIENCIA</Trans>
                 </span>
                 {" "}
@@ -56,7 +58,7 @@ const Header = ({ siteTitle }) => {
           </SInicioYServicios>
           <SHeaderDerecha>
             <SAnimacionHomeDer initial={{ opacity: 0, y: 30, x: 30 }} animate={{ opacity: 1, y: 0, x: 0 }} transition={{ duration: 1.9, ease: "easeInOut", type: "spring" }}>
-              <IStickerCorazon />
+              <IStickerCorazon isMobile={isMobile} />
             </SAnimacionHomeDer>
           </SHeaderDerecha>
         </SContenido>
