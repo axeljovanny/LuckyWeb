@@ -59,17 +59,7 @@
     object-fit: cover;
   }
 
-  .imgGrafiiti{
-    width: 110%;
-    height: auto;
-    position: absolute;
-    top:0%;
-    right: 0%;
-  }
-  .imgGrafiiti img {
-    object-fit: cover;
-
-  }
+  
 
   /* imagenes del componente nav movil*/
 

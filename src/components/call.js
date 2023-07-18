@@ -4,7 +4,7 @@ import { SCall, SCallButtom, SCallFrase } from "../styles/js/call";
 import { Trans} from 'gatsby-plugin-react-i18next';
 import { motion } from "framer-motion";
 
-const Call = ({ siteTit }) => {
+const Call = ({ siteTitle }) => {
     
     return (
         <SCall>

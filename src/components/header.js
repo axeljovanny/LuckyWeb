@@ -35,29 +35,32 @@ const Header = ({ siteTitle }) => {
 
           <SInicioYServicios initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.9, ease: "easeInOut", type: "spring"}} >
             <motion.div >
-            <IStickerLap />
+              <IStickerLap />
             </motion.div>
             <STextoInicio>
               <motion.h1 initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.9, ease: "easeInOut", type: "spring", delay: .3 }}>
                 <span class="Es web"> <Trans>HEADER_LA</Trans><br /> </span>
                 <span class="Es movil"> <Trans>HEADER_LA</Trans> </span>
-                <span> <Trans>HEADER_CREATIVIDAD</Trans> </span>  <span class="Es"><Trans>HEADER_ES</Trans></span>  <span class="Es"><Trans>HEADER_UN</Trans></span> <span><Trans>HEADER_REFLEJO</Trans></span> <span class="Es"><Trans>HEADER_DE</Trans></span> <span><Trans>HEADER_NUESTRA</Trans></span> <span><Trans>HEADER_EXPERIENCIA</Trans></span>{" "}
+                <span> <Trans>HEADER_CREATIVIDAD</Trans> </span>  <span class="Es"><Trans>HEADER_ES</Trans></span>  <span class="Es"><Trans>HEADER_UN</Trans></span> <span><Trans>HEADER_REFLEJO</Trans></span> <span class="Es"><Trans>HEADER_DE</Trans></span> <span><Trans>HEADER_NUESTRA</Trans></span><span style={{ position: "relative", display: "inline-block" }}>
+                  <IGrafiiti />
+                  <Trans>HEADER_EXPERIENCIA</Trans>
+                </span>
+                {" "}
               </motion.h1>
             </STextoInicio>
             <STextoServiciosHome>
-              <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.9, ease: "easeInOut", type: "spring", delay: 1.3}}>
+              <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.9, ease: "easeInOut", type: "spring", delay: 1.3 }}>
                 <Trans i18nKey="SERVICES" />
               </motion.p>
             </STextoServiciosHome>
           </SInicioYServicios>
           <SHeaderDerecha>
-            <SAnimacionHomeDer initial={{ opacity: 0, y: 30, x: 30 }} animate={{ opacity: 1, y: 0 , x: 0}} transition={{ duration: 1.9, ease: "easeInOut", type: "spring" }}>
+            <SAnimacionHomeDer initial={{ opacity: 0, y: 30, x: 30 }} animate={{ opacity: 1, y: 0, x: 0 }} transition={{ duration: 1.9, ease: "easeInOut", type: "spring" }}>
               <IStickerCorazon />
             </SAnimacionHomeDer>
           </SHeaderDerecha>
         </SContenido>
       </SHeader>
-
     </>
   );
 };
