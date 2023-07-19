@@ -1,29 +1,30 @@
-import { css, createGlobalStyle } from "styled-components"
+import { css, createGlobalStyle } from "styled-components";
+import { colors } from "../../utils/const";
 
 export const size = {
   small: 400,
   medium: 480,
   large: 1140,
   xlarge: 1400,
-}
+};
 
 export const above = Object.keys(size).reduce((acc, label) => {
   acc[label] = (...args) => css`
     @media (min-width: ${size[label]}px) {
       ${css(...args)}
     }
-  `
-  return acc
-}, {})
+  `;
+  return acc;
+}, {});
 
 export const aboveMax = Object.keys(size).reduce((acc, label) => {
   acc[label] = (...args) => css`
     @media (max-width: ${size[label]}px) {
       ${css(...args)}
     }
-  `
-  return acc
-}, {})
+  `;
+  return acc;
+}, {});
 
 export const GlobalStyles = createGlobalStyle`
 body {
@@ -32,6 +33,7 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
+  background-color: ${colors.white};
 }
 a {
   text-decoration: none;
