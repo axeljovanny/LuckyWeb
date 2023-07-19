@@ -1,5 +1,10 @@
 import React from "react";
-import { SCall, SCallButtom, SCallFrase } from "../styles/js/call";
+import {
+  SCall,
+  SCallButtom,
+  SCallFrase,
+  STextGuarantee,
+} from "../styles/js/call";
 import { Trans } from "gatsby-plugin-react-i18next";
 import { motion } from "framer-motion";
 
@@ -39,6 +44,11 @@ const Call = ({ siteTitle }) => {
           <Trans i18nKey="CALL_CONTACT" />
         </motion.a>
       </SCallButtom>
+      <STextGuarantee>
+        <span>
+          <Trans i18nKey="CALL_GUARANTEE"></Trans>
+        </span>
+      </STextGuarantee>
     </SCall>
   );
 };
