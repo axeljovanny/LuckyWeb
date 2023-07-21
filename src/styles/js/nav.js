@@ -246,6 +246,7 @@ export const OverButton = styled(motion.button)`
   top: 50px;
   left: 30px;
   background: ${(props) => (props.isOpen ? "#706d68a3" : "#bbb3a685")};
+  backdrop-filter: blur(5px);
   padding: 10px;
   border-radius: 50%;
 
@@ -259,7 +260,7 @@ export const OverButton = styled(motion.button)`
 export const Overlay = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  height: 10%;
+  height: auto;
   width: 100vw;
   position: fixed;
   top: 0;

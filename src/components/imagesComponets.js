@@ -28,18 +28,16 @@ export function IFondoHeader() {
 
 
 export function IStickerBorrego() {
+    
     return <StaticImage
         src="../images/Stickers/sticker_borrego.png"
         alt="Fondo de nuestro header"
         loading="eager"
         placeholder="blurred"
-        layout="fullWidth"
-        quality='80'
+        quality='90'
         formats={['auto', 'webp', 'avif']}
-        className="imgBorrego"
-        style={{
-            position: "absolute"
-        }}
+        className='imgBorrego'
+
     />
 
 }
@@ -51,38 +49,26 @@ export function IStickerLap() {
         alt="Fondo de nuestro header"
         loading="eager"
         placeholder="blurred"
-        layout="fullWidth"
         quality='90'
         formats={['auto', 'webp', 'avif']}
-        className="imgLap"
-        style={{
-            position: "absolute"
-        }}
-
+        className='imgLap'
     />
 
 }
 
 export function IStickerCorazon(isMobile) {
-    if (isMobile) {
         return (
             <StaticImage
                 src="../images/Stickers/sticker_corazon.png"
                 alt="Fondo de nuestro header"
                 loading="eager"
                 placeholder="blurred"
-                layout='constrained'
                 quality='70'
+                layout='constrained'
                 formats={['auto', 'webp', 'avif']}
-                className="imgCorazon"
-                style={{
-                    position: "absolute"
-                }}
+                className='imgCorazon'
             />
         );
-    }
-    return null;
-
 }
 
 export function ILogoTrebol() {
@@ -126,15 +112,9 @@ export function IGrafiiti(isMobile) {
             alt="Fondo de nuestro header"
             loading="eager"
             placeholder="blurred"
-            quality={70}
+            quality={80}
             formats={['auto', 'webp', 'avif']}
-            width={isMobile ? 220 : 500}
-            height={isMobile ? 60 : 60}
-            style={{
-                position: "absolute",
-                bottom: "-20%"
-            }}
-            objectFit="contain"
+            className='imgGraf'
         />
     );
 

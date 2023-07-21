@@ -27,7 +27,7 @@ export const SHeader = styled.div`
   display: flex; /* utilizar las funciones de flex */
   justify-content: center; /* centrar contenido */
   align-items: center; /* alinear el contenido */
-  flex-flow: row wrap; /* utilizar filas y columnas y saltar de linea si no cabe */
+  flex-flow: column wrap; /* utilizar filas y columnas y saltar de linea si no cabe */
   overflow: hidden;
 
   @media (max-width: ${above.large}px) {
@@ -40,17 +40,15 @@ export const SHeader = styled.div`
 
 export const SNav = styled.div`
   /* Comentario en estilos */
+  display: none; /* utilizar las funciones de flex */
 
-  width: 100%; /* ancho de mi pagina */
-  height: 20%; /* largo de mi pagina */
-  display: flex; /* utilizar las funciones de flex */
-  justify-content: flex-end;
-  align-items: center;
-
-  @media (max-width: ${above.large}px) {
-    /* Estilos para dispositivos móviles en modo paisaje */
-    justify-content: center;
-  }
+  ${above.large`
+    display: flex; /* utilizar las funciones de flex */
+    width: 100%; /* ancho de mi pagina */
+    height: 20%; /* largo de mi pagina */
+    align-items: center;
+    justify-content: center;`}
+ 
 `;
 
 export const SLogo = styled.div`
@@ -64,6 +62,18 @@ export const SLogo = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row;
+  `}
+`;
+
+export const SStickers = styled.div`
+   position:absolute;
+   top: 0;
+   z-index: 9;
+   width: 100vw;
+   height: 100vh;
+
+  ${above.large`
+    background: none;
   `}
 `;
 
@@ -132,26 +142,26 @@ export const SNavButton = styled.div`
 
 export const SContenido = styled.div`
   width: 100%; /* ancho de mi pagina */
-  height: 80%; /* largo de mi pagina */
   display: flex; /* utilizar las funciones de flex: ; */
   flex-flow: column-reverse wrap;
+  background: none; /* color de fondo */
+
 
   ${above.large`
-    background: none; /* color de fondo */
+    height: 80%; /* largo de mi pagina */
     flex-flow: column wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
   `}
 `;
 
 export const SInicioYServicios = styled(motion.div)`
   /* Comentario en estilos */
   width: 100%; /* ancho de mi pagina */
-  height: 80%; /* largo de mi pagina */
+  height: auto; /* largo de mi pagina */
   background: none; /* color de fondo */
   display: flex; /* utilizar las funciones de flex: ; */
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-flow: column nowrap;
   align-items: center;
 
   ${above.large`
@@ -162,21 +172,21 @@ export const SInicioYServicios = styled(motion.div)`
 `;
 
 export const STextoServiciosHome = styled.div`
-  width: 100%; /* an:cho de mi pagina */
-  height: 25%; /* largo de mi pagina */
+  width: 70%; /* an:cho de mi pagina */
+  height: auto; /* largo de mi pagina */
   background: none; /* color de fondo */
   display: flex; /* utilizar las funciones de flex */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 25%;
+  text-align: center;
 
   p {
     color: ${colors.black};
     font-family: ${fonts.montExtraBold};
     font-size: 10px;
-    word-spacing: 5px;
+    word-spacing: 1px;
   }
 
   ${above.large`
@@ -186,7 +196,9 @@ export const STextoServiciosHome = styled.div`
     bottom: 0;
 
     p {
-      font-size: 13px;
+      font-size: 13px;    
+      word-spacing: 5px;
+
     }
   `}
 `;
@@ -194,27 +206,24 @@ export const STextoServiciosHome = styled.div`
 /*+++ INICIA SECCION HEADER IZQUIERDA+++*/
 
 export const SHeaderIzquierda = styled.div`
-  /* Comentario en estilos */
-  width: 100%; /* ancho de mi pagina */
-  height: 20%; /* largo de mi pagina */
-  background: none; /* color de fondo */
-  display: flex; /* utilizar las funciones de flex */
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
+  display: none; /* utilizar las funciones de flex */
 
   ${above.large`
     width: 15%; /* ancho de mi pagina */
     height: 100%;
-    justify-content: center;
+    background: none; /* color de fondo */
+    display: flex; /* utilizar las funciones de flex */
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-end;
+
   `}
 `;
 
 export const SAnimacionHomeIzq = styled(motion.div)`
   /* Comentario en estilos */
-  width: 40%; /* ancho de mi pagina */
-  height: 100%; /* largo de mi pagina */
+ 
   background: none; /* utilizar las funciones de flex */
   justify-content: center;
   align-items: center;
@@ -226,8 +235,7 @@ export const SAnimacionHomeIzq = styled(motion.div)`
   transform: translateY(-10%);
 
   ${above.large`
-    width: 90%; /* ancho de mi pagina */
-    height: 40%;
+   
     position: static;
     transform: scale(1.3);
   `}
@@ -244,6 +252,8 @@ display: none;  // se oculta
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    padding-left: 5em;
+
     a {
       height: width;
       margin: 0;
@@ -255,10 +265,10 @@ display: none;  // se oculta
 /*+++ INICIA SECCION HEADER DERECHA+++*/
 
 export const SHeaderDerecha = styled.div`
-  position: relative;
   display: none; /* utilizar las funciones de flex */
 
   ${above.large`
+    position: relative;
     width: 15%; /* ancho de mi pagina */
     height: 100%; /* largo de mi pagina */
     background: none; /* color de fondo */
@@ -295,15 +305,11 @@ export const SAnimacionHomeDer = styled(motion.div)`
 export const STextoInicio = styled.div`
   /* Comentario en estilos */
   width: 100%; /* ancho de mi pagina */
-  height: 75%; /* largo de mi pagina */
+  height: auto; /* largo de mi pagina */
   background-color: none;
-  display: flex; /* utilizar las funciones de flex */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   position: relative;
-  padding: 15% 10%;
+  padding: 0 10%;
   color: ${colors.black};
 
   h1 {
@@ -313,9 +319,8 @@ export const STextoInicio = styled.div`
     text-align: center;
     line-height: 1.6em;
     letter-spacing: 1px;
-    padding: 0 10%;
+    padding: 20% 10% 0 10%;
   }
-
   h1 > span {
     font-size: 2em;
     background: none;
@@ -326,7 +331,6 @@ export const STextoInicio = styled.div`
     font-size: 1.3em;
     vertical-align: super;
   }
-
   .web {
     display: none;
   }
@@ -335,7 +339,7 @@ export const STextoInicio = styled.div`
   }
 
   ${above.large`
-    width: 100%;
+    width: 80%;
     height: 80%;
     background: none;
     padding: 0 18% 0;
@@ -358,14 +362,19 @@ export const STextoInicio = styled.div`
   `}
 
   ${above.xlarge`
+    width: 50%;
     height: 80%;
-    background-color: none;
     padding: 0 20% 0;
 
     h1 {
       letter-spacing: 5px;
       font-size: 4em;
       padding: 0;
+      line-height: 1.2em;
+
+    }
+    .exp{
+      padding-top: 10px;
     }
   `}
 `;

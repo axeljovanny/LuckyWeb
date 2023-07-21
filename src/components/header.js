@@ -12,6 +12,7 @@ import {
   SNav,
   SNavButton,
   SRedes,
+  SStickers,
   STextoInicio,
   STextoServiciosHome,
 } from "../styles/js/header";
@@ -34,29 +35,36 @@ import "../styles/css/svg.css";
 import { Trans } from 'gatsby-plugin-react-i18next';
 import { useMediaQuery } from "react-responsive";
 
+const Stickers = (isMobile) => {
+  return (
+    
+    <SStickers>
+      
+        <IStickerBorrego />
+        <IStickerLap />
+        <IStickerCorazon />
+
+    </SStickers>
+  )
+}
+
 const Header = ({ siteTitle }) => {
-  const isMobile = useMediaQuery ({ maxWidth: 767 }); 
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <>
+    <> 
+      <Stickers isMobile={isMobile}/>
       <SHeader>
-        <IFondoHeader />
+        <IFondoHeader /> 
         <SNav>
           <SNavButton></SNavButton>
           <SLogo>
-            <ILogoTrebol />
+            <ILogoTrebol /> 
           </SLogo>
-          <SIdioma />
+          <SIdioma /> 
         </SNav>
         <SContenido>
           <SHeaderIzquierda>
-            <SAnimacionHomeIzq
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 4, ease: "easeInOut", type: "spring" }}
-            >
-              <IStickerBorrego />
-            </SAnimacionHomeIzq>
             <SRedes>
               <motion.a
                 initial={{ opacity: 0, x: -15 }}
@@ -109,20 +117,16 @@ const Header = ({ siteTitle }) => {
               </motion.a>
             </SRedes>
           </SHeaderIzquierda>
-
           <SInicioYServicios
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.9, ease: "easeInOut", type: "spring" }}
           >
-            <motion.div>
-              <IStickerLap />
-            </motion.div>
             <STextoInicio>
               <motion.h1 initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.9, ease: "easeInOut", type: "spring", delay: .3 }}>
                 <span className="Es web"> <Trans>HEADER_LA</Trans><br /> </span>
                 <span className="Es movil"> <Trans>HEADER_LA</Trans> </span>
-                <span> <Trans>HEADER_CREATIVIDAD</Trans> </span>  <span className="Es"><Trans>HEADER_ES</Trans></span>  <span className="Es"><Trans>HEADER_UN</Trans></span> <span><Trans>HEADER_REFLEJO</Trans></span> <span className="Es"><Trans>HEADER_DE</Trans></span> <span><Trans>HEADER_NUESTRA</Trans></span><span style={{ position: "relative", display: "inline-block" }}>
+                <span> <Trans>HEADER_CREATIVIDAD</Trans> </span>  <span className="Es"><Trans>HEADER_ES</Trans></span>  <span className="Es"><Trans>HEADER_UN</Trans></span> <span><Trans>HEADER_REFLEJO</Trans></span> <span className="Es"><Trans>HEADER_DE</Trans></span> <span><Trans>HEADER_NUESTRA</Trans></span><span className="exp" style={{ position: "relative", display: "inline-block" }}>
                   <IGrafiiti isMobile={isMobile} />
                   <Trans>HEADER_EXPERIENCIA</Trans>
                 </span>{" "}
@@ -144,13 +148,6 @@ const Header = ({ siteTitle }) => {
             </STextoServiciosHome>
           </SInicioYServicios>
           <SHeaderDerecha>
-            <SAnimacionHomeDer
-              initial={{ opacity: 0, y: 30, x: 30 }}
-              animate={{ opacity: 1, y: 0, x: 0 }}
-              transition={{ duration: 1.9, ease: "easeInOut", type: "spring" }}
-            >
-              <IStickerCorazon />
-            </SAnimacionHomeDer>
           </SHeaderDerecha>
         </SContenido>
       </SHeader>

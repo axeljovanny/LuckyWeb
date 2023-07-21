@@ -114,7 +114,7 @@ export const MenuToggle = ({ toggle, siteTitle, isOpen }) => {
   console.log("valor de open:", isOpen);
     return (
     <OverButton isOpen={isOpen} onClick={toggle}>
-    <svg width="40" height="40" viewBox="0 0 21 22">
+    <svg width="30" height="30" viewBox="-2 -2 25 25">
     <Path
       variants={{
         closed: { d: "M 2 2.5 L 20 2.5", stroke: colors.black },

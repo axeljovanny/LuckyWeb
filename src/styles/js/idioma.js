@@ -4,47 +4,34 @@ import { colors, fonts } from "../../utils/const"
 import { motion } from "framer-motion"
 
 export const SContenedorIdioma = styled(motion.div)`
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    position: absolute;
-    z-index: 11;
-    background: ${colors.none};
-    justify-content: right;
-    top: 60px;
-    right: 50px;
+    display: none;
 
     ${above.medium`
-        top: 60px;
-        right: 80px;
-    `}
-    ${above.large`
-        top: 60px;
-        right: 90px;
-    `}
-`;
+        display: flex;
+        flex-direction: row;
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        right: 0px;
+        font-family: ${fonts.reciaB};
+        font-size: 23px;
 
-export const SIdioma = styled.div`
-    font-family: ${fonts.reciaB};
-    font-size: 23px;
 
+ 
     a {
-        color: ${colors.black};        
-        padding-left: 20%;
+        color: ${colors.black};   
+        padding: 10px;     
+
+
     }
-
-    ${above.medium`
-        font-size: 30px;
-
-        a{
-            padding-left: 30%;
-        }
     `}
     ${above.large`
+        top: 0px;
+        right: 0px;
         font-size: 30px;
-
-        a{
-            padding-left: 30%;
-        }
     `}
 `;
