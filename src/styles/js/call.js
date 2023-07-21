@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { above } from './index'
-import { colors, fonts } from "../../utils/const"
+import styled from "styled-components";
+import { above } from "./index";
+import { colors, fonts } from "../../utils/const";
 import { motion } from "framer-motion";
 
 export const SCall = styled.div`
@@ -57,28 +57,56 @@ export const SCallFrase = styled.div`
 `;
 
 export const SCallButtom = styled.div`
-  width: 90%;
-  height: auto;
-  background-color: none;
-  display: flex;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.5px;
+  background-color: #000;
+  border-radius: 8px;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  border: 1px solid ${colors.black};
-  /* margin-top: 5%; */
+  padding: 24px 30px;
+  display: flex;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 5%;
 
   a {
-    color: ${colors.black};
+    color: ${colors.white};
     font-family: ${fonts.montBlack};
     font-size: 1em;
   }
 
   ${above.medium`
-    width: 50%;
+    padding-left: 60px;
+    padding-right: 60px;    
+    margin-top: 1%;
+    
   `}
   ${above.large`
-    width: 30%;
-    height: 8%;
-    // margin-top: 0%; 
+    padding-left: 60px;
+    padding-right: 60px;    
+    margin-top: 1.5%;
+  `}
+`;
+
+export const STextGuarantee = styled.div`
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: ${fonts.handOfSean};
+  color: ${colors.black};
+  font-size: 0.8em;
+  margin-top: 8%;
+
+  ${above.medium`
+  
+  `}
+  ${above.large`
+    margin-top: 2%;
+    font-size: 1em;
   `}
 `;
