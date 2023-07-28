@@ -37,6 +37,9 @@ export function IStickerBorrego() {
         quality='90'
         formats={['auto', 'webp', 'avif']}
         className='imgBorrego'
+        style={{
+            position: "absolute"
+        }}
 
     />
 
@@ -52,6 +55,9 @@ export function IStickerLap() {
         quality='90'
         formats={['auto', 'webp', 'avif']}
         className='imgLap'
+        style={{
+            position: "absolute"
+        }}
     />
 
 }
@@ -67,6 +73,9 @@ export function IStickerCorazon(isMobile) {
                 layout='constrained'
                 formats={['auto', 'webp', 'avif']}
                 className='imgCorazon'
+                style={{
+                    position: "absolute"
+                }}
             />
         );
 }
@@ -115,6 +124,9 @@ export function IGrafiiti(isMobile) {
             quality={80}
             formats={['auto', 'webp', 'avif']}
             className='imgGraf'
+            style={{
+                position: "absolute"
+            }}
         />
     );
 
