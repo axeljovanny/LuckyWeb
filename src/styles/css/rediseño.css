@@ -29,10 +29,7 @@
 
 
   .imgCorazon  {
-   display:none
-  }
-  .imgCorazon img {
-    object-fit: cover;
+   display:none;
   }
   
   .imgMenu  {

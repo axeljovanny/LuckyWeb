@@ -1,8 +1,6 @@
-import { useMediaQuery } from 'react-responsive';
 import React from "react"
 import "../styles/css/rediseño.css"
-import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 //TODO: Poner bien las descripciones de los ALT en cada imagen
 
@@ -70,7 +68,6 @@ export function IStickerCorazon(isMobile) {
                 loading="eager"
                 placeholder="blurred"
                 quality='70'
-                layout='constrained'
                 formats={['auto', 'webp', 'avif']}
                 className='imgCorazon'
                 style={{
