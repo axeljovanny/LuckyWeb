@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { motion, useCycle } from "framer-motion";
 
 import { colors } from "../utils/const";
@@ -45,16 +45,16 @@ const Nav = ({ open = "closed", toggle }) => {
             <Link to="/" onClick={toggle}>
               <h1><Trans>NAV_HOME</Trans></h1>
             </Link>
-            <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank">
+            <a href="behance://profile/LuckyDuckyStudio" rel="noreferrer" target="_blank"  aria-label="Link al Perfil de Behance">
               <h1><Trans>NAV_PROYECTOS</Trans></h1>
             </a>
             <h1 className="menuDisabled"><Trans>NAV_NOSOTROS</Trans></h1>
           </SContenedorContenido>
           <SContenedorRedesYSticker>
             <SRedesNav>
-              <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.white} className={"svgNav"} /> </a>
-              <a href="https://www.facebook.com/luckyducky.studio" rel="noreferrer" target="_blank"><FacebookIcon fill={colors.white} className={"svgNav"} /> </a>
-              <a href="https://www.instagram.com/lduckystudio/" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.white} className={"svgNav"} /> </a>
+              <a href="behance://profile/LuckyDuckyStudio"  aria-label="Link al Perfil de Behance" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.white} className={"svgNav"} /> </a>
+              <a href="fb://profile/luckyducky.studio"  aria-label="Link al Perfil de Facebook" rel="noreferrer" target="_blank"><FacebookIcon fill={colors.white} className={"svgNav"} /> </a>
+              <a href="instagram://user?username=lduckystudio"  aria-label="Link al Perfil de Instagram" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.white} className={"svgNav"} /> </a>
             </SRedesNav>
             <IBala />
           </SContenedorRedesYSticker>
@@ -113,7 +113,7 @@ const sidebar = {
 export const MenuToggle = ({ toggle, siteTitle, isOpen }) => {
   console.log("valor de open:", isOpen);
     return (
-    <OverButton isOpen={isOpen} onClick={toggle}>
+    <OverButton title="Menu" isOpen={isOpen} onClick={toggle}>
     <svg width="30" height="30" viewBox="-2 -2 25 25">
     <Path
       variants={{

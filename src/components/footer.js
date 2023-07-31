@@ -16,10 +16,10 @@ const Footer = ({ siteTitle}) => {
                     <IStickerlogo/>
                 </SAnimacionLDS>
                 <SRedesFooter>
-                    <a href="https://www.behance.net/LuckyDuckyStudio" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.white} className={"svgFooter"} /> </a>
-                    <a href="https://www.facebook.com/luckyducky.studio" rel="noreferrer" target="_blank"><FacebookIcon fill={colors.white} className={"svgFooter"} /> </a>
-                    <a href="https://www.instagram.com/lduckystudio/" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.white} className={"svgFooter"} /> </a>
-                    <a href="https://www.linkedin.com/company/lduckystudio/" rel="noreferrer" target="_blank"> <LinkedinIcon fill={colors.white} className={"svgFooter"} /> </a>
+                    <a href="behance://profile/LuckyDuckyStudio" aria-label="Link al Portafolio en Behance" rel="noreferrer" target="_blank"><BehanceIcon fill={colors.white} className={"svgFooter"} /> </a>
+                    <a href="fb://profile/luckyducky.studio" aria-label="Link al Perfil de Facebook"  rel="noreferrer" target="_blank"><FacebookIcon fill={colors.white} className={"svgFooter"} /> </a>
+                    <a href="instagram://user?username=lduckystudio"  aria-label="Link al Perfil de Instagram" rel="noreferrer" target="_blank"> <InstagramIcon fill={colors.white} className={"svgFooter"} /> </a>
+                    <a href="https://www.linkedin.com/company/lduckystudio/" aria-label="Link al Perfil de LinkedIn"  rel="noreferrer" target="_blank"> <LinkedinIcon fill={colors.white} className={"svgFooter"} /> </a>
                 </SRedesFooter>
             </SIzqFooter>
             <SContenedorCentral>

@@ -6,25 +6,30 @@
     width: 200px;
     left: -8%;
     top: 78%;
-    transform: rotate(-15deg) scale(1.5) translateX(-3%);
+    transform: rotate(-15deg) translateX(-3%);
   }
   .imgBorrego img {
+    width: 100%;
     object-fit: cover;
   }
 
   .imgLap {
       top: 3%;
-      right: -30%;
+      right: -25%;
       width: 250px;
-    transform: rotateY(200deg) rotate(-20deg) scale(1.5) translate(5%);
+    transform: rotateY(200deg) rotate(-20deg) translate(5%);
   }
   .imgLap img {
+    width: 100%;
     object-fit: cover;
   }
 
   .imgGraf {
     bottom: -20%;
     width: 250px;
+    display: flex;
+  }
+  .imgGraf img{
   }
 
 
@@ -169,31 +174,24 @@
 }
 
 .imgGraf {
-  bottom: -70%;
-  width: 600px;
+  bottom: -10%;
+  width: 400px;
 }
     
     .imgBorrego {
-      left: -12%;
-      top: 15%;
-      width: 500px ;
+      border-color: red;
+      left: -10%;
+      top: 20%;
+      width: 300px ;
       transform: rotate(25deg);
-      
-    }
-    .imgBorrego img {
-      object-fit: cover;
-      
       
     }
 
     .imgLap {
       top: 20%;
       right: -10%;
-      width: 500px ;
+      width: 300px ;
       transform: rotateY(200deg) rotate(-25deg)
-    }
-    .imgLap img {
-      object-fit: cover;
     }
     
   
@@ -204,7 +202,7 @@
       display:flex !important;
       right: -10%;
       bottom: -10%;
-      width: 400px ;
+      width: 300px ;
       transform: rotate(-40deg)
     }
     .imgCorazon img {
@@ -353,5 +351,30 @@ transform: rotate(12deg);
       width: 4% ;
       
     }
+    .imgBorrego {
+      left: -8%;
+      top: 15%;
+      width: 400px ;
+      transform: rotate(25deg);
+      
+    }
+    .imgLap {
+      top: 20%;
+      right: -8%;
+      width: 400px;
+    transform: rotateY(200deg) rotate(-20deg) translate(5%);
+  }
+  .imgGraf {
+    bottom: -20%;
+    width: 550px;
+    display: flex;
+  }
+  .imgCorazon  {
+    display:flex !important;
+    right: -8%;
+    bottom: -15%;
+    width: 400px ;
+    transform: rotate(-40deg)
+  }
   }
 

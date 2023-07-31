@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  SAnimacionHomeDer,
-  SAnimacionHomeIzq,
   SContenido,
   SHeader,
   SHeaderDerecha,
@@ -75,9 +73,9 @@ const Header = ({ siteTitle }) => {
                   type: "spring",
                   delay: 1,
                 }}
-                href="https://www.behance.net/LuckyDuckyStudio"
+                href="behance://profile/LuckyDuckyStudio"
                 rel="noreferrer"
-                target="_blank"
+                target="_blank"  aria-label="Link al Perfil de Behance"
               >
                 <BehanceIcon fill={colors.black} className={"svgHeader"} />{" "}
               </motion.a>
@@ -90,9 +88,9 @@ const Header = ({ siteTitle }) => {
                   type: "spring",
                   delay: 1.2,
                 }}
-                href="https://www.facebook.com/luckyducky.studio"
+                href="fb://profile/luckyducky.studio"
                 rel="noreferrer"
-                target="_blank"
+                target="_blank"  aria-label="Link al Perfil de Facebook"
               >
                 <FacebookIcon fill={colors.black} className={"svgHeader"} />{" "}
               </motion.a>
@@ -105,9 +103,9 @@ const Header = ({ siteTitle }) => {
                   type: "spring",
                   delay: 1.4,
                 }}
-                href="https://www.instagram.com/lduckystudio/"
+                href="instagram://user?username=lduckystudio"
                 rel="noreferrer"
-                target="_blank"
+                target="_blank"  aria-label="Link al Perfil de Instagram"
               >
                 {" "}
                 <InstagramIcon

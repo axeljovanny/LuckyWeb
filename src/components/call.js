@@ -40,6 +40,7 @@ const Call = ({ siteTitle }) => {
           href="https://wa.me/5214181119941"
           rel="noreferrer"
           target="_blank"
+          aria-label="Link que redirige a Whatsapp"
         >
           <Trans i18nKey="CALL_CONTACT" />
         </motion.a>

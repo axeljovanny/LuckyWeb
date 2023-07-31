@@ -223,25 +223,7 @@ export const SHeaderIzquierda = styled.div`
   `}
 `;
 
-export const SAnimacionHomeIzq = styled(motion.div)`
-  /* Comentario en estilos */
- 
-  background: none; /* utilizar las funciones de flex */
-  justify-content: center;
-  align-items: center;
-  border: 1px solid none;
-  position: absolute;
-  left: -10%;
-  bottom: 0%;
-  transform: scale(1.2);
-  transform: translateY(-10%);
 
-  ${above.large`
-   
-    position: static;
-    transform: scale(1.3);
-  `}
-`;
 
 export const SRedes = styled (motion.div)`
 display: none;  // se oculta
@@ -281,28 +263,7 @@ export const SHeaderDerecha = styled.div`
   `}
 `;
 
-export const SAnimacionHomeDer = styled(motion.div)`
-  width: 90%; /* ancho de mi pagina */
-  height: 30%; /* largo de mi pagina */
-  background: none; /* color de fondo */
-  display: flex; /* utilizar las funciones de flex */
-  justify-content: center;
-  align-items: center;
-  border: none; /* utilizar las funciones de flex */
-  transform: scale(1.3);
-  position: absolute;
-  top: 77%;
-  left: 25%;
 
-  ${above.large`
-    width: 100%; /* ancho de mi pagina */
-    height: 100%;
-    position: static;
-    top: 0;
-    left: 0;
-    transform: scale(1);
-  `}
-`;
 
 export const STextoInicio = styled.div`
   /* Comentario en estilos */
