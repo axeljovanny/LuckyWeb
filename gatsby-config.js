@@ -4,7 +4,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Lucky Ducky Studio`,
+    title: `¡Hola! 🦆`,
     description: `¡Bienvenidos a Lucky Ducky Studio!
 
     Somos un estudio creativo que derrocha alegría y pasión en cada proyecto. Nuestra misión es hacer que tu marca se destaque como un patito de la suerte entre la multitud. Con un equipo de talentosos diseñadores, expertos en desarrollo web y estrategas de marketing, estamos listos para llevar tu visión al siguiente nivel.
@@ -20,6 +20,19 @@ module.exports = {
     author: `@ldstudio`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-LSYD37FEWL", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        },
+      },
+    },
     "gatsby-plugin-styled-components", 
     "gatsby-plugin-image", 
     "gatsby-plugin-sitemap", 
