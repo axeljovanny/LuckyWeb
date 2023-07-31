@@ -9,7 +9,7 @@ export const SFooter = styled.div`
   background-color: ${colors.black}; /* largo de mi pagina */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70% 20% 20%;
+  grid-template-rows: 70% 20% 10%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 

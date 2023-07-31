@@ -21,8 +21,9 @@
     
     "SERVICIOS_TITTLE": "SERVICES",
     "SERVICIOS_BRANDING": "BRANDING",
-    "SERVICIOS_WEB": "DESARROLLO WEB",
-    "SERVICIOS_CONTENIDO": "CREACIÓN DE CONTENIDO",
+    "SERVICIOS_WEB": "WEB DEVELOPMENT",
+    "SERVICIOS_CONTENIDO": "CONTENT CREATION",
+   
     "SERVICIOS_BRANDING_DESC":"With your ideas we will help you to highlight your brand with a unique, professional identity that reflects the values and personality of your business.",
     "SERVICIOS_WEB_DESC":"We offer you creative and effective solutions to enhance your brand's presence in networks with written, visual and audiovisual content to bring the right message to your audience.",
     "SERVICIOS_CONTENIDO_DESC":"We generate customized and professional solutions to take your online presence to the next level. We will take care of creating an effective and attractive online presence.",

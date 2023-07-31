@@ -29,7 +29,7 @@ background-color:${colors.white};
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 10% 0 0;
+padding: 5% 0;
 
 h1{
 font-family: ${fonts.reciaB};
@@ -43,6 +43,7 @@ ${above.medium`
     
   `}
 ${above.large`
+padding: 10% 0 0;
 
 h1{
 
@@ -53,11 +54,11 @@ font-size: 5em;
 `
 
 export const SContenedorGrid = styled.div`
-width: 85%;
+width: 90%;
 height: 80%; 
 background-color: none;
 display: grid;
-grid-template-columns:70% 20%;
+grid-template-columns:80% 20%;
 grid-template-rows: repeat(6, auto);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
@@ -95,9 +96,6 @@ h2{
   font-size: 2em;
   color: ${colors.black};
 }
-
-
-
 ${above.medium`
     
   `}
@@ -127,9 +125,8 @@ grid-area: 2 / 1 / 3 / 3;
 display: flex;
 justify-content:flex-start;
 align-items: flex-start;
-padding: 0 0 0 10%;
+padding: 10% 5%;
 flex-direction: column;
-
 
 h3{
   font-family: ${fonts.monttMedium};
@@ -226,7 +223,7 @@ border-top: solid 0.1em ${colors.black};
 display: flex;
 justify-content:flex-start;
 align-items: flex-start;
-padding: 0 0 0 10%;
+padding: 10% 5%;
 flex-direction: column;
 
 
@@ -309,7 +306,7 @@ grid-area: 6 / 1 / 7 / 3;
 display: flex;
 justify-content:flex-start;
 align-items: flex-start;
-padding: 0 0 0 10%;
+padding: 10% 5%;
 flex-direction: column;
 
 h3{

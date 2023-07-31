@@ -28,7 +28,6 @@ export const aboveMax = Object.keys(size).reduce((acc, label) => {
 
 export const GlobalStyles = createGlobalStyle`
 body {
-  overflow-x: hidden;
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
