@@ -8,6 +8,8 @@ import { graphql} from 'gatsby';
 import Footer from "../components/footer";
 import { IconNav } from "../components/nav";
 import { Idiomas } from "../components/idioma";
+import { SEO } from "../components/seo"
+
 
 const IndexPage = () => {
 
@@ -28,7 +30,7 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Hola 🖖</title>
+export const Head = () => <SEO/> 
 
 export const query = graphql`
   query ($language: String!) {
