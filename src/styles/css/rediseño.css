@@ -29,7 +29,7 @@
 
 
   .imgCorazon  {
-   display:none;
+   display:none !important;
   }
   
   .imgMenu  {
@@ -201,7 +201,7 @@
     
   
     .imgCorazon  {
-      display:flex;
+      display:flex !important;
       right: -10%;
       bottom: -10%;
       width: 400px ;
