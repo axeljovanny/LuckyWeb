@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /admin/         # No permitir el acceso a la carpeta de administración
+Disallow: /contacto.html  # No permitir el acceso a la página de contacto
+Disallow: /privado/       # No permitir el acceso a la carpeta de contenido privado
+Disallow: /archivos/      # No permitir el acceso a la carpeta de archivos
+Disallow: /tmp/          # No permitir el acceso a la carpeta temporal
+
+User-agent: Googlebot   # Directivas específicas para el rastreador de Google
+Disallow: /noindex.html  # No permitir el acceso a una página específica para Googlebot
+Allow: /                 # Permitir el acceso al resto del sitio
+
+Sitemap: https://luckyducky.studio/sitemap-index.xml   # Especificar la ubicación del sitemap

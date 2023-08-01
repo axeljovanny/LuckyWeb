@@ -10,9 +10,28 @@ import { IconNav } from "../components/nav";
 import { Idiomas } from "../components/idioma";
 import { SEO } from "../components/seo"
 
+export const query = graphql`
+  query ($language: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
 
-const IndexPage = () => {
-
+const IndexPage = ({ data }) => {
+  const { siteUrl } = data.site.siteMetadata;
+  const { locales } = data;
   return (
     <>
       <Layout>
@@ -32,18 +51,4 @@ export default IndexPage;
 
 export const Head = () => <SEO/> 
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(
-      filter: { language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-  }
-`;
+
