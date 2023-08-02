@@ -11,20 +11,15 @@ display: flex;
 justify-content:space-around;
 align-items: center;
 flex-direction: column;
-
-
-${above.medium`
-    
+${above.medium`  
   `}
 ${above.large`
-
   `}
 `
 
 
 export const SContenedorTitulo = styled.div`
 width: 30%;
-height: 16%; 
 background-color:${colors.white};  
 display: flex;
 justify-content: center;
@@ -38,24 +33,20 @@ font-size: 3.5em;
 
 }
 
-
 ${above.medium`
     
   `}
 ${above.large`
-padding: 10% 0 0;
+padding: 2em 0;
 
 h1{
-
 font-size: 5em;
-
 }
-  `}
+`}
 `
 
 export const SContenedorGrid = styled.div`
 width: 90%;
-height: 80%; 
 background-color: none;
 display: grid;
 grid-template-columns:80% 20%;

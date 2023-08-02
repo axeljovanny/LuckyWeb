@@ -12,6 +12,7 @@ export const SFooter = styled.div`
   grid-template-rows: 70% 20% 10%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  overflow: hidden;
 
   ${above.medium`
     
@@ -93,7 +94,7 @@ export const SDerFooter = styled.div`
   /* Comentario en estilos */
   width: 100%;
   background-color: none; /* largo de mi pagina */
-
+  position: relative;
   display: none;
   justify-content: center;
   align-items: center;
@@ -103,11 +104,12 @@ export const SDerFooter = styled.div`
   ${above.large`
     grid-area: 1 / 3 / 2 / 4;
     width: 100%;
-    background-color:none;   /* largo de mi pagina */
+    background-color: none;   /* largo de mi pagina */
 
     display: flex;
     justify-content: center;
     align-items: center;  
+
   `}
 `;
 export const SAnimacionFooter = styled.div`

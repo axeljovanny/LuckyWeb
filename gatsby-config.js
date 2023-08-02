@@ -4,7 +4,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `¡Hola! 🦆`,
+    title: `🦆 Lucky Ducky Studio`,
     description: `¡Bienvenidos a Lucky Ducky Studio!
 
     Somos un estudio creativo que derrocha alegría y pasión en cada proyecto. Nuestra misión es hacer que tu marca se destaque como un patito de la suerte entre la multitud. Con un equipo de talentosos diseñadores, expertos en desarrollo web y estrategas de marketing, estamos listos para llevar tu visión al siguiente nivel.
@@ -62,8 +62,8 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`,
-        languages: [`en`, `es`],
-        defaultLanguage: `en`,
+        languages: [`us`, `mx`],
+        defaultLanguage: `mx`,
         siteUrl: `https://luckyducky.studio`,
         i18nextOptions: {
           interpolation: {
@@ -76,11 +76,11 @@ module.exports = {
           {
             matchPath: '/:lang?/blog/:uid',
             getLanguageFromPath: true,
-            excludeLanguages: ['es']
+            excludeLanguages: ['mx']
           },
           {
             matchPath: '/preview',
-            languages: ['en']
+            languages: ['mx']
           }
         ]
       }

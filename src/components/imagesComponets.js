@@ -97,7 +97,7 @@ export function ILogoTrebolNav() {
     return <StaticImage
         src="../images/Logos/Isotipo_Black.png"
         alt="Isotipo trebol Lucky Ducky Studio"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         layout="fullWidth"
         quality='90'
@@ -133,7 +133,7 @@ export function INube() {
     return <StaticImage
         src="../images/Stickers/sticker_nube.png"
         alt="Sticker Nube ilustrada"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         layout="fullWidth"
         quality='90'
@@ -153,7 +153,7 @@ export function IBala() {
     return <StaticImage
         src="../images/Stickers/sticker_bala.png"
         alt="Sticker Bala ilustrada"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         layout="fullWidth"
         quality='90'
@@ -185,7 +185,7 @@ export function IStickerlogo() {
     return <StaticImage
         src="../images/Stickers/logoSticker2.png"
         alt="Sticker Logo Lucky Ducky Studio"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         layout="fullWidth"
         quality='80'
@@ -201,7 +201,7 @@ export function IStickerFoco() {
     return <StaticImage
         src="../images/Stickers/Foco.png"
         alt="Sticker Foco ilustrado"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         layout="fullWidth"
         quality='80'
@@ -218,7 +218,7 @@ export function IStickerMesa() {
     return <StaticImage
         src="../images/Stickers/Mesa de trabajo 2.png"
         alt="Sticker pato ilustrado"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         layout="fullWidth"
         quality='80'
@@ -236,7 +236,7 @@ export function IStickerTrebol2() {
     return <StaticImage
         src="../images/Stickers/trevol2.png"
         alt="Sticker trebol ilustrado"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         layout="fullWidth"
         quality='80'
@@ -254,13 +254,12 @@ export function IPortafolio() {
     return <StaticImage
         src="../images/Fondos/Portafolio.jpg"
         alt="Imagen que menciona que se esta trabajando en un video perron de portafolio"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         layout="fullWidth"
         quality='80'
         formats={['auto', 'webp']}
         className="portafolio"
-
     />
 
 }
@@ -269,7 +268,7 @@ export function IPortafolioMovil() {
     return <StaticImage
         src="../images/Fondos/PortafolioMovil.jpg"
         alt="Imagen que menciona que se esta trabajando en un video perron de portafolio"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         layout="fullWidth"
         quality='80'

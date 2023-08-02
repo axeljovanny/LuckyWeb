@@ -23,7 +23,7 @@ import "../styles/css/svg.css";
 import { colors } from "../utils/const";
 import { Trans } from 'gatsby-plugin-react-i18next';
 
-const Call = ({ siteTit }) => {
+const Servivios = ({ siteTit }) => {
   const [content, toggleContent] = useState(false);
   const [web, toggleWeb] = useState(false);
   const [brand, toggleBrand] = useState(false);
@@ -92,4 +92,4 @@ const Call = ({ siteTit }) => {
   );
 };
 
-export default Call;
+export default Servivios;

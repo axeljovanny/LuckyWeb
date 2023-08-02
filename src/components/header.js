@@ -51,7 +51,6 @@ const Header = ({ siteTitle }) => {
 
   return (
     <> 
-      <Stickers isMobile={isMobile}/>
       <SHeader>
         <IFondoHeader /> 
         <SNav>
@@ -149,6 +148,7 @@ const Header = ({ siteTitle }) => {
           </SHeaderDerecha>
         </SContenido>
       </SHeader>
+      <Stickers isMobile={isMobile}/>
     </>
   );
 };

@@ -4,8 +4,8 @@ import { colors, fonts } from "../../utils/const";
 import { motion } from "framer-motion";
 
 export const SCall = styled.div`
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 60vh;
   background-color: ${colors.white};
   display: flex;
   justify-content: center;
@@ -16,6 +16,7 @@ export const SCall = styled.div`
   ${above.medium`    
   `}
   ${above.large`  
+    height: 30vh;
     margin: 8% 0 8% 0;
   `}
 `;

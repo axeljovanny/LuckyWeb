@@ -6,7 +6,9 @@ import Footer from "../components/footer";
 import { Idiomas } from "../components/idioma";
 
 const pageStyles = {
-  color: "#232129",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
@@ -19,13 +21,6 @@ const headingStyles = {
 const paragraphStyles = {
   marginBottom: 48,
 }
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
 
 const NotFoundPage = () => {
   return (
@@ -34,22 +29,12 @@ const NotFoundPage = () => {
       <IconNav/>
       <Idiomas/>
       <main style={pageStyles}>
-        <h1 style={headingStyles}>Page not found</h1>
+        <h1 style={headingStyles}>Pagína no encontrada</h1>
         <p style={paragraphStyles}>
-          Sorry 😔, we couldn’t find what you were looking for.
-          <br />
-          {process.env.NODE_ENV === "development" ? (
-            <>
-              <br />
-              Try creating a page in <code style={codeStyles}>src/pages/</code>.
-              <br />
-            </>
-          ) : null}
-          <br />
-          <Link to="/">Go home</Link>.
+          Lo sentimos mano 😔, la pagína a la que quieres entrar no existe, pero puedes ir a nuetro Inicio.
+          <Link to="/">Visitar Inicio</Link>.
         </p>
       </main>
-      <Footer/>
     </Layout>   
   </>
   )
