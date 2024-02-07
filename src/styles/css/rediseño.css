@@ -194,7 +194,9 @@
     }
     
   
-  
+    .info{
+      width: 300px ;
+    }
     
   
     .imgCorazon  {
@@ -370,5 +372,10 @@
     width: 400px ;
     transform: rotate(-40deg)
   }
+
+  .info{
+    width: 800px ;
+  }
+  
   }
 

@@ -4,7 +4,8 @@ import '../styles/css/fonts.css'
 export const colors = {
     black: "#424242",
     white: "#FBFBFB",
-    none: "none"
+    none: "none",
+    info: "FFFEE1",
 }
 
 export const sizes = {

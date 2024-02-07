@@ -4,8 +4,8 @@ import { colors, fonts } from "../../utils/const";
 
 export const SInfo = styled.div`
   width: 100vw; 
-  height: 80vh;
-  background-color: ${colors.white}; /* largo de mi pagina */
+  height: 70vh;
+  background-color: ${colors.info};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,5 +15,7 @@ export const SInfo = styled.div`
     
   `}
   ${above.large`
+  width: 100vw; 
+  height: 80vh;
   `}
 `;

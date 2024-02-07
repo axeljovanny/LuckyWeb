@@ -47,9 +47,9 @@ const IndexPage = ({ data }) => {
                 placeholder="blurred"
                 quality='70'
                 formats={['auto', 'webp']}
+                className='info'
                 style={{
                     position: "absolute",
-                    width:"40%",
                 }}
             />
         </SInfo>
